@@ -27,7 +27,7 @@
                                     <li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
                                     <li><a href="#"><i class="fa fa-map-marker"></i>{{$event["location_name"]}}</a></li>
                                 </ul>
-                                <p>{{$event["description"]}}</p>
+                                <p>{{ strlen($event["description"]) > 400 ? substr($event["description"], 0, 400) . '...' : $event["description"] }}</p>
                             </div>
                         </div>
                     </div>

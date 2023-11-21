@@ -17,7 +17,7 @@ use App\Models\Event;
 
 Route::get('/', function () {
     return view("pages.index",[
-        "events" => Event::take(3)->get()
+        "events" => Event::latest()->take(4)->get()
     ]);
 });
 Route::get("/history", function(){
