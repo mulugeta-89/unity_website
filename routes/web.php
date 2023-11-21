@@ -94,4 +94,3 @@ Route::get("/event/{event}", [EventController::class, "show"]);
 Route::get("event/{event}/edit", [EventController::class, "edit"]);
 Route::delete("event/{event}", [EventController::class, "destroy"]);
 Route::put("event/{event}", [EventController::class, "update"]);
-Route::get("/event/{event}", [EventController::class, "show"]);
