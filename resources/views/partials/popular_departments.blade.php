@@ -12,10 +12,10 @@
                 <div class="cours-bx">
                     <div class="action-box">
                         <img src="{{asset("/images/cs_original.jpg")}}" alt="">
-                        <a href="cs.html" class="btn">Read More</a>
+                        <a href="/department/cs" class="btn">Read More</a>
                     </div>
                     <div class="info-bx text-center">
-                        <h5><a href="cs.html">Computer Science</a></h5>
+                        <h5><a href="/department/cs">Computer Science</a></h5>
                         <span>Faculty of Technlogy</span>
                     </div>
                     <div class="cours-more-info">
@@ -27,10 +27,10 @@
                 <div class="cours-bx">
                     <div class="action-box">
                         <img src="{{asset("/images/accounting.jpg")}}" alt="">
-                        <a href="accounting.html" class="btn">Read More</a>
+                        <a href="/department/accounting" class="btn">Read More</a>
                     </div>
                     <div class="info-bx text-center">
-                        <h5><a href="accounting.html">Accounting and Finance</a></h5>
+                        <h5><a href="/department/accounting">Accounting and Finance</a></h5>
                         <span>Faculty of Distance Learning</span>
                     </div>
                     <div class="cours-more-info">
@@ -41,10 +41,10 @@
                 <div class="cours-bx">
                     <div class="action-box">
                         <img src="{{asset("/images/public_health.jpg")}}" alt="">
-                        <a href="public_health.html" class="btn">Read More</a>
+                        <a href="/department/public_health" class="btn">Read More</a>
                     </div>
                     <div class="info-bx text-center">
-                        <h5><a href="public_health.html">Public Health</a></h5>
+                        <h5><a href="/department/public_health">Public Health</a></h5>
                         <span>Faculty of Health</span>
                     </div>
                     <div class="cours-more-info">
@@ -56,10 +56,10 @@
                 <div class="cours-bx">
                     <div class="action-box">
                         <img src="{{asset("/images/mba.jpg")}}" alt="">
-                        <a href="mba.html" class="btn">Read More</a>
+                        <a href="/department/mba" class="btn">Read More</a>
                     </div>
                     <div class="info-bx text-center">
-                        <h5><a href="mba.html">MBA-General</a></h5>
+                        <h5><a href="/department/mba">MBA-General</a></h5>
                         <span>Faculty of Bussiness and Economics</span>
                     </div>
                     <div class="cours-more-info">

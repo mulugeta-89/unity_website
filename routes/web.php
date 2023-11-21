@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Event;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// for the events
+Route::get("/events", function(){
+    return view("event.index", [
+        "heading" => "Events Bro",
+        "events" => Event::all()
+    ]);
+});
 
 Route::get('/', function () {
-    return view("layout");
+    return view("pages.index");
 });
 Route::get("/history", function(){
     return view("pages.history");
@@ -70,3 +78,16 @@ Route::get("/campus/adama", function(){
 Route::get("/campus/burayu", function(){
     return view("pages.burayu");
 });
+Route::get("department/cs", function(){
+    return view("pages.cs");
+});
+Route::get("/deparment/accounting", function(){
+    return view("pages.accounting");
+});
+Route::get("/department/public_health", function(){
+    return view("pages.public_health");
+});
+Route::get("/department/mba", function(){
+    return view("pages.mba");
+});
+

@@ -145,7 +145,7 @@
                                         </li>
                                         <li><a href="javascript:;">Event<i class="fa fa-angle-right"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="event.html">Event</a></li>
+                                                <li><a href="/events">Event</a></li>
                                                 <li><a href="events-details.html">Events Details</a></li>
                                             </ul>
                                         </li>
@@ -215,19 +215,7 @@
             </div>
         </header>
     </div>
-    {{-- header end here --}}
-    {{-- <div class="page-content bg-white">
-        @include("partials.hero")
-        <div class="content-block">
-            @include("partials.services")
-            @include("partials.popular_departments")
-            @include("event.show")
-            @include("partials.testimonial")
-            @include("news.show")
-        </div>
-    </div> --}}
     @yield("content")
-
     {{-- Footer starts here --}}
     <footer>
 		<div class="footer-top">
@@ -275,10 +263,10 @@
 								<div class="widget footer_widget">
 									<h5 class="footer-title">Company</h5>
 									<ul>
-										<li><a href="index.html">Home</a></li>
-										<li><a href="campuses.html">About</a></li>
+										<li><a href="/">Home</a></li>
+										<li><a href="/campuses">About</a></li>
 										<li><a href="#">FAQs</a></li>
-										<li><a href="contact_us.html">Contact</a></li>
+										<li><a href="/contact_us">Contact</a></li>
 									</ul>
 								</div>
 							</div>
@@ -287,8 +275,8 @@
 									<h5 class="footer-title">Get In Touch</h5>
 									<ul>
 										<li><a href="#">News</a></li>
-										<li><a href="#">Events</a></li>
-										<li><a href="campuses.html">Campuses</a></li>
+										<li><a href="/events">Events</a></li>
+										<li><a href="/campuses">Campuses</a></li>
 										<li><a href="#">Testimonials</li>
 									</ul>
 								</div>
@@ -297,9 +285,9 @@
 								<div class="widget footer_widget">
 									<h5 class="footer-title">Programs</h5>
 									<ul>
-										<li><a href="undergraduate.html">Undergraduate</li>
-										<li><a href="postgraduate.html">Postgraduate</a></li>
-										<li><a href="distance_education.html">Distance Education</a></li>
+										<li><a href="/undergraduate">Undergraduate</li>
+										<li><a href="/postgraduate">Postgraduate</a></li>
+										<li><a href="/distance_education">Distance Education</a></li>
 									</ul>
 								</div>
 							</div>

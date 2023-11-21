@@ -30,12 +30,6 @@
 	padding-left: 30px; /* Adjust this value as needed */
 
 }
-.home-btn {
-	color: white;
-}
-.home-btn:hover {
-	color: white;
-}
 .bra li {
 	margin-bottom: 300px;
 }
@@ -327,7 +321,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 140px;
-    height: 90px;
+    height: 80px;
     position: relative;
     z-index: 9;
 	transition:all 0.5s;
@@ -806,7 +800,7 @@
     .menu-links .nav > li > a:hover,
     .menu-links .nav > li > a:active,
     .menu-links .nav > li > a:focus {
-        background-color: orange;
+        background-color: #f0f0f0;
         text-decoration: none;
     }
     .menu-links .nav > li .mega-menu > li:after {
@@ -910,7 +904,7 @@
     .menu-links .nav .open > a:focus,
     .menu-links .nav .open > a:hover {
         background-color: inherit;
-        border-color: orange;
+        border-color: #e9e9e9;
     }
 }
 @media screen and (max-width: 991px){
