@@ -5,7 +5,7 @@
       <div class="col-md-10 mx-auto">
         <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color:#98b4d4;">
             Elevate Your Leadership Journey: Unity University's MBA-General Department                </h1>
-        <img src="{{asset("/images/mba.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
+        <img src="{{asset("/images/mba.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center rounded">
         <div class="text-black text-justify">
             <p>
                 Welcome to the pinnacle of business education and leadership development—<b>Unity University</b>'s MBA-General Department. Grounded in a commitment to excellence, innovation, and transformative leadership, our department is designed to shape the business leaders of tomorrow.

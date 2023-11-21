@@ -64,8 +64,8 @@
 <div class="page-wraper">
 <div id="loading-icon-bx"></div>
 	<!-- Header Top ==== -->
-    <div>
-        <header class="header rs-nav header-transparent" >
+    <div class="fixed-top">
+        <header class="header rs-nav header-transparent fixed-top">
             <div class="top-bar" style="background-color: #fff; color: black;">
                 <div class="container">
                     <div class="row d-flex justify-content-between">
@@ -288,6 +288,7 @@
 										<li><a href="/undergraduate">Undergraduate</li>
 										<li><a href="/postgraduate">Postgraduate</a></li>
 										<li><a href="/distance_education">Distance Education</a></li>
+                                        <li><a href="/event/create">Post event</a></li>
 									</ul>
 								</div>
 							</div>

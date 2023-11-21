@@ -6,7 +6,7 @@
         <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color:#98b4d4;">
             Unveiling Opportunities: Unity University's Accounting and Finance Department
         </h1>
-        <img src="{{asset("/images/accounting.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
+        <img src="{{asset("/images/accounting.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center rounded">
         <div class="text-black text-justify">
             <p>
                 Welcome to the cornerstone of financial prowess and strategic acumen—<b>Unity University</b>'s Accounting and Finance Department. Rooted in a legacy of precision, expertise, and financial leadership, our department is a launching pad for the financial trailblazers of tomorrow.

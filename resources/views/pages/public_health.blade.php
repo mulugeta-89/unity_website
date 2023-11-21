@@ -6,7 +6,7 @@
         <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color:#98b4d4;">
             Empowering Communities: Unity University's Public Health Department
         </h1>
-        <img src="{{asset("/images/public_health.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
+        <img src="{{asset("/images/public_health.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center rounded">
         <div class="text-black text-justify">
             <p>
                 Welcome to the heart of community well-being and societal impact—<b>Unity University</b>'s Public Health Department. Rooted in a mission to promote health equity, preventive care, and societal wellness, our department is a catalyst for change, nurturing the next generation of public health leaders and advocates.

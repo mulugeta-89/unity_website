@@ -7,7 +7,7 @@
             RUKYA CAMPUS (DESSIE)
 
         </h1>
-        <img src="{{asset("/images/Dessie 2.jpg")}}" alt="Image" class="img-fluid mt-4">
+        <img src="{{asset("/images/Dessie 2.jpg")}}" alt="Image" class="img-fluid mt-4 rounded">
         <div class="curriculum-list mt-3">
             <div class="row">
                 <div class="col-md-6 col-sm-12">

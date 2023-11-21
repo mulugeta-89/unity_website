@@ -5,7 +5,7 @@
     <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
         <div class="container">
             <div class="page-banner-entry">
-                <h1 class="text-white" style="margin-top: 90px">{{$heading}}</h1>
+                <h1 class="text-white" style="margin-top: 90px">Events</h1>
              </div>
         </div>
     </div>
@@ -48,34 +48,11 @@
                     <ul id="masonry" class="ttr-gallery-listing magnific-image row">
                         @unless(count($events) == 0)
                             @foreach($events as $event)
-                            
-                                <li class="action-card col-lg-6 col-md-6 col-sm-12 happening">
-                                    <div class="event-bx m-b30">
-                                        <div class="action-box">
-                                            <img src="{{asset("/images/event/pic1.jpg")}}" alt="">
-                                        </div>
-                                        <div class="info-bx d-flex">
-                                            <div>
-                                                <div class="event-time">
-                                                    <div class="event-date">29</div>
-                                                    <div class="event-month">October</div>
-                                                </div>
-                                            </div>
-                                            <div class="event-info">
-                                                <h4 class="event-title"><a href="#">{{$event["title"]}}</a></h4>
-                                                <ul class="media-post">
-                                                    <li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-                                                    <li><a href="#"><i class="fa fa-map-marker"></i> {{$event["location_name"]}}</a></li>
-                                                </ul>
-                                                <p>{{$event["description"]}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                <x-event_card :event="$event"/>
                             @endforeach
                         @else
                             <p>No Event found</p>
-                        @endif
+                        @endunless
                     </ul>
                 </div>
             </div>

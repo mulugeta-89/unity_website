@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Event;
 
@@ -13,16 +14,11 @@ use App\Models\Event;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-// for the events
-Route::get("/events", function(){
-    return view("event.index", [
-        "heading" => "Events Bro",
-        "events" => Event::all()
-    ]);
-});
 
 Route::get('/', function () {
-    return view("pages.index");
+    return view("pages.index",[
+        "events" => Event::take(3)->get()
+    ]);
 });
 Route::get("/history", function(){
     return view("pages.history");
@@ -90,4 +86,8 @@ Route::get("/department/public_health", function(){
 Route::get("/department/mba", function(){
     return view("pages.mba");
 });
-
+// for the events
+Route::get("/events", [EventController::class, "index"]);
+Route::get("/event/create", [EventController::class, "create"]);
+Route::post("/events/store", [EventController::class, "store"]);
+Route::get("/event/{event}", [EventController::class, "show"]);

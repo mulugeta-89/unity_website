@@ -6,7 +6,7 @@
         <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color:#98b4d4;">
             Welcome to the Innovation Hub: Unity University's Computer Science Department
         </h1>
-        <img src="{{asset("/images/cs_original.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
+        <img src="{{asset("/images/cs_original.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center rounded">
         <div class="text-black text-justify">
             <p>
                 At <b>Unity University</b>, our Computer Science Department stands as a beacon of innovation, knowledge, and technological advancement. Steeped in a tradition of excellence and forward-thinking education, our department offers an unparalleled academic experience that nurtures the next generation of tech leaders and innovators.

@@ -6,7 +6,7 @@
         <h1 class="full-width text-center" style="margin-top: 150px;font-size: 46px; text-transform: uppercase; text-align: justify; color:#98b4d4;">
             BURAYU CAMPUS, GEFERSSA (OROMIYA)
         </h1>
-        <img src="{{asset("/images/Burayu.jpg")}}" alt="Image" class="img-fluid mt-4">
+        <img src="{{asset("/images/Burayu.jpg")}}" alt="Image" class="img-fluid mt-4 rounded">
         <div class="curriculum-list mt-3">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
