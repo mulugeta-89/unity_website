@@ -32,6 +32,17 @@ class EventController extends Controller
         Event::create($formFields);
         return redirect("/");
     }
+    public function update(Request $request, Event $event){
+        $formFields = $request->validate([
+            "title" => "required",
+            "description" => "required",
+            "start_date" => "required",
+            "end_date" => "required",
+            "location_name" => "required",
+        ]);
+        $event->update($formFields);
+        return redirect("/events");
+    }
     public function edit(Event $event){
         return view("event.edit", [
             "event" => $event

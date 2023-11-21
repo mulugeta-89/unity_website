@@ -3,8 +3,9 @@
 <div>
 <div class="container mt-6 pt-5" style="margin-top: 120px;">
     <h1 style="text-align: center">Add Event</h1>
-    <form action="/events/store" method="POST">
+    <form action="/event/{{$event->id}}" method="POST">
       @csrf
+      @method("PUT")
       <div class="form-group">
         <label for="title">Event Title</label>
         <input 
@@ -69,7 +70,7 @@
             <p class="text-danger mt-1">{{$message}}</p>
         @enderror
       </div>
-      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      <button type="submit" class="btn btn-primary mb-2">Edit Event</button>
     </form>
   </div>
 </div>
