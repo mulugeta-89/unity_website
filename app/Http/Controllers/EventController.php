@@ -48,4 +48,8 @@ class EventController extends Controller
             "event" => $event
         ]);
     }
+    public function destroy(Event $event){
+        $event->delete();
+        return redirect("/events");
+    }
 }

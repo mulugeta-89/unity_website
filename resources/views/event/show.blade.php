@@ -41,9 +41,20 @@
             <div class="row">
                 <div class="col-md-12">
                   <a href="/event/{{$event->id}}/edit">Edit</a>
-                  <a href="/event/{{$event->id}}/delete">Delete</a>
+                  {{-- <a href="/event/{{$event->id}}/delete">Delete</a> --}}
                 </div>
               </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form method="POST" action="/event/{{$event->id}}">
+                            @csrf
+                            @method("DELETE")
+                            <button class="text-red-600">
+                                Delete
+                            </button>
+                        </form>
+                </div>
+            </div>
 
           </div>
           
