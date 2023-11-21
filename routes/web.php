@@ -90,4 +90,5 @@ Route::get("/department/mba", function(){
 Route::get("/events", [EventController::class, "index"]);
 Route::get("/event/create", [EventController::class, "create"]);
 Route::post("/events/store", [EventController::class, "store"]);
+Route::get("event/{event}/edit", [EventController::class, "edit"]);
 Route::get("/event/{event}", [EventController::class, "show"]);

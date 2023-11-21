@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                             <div class="event-info">
-                                <h4 class="event-title"><a href="#">{{$event["title"]}}</a></h4>
+                                <h4 class="event-title"><a href="/event/{{$event->id}}">{{$event["title"]}}</a></h4>
                                 <ul class="media-post">
                                     <li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
                                     <li><a href="#"><i class="fa fa-map-marker"></i>{{$event["location_name"]}}</a></li>

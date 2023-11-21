@@ -32,4 +32,9 @@ class EventController extends Controller
         Event::create($formFields);
         return redirect("/");
     }
+    public function edit(Event $event){
+        return view("event.edit", [
+            "event" => $event
+        ]);
+    }
 }

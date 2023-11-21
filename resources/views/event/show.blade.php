@@ -38,6 +38,13 @@
                 <p class="text-justify">{{$event["description"]}}</p>
               </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                  <a href="/event/{{$event->id}}/edit">Edit</a>
+                  <a href="/event/{{$event->id}}/delete">Delete</a>
+                </div>
+              </div>
+
           </div>
           
         
