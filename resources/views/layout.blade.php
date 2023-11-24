@@ -20,8 +20,8 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON ============================================= -->
-	<link rel="icon" href="{{asset("/images/favicon.ico")}}" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="{{asset("/images/favicon.png")}}" />
+	<link rel="icon" href="{{asset("/images/logo3.png")}}" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{asset("/images/logo3.png")}}" />
 	
 	<!-- PAGE TITLE HERE ============================================= -->
 	<title>Unity University</title>

@@ -30,7 +30,7 @@ class EventController extends Controller
             "location_name" => "required",
         ]);
         Event::create($formFields);
-        return redirect("/");
+        return redirect("/events");
     }
     public function update(Request $request, Event $event){
         $formFields = $request->validate([

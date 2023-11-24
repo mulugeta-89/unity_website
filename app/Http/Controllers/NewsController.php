@@ -16,4 +16,14 @@ class NewsController extends Controller
     public function create(){
         return view("news.create");
     }
+    public function store(Request $request){
+        $formFields = $request->validate([
+            "title" => "required",
+            "content" => "required",
+            "publish_date" => "required",
+        ]);
+        News::create($formFields);
+        return redirect("/news");
+        
+    }
 }

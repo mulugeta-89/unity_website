@@ -8,7 +8,7 @@
             <ul class="media-post">
                 <li><a href="#"><i class="fa fa-calendar"></i>{{$new->publish_date}}</a></li>
             </ul>
-            <h5 class="post-title"><a href="blog-details.html">{{$new->title}}</a></h5>
+            <h5 class="post-title"><a href="blog-details.html">{{ strlen($new["title"]) > 30 ? substr($new["title"], 0, 30) . '...' : $new["title"] }}</a></h5>
             <p>{{ strlen($new["content"]) > 200 ? substr($new["content"], 0, 200) . '...' : $new["content"] }}</p>
             <div class="post-extra">
                 <a href="#" class="btn-link">READ MORE</a>

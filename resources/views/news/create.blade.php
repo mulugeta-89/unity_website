@@ -3,10 +3,10 @@
 <div>
 <div class="container mt-6 pt-5" style="margin-top: 120px;">
     <h1 style="text-align: center">Add News</h1>
-    <form action="/events/store" method="POST">
+    <form action="/news/store" method="POST">
       @csrf
       <div class="form-group">
-        <label for="title">NewsTitle</label>
+        <label for="title">Title</label>
         <input 
         type="text" 
         class="form-control" 
@@ -23,10 +23,10 @@
         <textarea 
         class="form-control"
          id="content"
-          name="content"
-           rows="4" 
-           required>{{old("description")}}</textarea>
-        @error("description")
+        name="content"
+        rows="4" 
+        required>{{old("content")}}</textarea>
+        @error("content")
             <p class="text-danger mt-1">{{$message}}</p>
         @enderror
       </div>
@@ -39,7 +39,7 @@
           name="publish_date" 
           value="{{old("publish_date")}}" 
           required >
-        @error("start_date")
+        @error("publish_date")
             <p class="text-danger mt-1">{{$message}}</p>
         @enderror
       </div>
