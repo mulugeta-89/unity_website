@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sticky-header navbar-expand-lg bg-black">
+            <div class="sticky-header navbar-expand-lg bg-blue">
                 <div class="menu-bar clearfix">
                     <div class="container clearfix">
                         <!-- Header Logo ==== -->
@@ -214,7 +214,7 @@
     </div>
     @yield("content")
     {{-- Footer starts here --}}
-    <footer>
+    <footer class="bg-blue">
 		<div class="footer-top">
 			<div class="pt-exebar">
 				<div class="container">
@@ -239,22 +239,6 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
 						<div class="widget">
-							{{-- <div class="subscribe-form m-b20">
-								<form class="subscription-form" action="#" method="post">
-									<div class="input-group">
-										<input name="email" required="required"  class="form-control" placeholder="Your Email Address" type="email">
-                                        <textarea 
-                                            class="form-control"
-                                            id="content"
-                                            name="message"
-                                            rows="4">
-                                            </textarea>
-										<span class="input-group-btn">
-											<button name="submit" value="Submit" type="submit" class="btn"><i class="fa fa-arrow-right"></i></button>
-										</span> 
-									</div>
-								</form>
-							</div> --}}
                             <div class="container">
                                 <h3 style="color: white">Contact Us</h3>
                                 <form>
