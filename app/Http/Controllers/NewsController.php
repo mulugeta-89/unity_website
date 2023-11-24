@@ -26,4 +26,9 @@ class NewsController extends Controller
         return redirect("/news");
         
     }
+    public function show(News $new){
+        return view("news.show",[
+            "new" => $new
+        ]);
+    }
 }

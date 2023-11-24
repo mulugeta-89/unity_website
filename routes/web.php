@@ -102,3 +102,4 @@ Route::put("event/{event}", [EventController::class, "update"]);
 Route::get("/news", [NewsController::class, "index"]);
 Route::get("/news/create", [NewsController::class, "create"]);
 Route::post("/news/store", [NewsController::class, "store"]);
+Route::get("/news/{new}", [NewsController::class, "show"]);
