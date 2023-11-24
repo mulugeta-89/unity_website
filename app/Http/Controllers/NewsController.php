@@ -13,4 +13,7 @@ class NewsController extends Controller
             "news" => News::latest()->paginate(6)
         ]);
     }
+    public function create(){
+        return view("news.create");
+    }
 }
