@@ -31,4 +31,19 @@ class NewsController extends Controller
             "new" => $new
         ]);
     }
+    public function edit(News $new){
+        return view("news.edit", [
+            "new" => $new
+        ]);
+    }
+    public function update(Request $request, News $new){
+        $formFields = $request->validate([
+            "title" => "required",
+            "content" => "required",
+            "publish_date" => "required",
+            
+        ]);
+        $new->update($formFields);
+        return redirect("/news");
+    }
 }
