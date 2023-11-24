@@ -143,8 +143,8 @@
                                                 <li><a href="/campuses">University Campuses</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/events">Event</a>
-                                            
+                                        <li><a href="/events">Events</a>
+                                        <li><a href="/news">News</a>  
                                         </li>
                                         <li><a href="javascript:;">Enterprises<i class="fa fa-angle-right"></i></a>
                                             <ul class="sub-menu">
