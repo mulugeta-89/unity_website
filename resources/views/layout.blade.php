@@ -20,8 +20,8 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON ============================================= -->
-	<link rel="icon" href="{{asset("/images/logo3.png")}}" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="{{asset("/images/logo3.png")}}" />
+	<link rel="icon" href="{{asset("/images/tab-logo.png")}}" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{asset("/images/tab-logo.png")}}" />
 	
 	<!-- PAGE TITLE HERE ============================================= -->
 	<title>Unity University</title>
@@ -220,7 +220,7 @@
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<a href="index.html"><img src="assets/images/logo-white.png" alt=""/></a>
+							<a href="index.html"><img src="{{asset("/images/logo3.png")}}" alt=""/></a>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
@@ -230,7 +230,7 @@
 							</ul>
 						</div>
 						<div class="pt-btn-join">
-							<a href="#" class="btn ">Join Now</a>
+							<a href="/contact_us" class="btn ">Join Now</a>
 						</div>
 					</div>
 				</div>
@@ -239,19 +239,36 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
 						<div class="widget">
-							<h5 class="footer-title">Sign Up For A Newsletter</h5>
-							<p class="text-capitalize m-b20">Weekly Breaking news analysis and cutting edge advices on job searching.</p>
-							<div class="subscribe-form m-b20">
-								<form class="subscription-form" action="http://educhamp.themetrades.com/demo/assets/script/mailchamp.php" method="post">
-									<div class="ajax-message"></div>
+							{{-- <div class="subscribe-form m-b20">
+								<form class="subscription-form" action="#" method="post">
 									<div class="input-group">
 										<input name="email" required="required"  class="form-control" placeholder="Your Email Address" type="email">
+                                        <textarea 
+                                            class="form-control"
+                                            id="content"
+                                            name="message"
+                                            rows="4">
+                                            </textarea>
 										<span class="input-group-btn">
 											<button name="submit" value="Submit" type="submit" class="btn"><i class="fa fa-arrow-right"></i></button>
 										</span> 
 									</div>
 								</form>
-							</div>
+							</div> --}}
+                            <div class="container">
+                                <h3 style="color: white">Contact Us</h3>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label" style="color: white">Your Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label" style="color: white">Message</label>
+                                        <textarea class="form-control" id="message" rows="3" placeholder="Type your message here"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
 						</div>
 					</div>
 					<div class="col-12 col-lg-5 col-md-7 col-sm-12">
@@ -296,14 +313,14 @@
 						<div class="widget widget_gallery gallery-grid-4">
 							<h5 class="footer-title">Our Gallery</h5>
 							<ul class="magnific-image">
-								<li><a href="{{asset("/images/gallery/pic1.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/gallery/pic1.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/gallery/pic2.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/gallery/pic2.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/gallery/pic3.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/gallery/pic3.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/gallery/pic4.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/gallery/pic4.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/gallery/pic5.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/gallery/pic5.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/gallery/pic6.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/gallery/pic6.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/gallery/pic7.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/gallery/pic7.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("images/gallery/pic8.jpg")}}" class="magnific-anchor"><img src="{{asset("images/gallery/pic8.jpg")}}" alt=""></a></li>
+								<li><a href="{{asset("/images/pic1.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic1.jpg")}}" alt=""></a></li>
+								<li><a href="{{asset("/images/pic2.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic2.jpg")}}" alt=""></a></li>
+								<li><a href="{{asset("/images/pic3.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic3.jpg")}}" alt=""></a></li>
+								<li><a href="{{asset("/images/pic4.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic4.jpg")}}" alt=""></a></li>
+								<li><a href="{{asset("/images/pic5.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic5.jpg")}}" alt=""></a></li>
+								<li><a href="{{asset("/images/pic6.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic6.jpg")}}" alt=""></a></li>
+								<li><a href="{{asset("/images/pic7.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic7.jpg")}}" alt=""></a></li>
+								
 							</ul>
 						</div>
 					</div>
