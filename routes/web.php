@@ -105,4 +105,5 @@ Route::post("/news/store", [NewsController::class, "store"]);
 Route::get("/news/{new}", [NewsController::class, "show"]);
 Route::get("/news/{new}/edit", [NewsController::class, "edit"]);
 Route::put("/news/{new}", [NewsController::class, "update"]);
+Route::delete("/news/{new}", [NewsController::class, "destroy"]);
 

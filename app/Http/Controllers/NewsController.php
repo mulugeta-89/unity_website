@@ -46,4 +46,8 @@ class NewsController extends Controller
         $new->update($formFields);
         return redirect("/news");
     }
+    public function destroy(News $new){
+        $new->delete();
+        return redirect("/news");
+    }
 }
