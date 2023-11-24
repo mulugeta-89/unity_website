@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Event;
+use App\Models\News;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +19,8 @@ use App\Models\Event;
 
 Route::get('/', function () {
     return view("pages.index",[
-        "events" => Event::latest()->take(4)->get()
+        "events" => Event::latest()->take(4)->get(),
+        "news" => News::latest()->take(4)->get()
     ]);
 });
 Route::get("/history", function(){
@@ -94,3 +97,6 @@ Route::get("/event/{event}", [EventController::class, "show"]);
 Route::get("event/{event}/edit", [EventController::class, "edit"]);
 Route::delete("event/{event}", [EventController::class, "destroy"]);
 Route::put("event/{event}", [EventController::class, "update"]);
+
+//for  news
+Route::get("/news", [NewsController::class, "index"]);

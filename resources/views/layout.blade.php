@@ -92,7 +92,7 @@
                     <div class="container clearfix">
                         <!-- Header Logo ==== -->
                         <div class="menu-logo">
-                            <a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
+                            <a href="index.html"><img src="{{asset("/images/logo3.png")}}" alt=""></a>
                         </div>
                         <!-- Mobile Nav Button ==== -->
                         <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -278,6 +278,7 @@
 										<li><a href="/events">Events</a></li>
 										<li><a href="/campuses">Campuses</a></li>
 										<li><a href="#">Testimonials</li>
+                                        <li><a href="/new/create">Post News</li>
 									</ul>
 								</div>
 							</div>

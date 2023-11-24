@@ -7,7 +7,7 @@
             @include("partials.popular_departments")
             @include("event.tobeOnHome")
             @include("partials.testimonial")
-            @include("news.show")
+            @include("news.tobeOnHome")
         </div>
     </div>
 @endsection

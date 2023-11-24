@@ -6,7 +6,7 @@
     <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
         <div class="container">
             <div class="page-banner-entry">
-                <h1 class="text-white" style="margin-top: 90px">Events</h1>
+                <h1 class="text-white" style="margin-top: 90px">News</h1>
             </div>
         </div>
     </div>
@@ -15,7 +15,7 @@
         <div class="container">
             <ul class="list-inline">
                 <li><a href="/">Home</a></li>
-                <li>Events</li>
+                <li>News</li>
             </ul>
         </div>
     </div>
@@ -23,21 +23,28 @@
     <!-- contact area -->
     <div class="content-block">
         <!-- Portfolio  -->
-        <div class="section-area section-sp1">
+        <div class="section-area section-sp1 gallery-bx">
             <div class="container">
-                <div class="ttr-blog-grid-3 row" id="masonry">
-                        @unless(count($events) == 0)
-                            @foreach($events as $event)
-                                <x-event_card :event="$event"/>
+                <div class="feature-filters clearfix center m-b40">
+                    <ul class="filters" data-toggle="buttons">
+                        <!-- ... (existing filter buttons) ... -->
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <ul id="masonry" class="ttr-gallery-listing magnific-image row">
+                        @unless(count($news) == 0)
+                            @foreach($news as $new)
+                                <x-news_card :new="$new"/>
                             @endforeach
                         @else
-                            <p>No Event found</p>
+                            <p>No News found</p>
                         @endunless
+                    </ul>
                 </div>
                 <!-- Pagination Links -->
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        {{ $events->links()}} <!-- Renders Bootstrap pagination links -->
+                        {{ $news->links()}} <!-- Renders Bootstrap pagination links -->
                     </div>
                 </div>
             </div>
