@@ -12,7 +12,7 @@
                 <div class="item">
                     <div class="event-bx">
                         <div class="action-box">
-                            <img src="{{asset("/images/event/pic4.jpg")}}" alt="">
+                            <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
                         </div>
                         <div class="info-bx d-flex">
                             <div>

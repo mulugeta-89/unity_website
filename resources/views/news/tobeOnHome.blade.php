@@ -12,7 +12,7 @@
                     <div class="item">
                         <div class="recent-news">
                             <div class="action-box">
-                                <img src="{{asset("/images/blog/latest-blog/pic1.jpg")}}" alt="">
+                                <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
                             </div>
                             <div class="info-bx">
                                 <ul class="media-post">

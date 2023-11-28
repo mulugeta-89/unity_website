@@ -46,7 +46,9 @@
 	<!-- STYLESHEETS ============================================= -->
 	<link rel="stylesheet" type="text/css" href="{{asset("style.css")}}">
 	<link class="skin" rel="stylesheet" type="text/css" href="{{asset("/color/color-1.css")}}">
-	
+
+    {{-- for counter --}}
+    
 	<!-- REVOLUTION SLIDER CSS ============================================= -->
 	<link rel="stylesheet" type="text/css" href="{{asset("vendors/revolution/css/layers.css")}}">
 	<link rel="stylesheet" type="text/css" href="{{asset("/vendors/revolution/css/settings.css")}}">
@@ -59,40 +61,53 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <style>
+            .header-transparent .is-fixed .menu-bar{
+                    position:fixed;
+                    background-color:rgba(6, 45, 151, 0.9);
+            }
+            .header-transparent .menu-bar{
+                background-color: inherit;
+            }
+        </style>
 </head>
 <body id="bg">
 <div class="page-wraper">
 <div id="loading-icon-bx"></div>
 	<!-- Header Top ==== -->
-    <div class="fixed-top">
-        <header class="header rs-nav header-transparent fixed-top">
-            <div class="top-bar" style="background-color: #fff; color: black;">
+    {{-- <div class="fixed-top"> --}}
+        <header class="header rs-nav header-transparent" style="background: linear-gradient(180deg, rgb(12, 152, 218) 0%, rgba(1, 2, 2, 0) 100%);
+        ">
+            <div class="top-bar" style="background-color: rgba(6, 45, 151, 0.1); color: rgb(250, 246, 246);">
                 <div class="container">
                     <div class="row d-flex justify-content-between">
                         <div class="topbar-left">
                             <ul>
-                                <li><a href="#" style="color: black;"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
-                                <li><a href="#" style="color: black;" ><i class="fa fa-envelope-o"></i>uuinfo@ethionet.et</a></li>
+                                <li><a href="#" style="color: rgb(253, 251, 251);"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+                                <li><a href="#" style="color: rgb(252, 249, 249);" ><i class="fa fa-envelope-o"></i>uuinfo@uu.edu.et</a></li>
                             </ul>
                         </div>
                         <div class="topbar-right">
                             <ul>
                                 <li>
-                                    <span class="ethiopian-flag"></span><span style="color: black"> Ethiopia</span>
+                                    <span class="ethiopian-flag"></span><span style="color: rgb(252, 249, 249)"> Ethiopia</span>
                                 </li>
-                                <li><a href="#" style="color: black">Students Login</a></li>
-                                <li><a href="#" style="color: black">Register</a></li>
+                                <li><a href="/"  style="color: red"><b>Announcements</b></a></li>
+                                <li><a href="#" style="color: rgb(253, 248, 248)">Students Login</a></li>
+                                <li><a href="#" style="color: rgb(252, 248, 248)">Register</a></li>
+                                <li><a href="#" style="color: rgb(252, 248, 248)">E-learning</a></li>
+                                <li><a href="/contact_us" style="color: rgb(248, 243, 243)">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="sticky-header navbar-expand-lg bg-blue">
-                <div class="menu-bar clearfix">
+            <div class="sticky-header navbar-expand-lg">
+                <div class="menu-bar clearfix" style="height: 100px;">
                     <div class="container clearfix">
                         <!-- Header Logo ==== -->
                         <div class="menu-logo">
-                            <a href="/"><img src="{{asset("/images/logo3.png")}}" alt=""></a>
+                            <a href="/"><img src="{{asset("/unity_photos/logo4.png")}}" alt=""></a>
                         </div>
                         <!-- Mobile Nav Button ==== -->
                         <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,6 +122,7 @@
                                     <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-youtube"></i></a></li>
                                     <!-- Search Button ==== -->
                                 </ul>
                             </div>
@@ -122,43 +138,51 @@
                         <!-- Navigation Menu ==== -->
                         <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
                             <div class="menu-logo">
-                                <a href="index.html">
+                                <a href="/">
                                     
                                 </a>
                             </div>
                             <ul class="nav navbar-nav">	
                                 <li >
-                                    <a href="/">
-                                        Home
+                                    <a href="/news">
+                                        <b>News</b>
                                     </a>
                                 </li>
-                                <li><a href="javascript:;">Pages <i class="fa fa-chevron-down"></i></a>
+                                <li><a href="javascript:;"><b>About</b> <i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="javascript:;">About<i class="fa fa-angle-right"></i></a>
+                                        <li><a href="javascript:;">About Unity<i class="fa fa-angle-right"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="/history">University History</a></li>
                                                 <li><a href="/vision">University Vision, Mission and Values</a></li>
                                                 <li><a href="/programs">University Academic Programs</a></li>
                                                 <li><a href="/student_services">University Student Services</a></li>
                                                 <li><a href="/campuses">University Campuses</a></li>
+                                                <li><a href="#">University Student Services</a></li>
+                                                <li><a href="#">Unity University Accreditation</a></li>
+                                                <li><a href="#">Alumni Association</a></li>
+                                                <li><a href="#">Auxiliary Faculties</a></li>
+
                                             </ul>
-                                        </li>
-                                        <li><a href="/events">Events</a>
-                                        <li><a href="/news">News</a>  
                                         </li>
                                         <li><a href="javascript:;">Enterprises<i class="fa fa-angle-right"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="/printing_press">Printing Press</a></li>
                                                 <li><a href="/clinic">Clinic/Hospital</a></li>
                                                 <li><a href="/cafeteria">Cafeteria</a></li>
+                                                <li><a href="/#">Studio</a></li>
+                                                <li><a href="/#">Stationary/Bookshops</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="javascript:;">General Education<i class="fa fa-angle-right"></i></a>
+                                        <li><a href="javascript:;">Academic General Education<i class="fa fa-angle-right"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="#">Kindergarten Education</a></li>
                                                 <li><a href="#">Elementary Education</a></li>
                                                 <li><a href="#">High-school Education</a></li>
+                                                <li><a href="#">Staff</a></li>
+                                                <li><a href="#">Policies and Procedures</a></li>
                                                 <li><a href="#">Requirements</a></li>
+                                                <li><a href="#">Mission Statement</a></li>
+                                                <li><a href="#">Course List</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -172,33 +196,96 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="add-mega-menu"><a href="javascript:;">Our Programs <i class="fa fa-chevron-down"></i></a>
-                                    <ul class="sub-menu add-menu">
-                                        <li class="add-menu-left">
-                                            <h5 class="menu-adv-title">Our Programs</h5>
-                                            <ul>
+                                <li >
+                                    <a href="/events">
+                                        <b>Events</b>
+                                    </a>
+                                </li>
+                                <li class="add-mega-menu"><a href="javascript:;"><b>Academics</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        
                                                 <li><a href="/undergraduate">Undergraduate</a></li>
                                                 <li><a href="/postgraduate">Postgraduate</a></li>
+                                                <li><a href="/online_education">Online Education</a></li>
                                                 <li><a href="/distance_education">Distance Education</a></li>
-                                            </ul>
-                                        </li>
+                                                <li><a href="#">Facility</a></li>
+                                                <li><a href="#">University Policies and Procedures</a></li>
+                                                <li><a href="#">Mission Statement</a></li>
+                                                <li><a href="#">Course List</a></li>
+                                                <li><a href="#">Degree Requirements</a></li>
                                         <li class="add-menu-right">
                                             <img src="assets/images/adv/adv.jpg" alt=""/>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="/online_education">Online Education</a>
-                                    
+                                <li><a href="javascript:;"><b>Office & Centers</b> <i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="javascript:;">Resource Administration<i class="fa fa-angle-right"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Human Resource Service</a></li>
+                                                <li><a href="#">Materials Management Services</a></li>
+                                                <li><a href="#">Transporation Services</a></li>
+                                                <li><a href="#">Protection Services</a></li>
+                                                <li><a href="#">Facility Maintains</a></li>
+                                                <li><a href="#">Technical Services</a></li>
+                                                <li><a href="#">University Academic Support</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="javascript:;">Academic Specialized Training<i class="fa fa-angle-right"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Executive Training</a></li>
+                                                <li><a href="#">Testing Services</a></li>
+                                                <li><a href="#">Consulting Services</a></li>
+                                                <li><a href="#">Credential reg</a></li>
+                                                <li><a href="#">Policies and Procedures</a></li>
+                                                <li><a href="#">Staff</a></li>
+                                                <li><a href="#">Mission Statement</a></li>
+                                                <li><a href="#">Course List</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="javascript:;">Academic Services<i class="fa fa-angle-right"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Library</a></li>
+                                                <li><a href="#">Laboratory</a></li>
+                                                <li><a href="#">Workshops</a></li>
+                                                <li><a href="#">Bookstores</a></li>
+                                                <li><a href="#">Computer Workstation</a></li>
+                                                <li><a href="#">Music & Media</a></li>
+                                                <li><a href="#">Online Catalogue</a></li>
+                                                <li><a href="#">Teacher Center</a></li>
+                                                <li><a href="#">Student with Disabilities</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;">Research And Community<i class="fa fa-chevron-down"></i></a>
+                                
+                                <li class="nav-dashboard"><a href="javascript:;"><b>Admissions</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Academic Calendar</a></li>
+                                        <li><a href="#">Enrollment Regulations</a></li>
+                                        <li><a href="#">Admission Policies</a></li>
+                                        <li><a href="#">Policies on Fairness and Student Conduct</a></li>
+                                        <li><a href="#">Prerequisites</a></li>
+                                        <li><a href="#">Attendance Policies</a></li>
+                                        <li><a href="#">Grade Reporting</a></li>
+                                        <li><a href="#">Fees</a></li>
+                                        <li><a href="#">Appeals</a></li>
+                                        <li><a href="#">Course Offerings</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-dashboard"><a href="javascript:;"><b>Research</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Linkages</a></li>
                                         <li><a href="#">Researches</a></li>
-                                        <li><a href="#">Community Engagment</a></li>
+                                        <li><a href="#">Community Engagement</a></li>
                                         <li><a href="#">Public Relations</a></li>
+                                        <li><a href="#">Publications</a></li>
                                         <li><a href="#">Voice of Unity</a></li>
+
+                                        
                                     </ul>
                                 </li>
+                                
                             </ul>
                             <div class="nav-social-link">
                                 <a href="javascript:;"><i class="fa fa-facebook"></i></a>
@@ -211,22 +298,23 @@
                 </div>
             </div>
         </header>
-    </div>
+    {{-- </div> --}}
     @yield("content")
     {{-- Footer starts here --}}
-    <footer class="bg-blue">
+    <footer style="background: rgb(29, 28, 28)">
 		<div class="footer-top">
 			<div class="pt-exebar">
 				<div class="container">
 					<div class="d-flex align-items-stretch">
 						<div class="pt-logo mr-auto">
-							<a href="index.html"><img src="{{asset("/images/logo3.png")}}" alt=""/></a>
+							<a href="/"><img src="{{asset("/unity_photos/logo4.png")}}" style="height: 130px; width: 400px" alt=""/></a>
 						</div>
 						<div class="pt-social-link">
 							<ul class="list-inline m-a0">
 								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-facebook-f"></i></a></li>
 								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-twitter"></i></a></li>
 								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-youtube"></i></a></li>
 							</ul>
 						</div>
 						<div class="pt-btn-join">
@@ -235,7 +323,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container">
+			<div class="container" style="text-align: left">
 				<div class="row">
 					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
 						<div class="widget">
@@ -317,6 +405,8 @@
 </div>
 
 <!-- External JavaScripts -->
+
+<script src="{{asset("/js/header.js")}}"></script>
 <script src="{{asset("/js/jquery.min.js")}}"></script>
 <script src="{{asset("assets/vendors/bootstrap/js/popper.min.js")}}"></script>
 <script src="{{asset("/vendors/bootstrap/js/bootstrap.min.js")}}"></script>
@@ -331,6 +421,9 @@
 <script src="{{asset("/vendors/owl-carousel/owl.carousel.js")}}"></script>
 <script src="{{asset("/js/functions.js")}}"></script>
 <script src="{{asset("/js/contact.js")}}"></script>
+
+
+
 <!-- the setting and also the color skin -->
 <!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
 <!-- Revolution JavaScripts Files -->
@@ -347,6 +440,7 @@
 <script src="{{asset("/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js")}}"></script>
 <script src="{{asset("/vendors/revolution/js/extensions/revolution.extension.video.min.js")}}"></script>
 <script src="{{asset("/js/bottom.js")}}"></script>
+
 </body>
 
 </html>

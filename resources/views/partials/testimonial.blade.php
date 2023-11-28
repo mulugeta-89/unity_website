@@ -10,7 +10,7 @@
             <div class="item">
                 <div class="testimonial-bx">
                     <div class="testimonial-thumb">
-                        <img src="{{asset("/images/testimonials/pic1.jpg")}}" alt="">
+                        <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
                     </div>
                     <div class="testimonial-info">
                         <h5 class="name">Peter Packer</h5>
@@ -24,7 +24,7 @@
             <div class="item">
                 <div class="testimonial-bx">
                     <div class="testimonial-thumb">
-                        <img src="{{asset("/images/testimonials/pic2.jpg")}}" alt="">
+                        <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
                     </div>
                     <div class="testimonial-info">
                         <h5 class="name">Peter Packer</h5>

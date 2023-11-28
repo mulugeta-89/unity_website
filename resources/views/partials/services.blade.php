@@ -4,7 +4,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="service-bx">
                     <div class="action-box">
-                        <img src="{{asset("/images/our-services/pic1.jpg")}}" alt="">
+                        <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
                     </div>
                     <div class="info-bx text-center">
                         <div class="feature-box-sm radius bg-white">
@@ -18,7 +18,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="service-bx">
                     <div class="action-box">
-                        <img src="{{asset("/images/our-services/pic2.jpg")}}" alt="">
+                        <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
                     </div>
                     <div class="info-bx text-center">
                         <div class="feature-box-sm radius bg-white">
@@ -32,7 +32,7 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="service-bx m-b0">
                     <div class="action-box">
-                        <img src="{{asset("/images/our-services/pic3.jpg")}}" alt="">
+                        <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
                     </div>
                     <div class="info-bx text-center">
                         <div class="feature-box-sm radius bg-white">
