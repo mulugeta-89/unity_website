@@ -70,16 +70,15 @@
                 height: 110px;
                 background-color: inherit;
             }
-            .header-transparent .menu-bar li{
+            .nav > li{
                 height: 50px;
             }
+            
             .items {
                 font-size: 8px
             }
             /* This CSS might not be necessary if Bootstrap already includes these classes */
-            
-
-
+         
         </style>
 </head>
 <body id="bg">
@@ -153,8 +152,9 @@
                                 </a>
                             </div>
                             <ul class="nav navbar-nav" >	
-                                <li class="nav-dashboard" style="padding-top: 0px;"><a href="javascript:;" style="font-size: 12px"><b>Home</b><i class="fa fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;
+                                "><b>Home</b></a>
+                                    <ul class="sub-menu" style="margin-top: 3px">
                                         <li><a href="/news">News</a></li>
                                         <li><a href="/events">Events</a></li>
                                         <li><a href="#">Links</a></li>
@@ -189,7 +189,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Main Office(Gerji)</a></li>
                                         <li><a href="#">Campuses</a></li>
@@ -197,7 +197,7 @@
                                     </ul>
                                 </li>
                                 
-                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px"><b>Admission and Records</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="add-mega-menu" ><a href="javascript:;" style="font-size: 12px"><b>Admission and Records</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu add-menu">
                                         <li class="add-menu-left">
                                             <ul>
@@ -224,7 +224,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px"><b>Academic Services</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px" style="height: 50px;"><b>Academic Services</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu add-menu">
                                         <li class="add-menu-left">
                                             <ul>
@@ -258,7 +258,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>Resource Administration Services</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Resource Administration Services</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Human Resource Service</a></li>
                                         <li><a href="#">Materials Management Services</a></li>
@@ -270,7 +270,7 @@
                                     </ul>
                                 </li>
                                 
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Undergraduate Studies</a></li>
                                         <li><a href="#">Postgraduate Studies</a></li>
@@ -283,7 +283,7 @@
                                         <li><a href="#">Grading</a></li>                                     
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard" style="padding-top: 0"><a href="javascript:;" style="font-size: 12px"><b>Academics General Education</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Academics General Education</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Kindergarten Education</a></li>
                                         <li><a href="#">Elementaty Education</a></li>
@@ -351,7 +351,7 @@
     {{-- </div> --}}
     @yield("content")
     {{-- Footer starts here --}}
-    <footer style="background: rgb(29, 28, 28)">
+    {{-- <footer style="background: rgb(29, 28, 28)">
 		<div class="footer-top">
 			<div class="pt-exebar">
 				<div class="container">
@@ -449,7 +449,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> --}}
     <!-- Footer END ==== -->
     <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
