@@ -57,10 +57,10 @@
 .sticky-top {
 	top:100px;
 }
-.header {
+/* .header {
     position: relative;
     z-index: 99999;
-}
+} */
 .header ul,
 .header ol {
     margin-bottom: 0;
@@ -671,17 +671,23 @@
 }
 .menu-links .nav > li .add-menu{
     display: flex;
-	width:420px;
+	/* width:420px; */
+	width: 520px;
 }
 .add-menu-left{
-    width: 100%;
+    /* width: 100%; */
+	width: 100%;
 	padding-left: 20px;
 	border-bottom:0 !important;
 }
-.add-menu-right{
+/* .add-menu-right{
     min-width: 240px;
     width: 240px;
     padding: 10px 20px;
+} */
+.add-menu-right{
+    width: 100%;
+    padding-left: 20px;
 }
 .menu-links .nav > li.has-mega-menu.demos .mega-menu{
 	left:auto;
@@ -1032,12 +1038,13 @@
 /*=================================
 	6. HEADER TRANSPARENT
 =================================*/
-.header-transparent{
+/* .header-transparent{
 	position:absolute;
 	width:100%;
-}
+} */
 .header-transparent .menu-bar{
-	background-color:black;
+	height: 200px;
+	background-color:inherit;
 	border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 .header-transparent .menu-links .nav > li > a{
@@ -3541,6 +3548,8 @@ body {
 
 .sub_page .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding-bottom: 21px;
+  max-height: 200px; /* Set the maximum height for scroll */
+overflow-y: auto;
 }
 
 .hero_area.sub_pages {
