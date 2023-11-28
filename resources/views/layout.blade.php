@@ -153,7 +153,7 @@
                             </div>
                             <ul class="nav navbar-nav" >	
                                 <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;
-                                "><b>Home</b></a>
+                                "><b>Home</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu" style="margin-top: 3px">
                                         <li><a href="/news">News</a></li>
                                         <li><a href="/events">Events</a></li>
