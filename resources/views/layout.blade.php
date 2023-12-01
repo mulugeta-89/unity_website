@@ -72,12 +72,14 @@
                 background: linear-gradient(180deg, rgb(12, 152, 218) 0%, rgba(1, 2, 2, 0) 100%);
                 
             }
-            .nav > li{
-                height: 50px;
-            }
-            
-            .items {
-                font-size: 8px
+            @media only screen and (min-width: 991px) {
+                .nav > li{
+                    height: 50px;
+                }
+                
+                .items {
+                    font-size: 8px
+                }
             }
             /* This CSS might not be necessary if Bootstrap already includes these classes */
          
