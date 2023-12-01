@@ -176,8 +176,8 @@
                                             <ul>
                                                 <li><a href="#">Chairman Message</a></li>
                                                 <li><a href="#">President and Ceo Message</a></li>
-                                                <li><a href="#">Unity University History</a></li>
-                                                <li><a href="#">University Vision, Mission, Values and Goals</a></li>
+                                                <li><a href="/history">Unity University History</a></li>
+                                                <li><a href="/vision">University Vision, Mission, Values and Goals</a></li>
                                                 <li><a href="#">Unity University Governance</a></li>
                                                 <li><a href="#">Office of the President and CEO</a></li>
                                                 <li><a href="#">University Resource Administration</a></li>

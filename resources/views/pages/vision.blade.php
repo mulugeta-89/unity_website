@@ -1,22 +1,30 @@
 @extends("layout")
 @section("content")
 <div class="container">
+    <style>
+        h2 {
+            color: wheat;
+        }
+        p,li {
+          color: white;  
+        }
+        </style>
     <div class="row">
       <div class="m-b30" id="curriculum">
-        <h1 class="full-width text-center" style="margin-top: 150px;font-size: 46px; text-transform: uppercase; text-align: justify;color:#98b4d4;">
+        <h1 class="full-width text-center" style="margin-top: 150px;font-size: 46px; text-transform: uppercase; text-align: justify; color:#c0c4c9;">
             Unity University Vision, Mission, Values and Goals
         </h1>
         <div class="curriculum-list">
-            <h2>Vision</h2>
-            <p class="text-black">Unity University strives to be one of the leading African Universities in teaching Learning and research with international reputation by 2030.</p>
+            <h2 style="color: wheat">Vision</h2>
+            <p>Unity University strives to be one of the leading African Universities in teaching Learning and research with international reputation by 2030.</p>
         </div>
         <div class="curriculum-list">
-            <h2>Mission</h2>
-            <p class="text-black">The Mission of Unity University is to contribute to sustainable development of society through providing education from KG to PhD and conduct research, at the highest international standards of excellence and participate in community development.</p>
+            <h2 style="color: wheat">Mission</h2>
+            <p>The Mission of Unity University is to contribute to sustainable development of society through providing education from KG to PhD and conduct research, at the highest international standards of excellence and participate in community development.</p>
         </div>
-        <div class="curriculum-list" style="color:black">
-            <h2>Values</h2>
-            <h5>Unity University is committed to the following core values:</h5>
+        <div class="curriculum-list">
+            <h2 style="color: wheat">Values</h2>
+            <h5 style="color: wheat">Unity University is committed to the following core values:</h5>
             <ol>
                 <li>1. 
                     Professionalism: A commitment to a high standard of professional integrity and ethics
@@ -34,9 +42,9 @@
                 <li>10. Transparency, trustworthiness and accountability in the performance of all tasks, goals and objectives of the University</li>
             </ol>
         </div>
-        <div class="curriculum-list" style="color:black">
-            <h2>Values</h2>
-            <h5>Unity University is committed to the following core values:</h5>
+        <div class="curriculum-list">
+            <h2 style="color: wheat">Values</h2>
+            <h5 style="color: wheat">Unity University is committed to the following core values:</h5>
             <ol>
                 <li>1. 
                     Create an organization which continuously promotes employee focused, student-centered, quality-based and growth oriented leadership that makes the University capable of serving the nation and the community
