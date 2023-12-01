@@ -12,34 +12,34 @@
                 <div class="col-md-6 col-sm-12 text-sm-center text-center">
                     <ul class="header_links_ul" style="color: white">
                         <h4 style="color: wheat">Undergraduate Programs</h4>
-                        <li><b>Accounting and Finance</b></li>
-                        <li><b>Architecture and Urban Planning</b></li>
-                        <li><b>Business Administration</b></li>
-                        <li><b>Civil Engineering</b></li>
-                        <li><b>Computer Science</b></li>
-                        <li><b>Construction Technology and Management</b></li>
-                        <li><b>Economics</b></li>
-                        <li><b>Management</b></li>
-                        <li><b>Marketing Management</b></li>
-                        <li><b>Medical Laboratory Sciences</b></li>
-                        <li><b>Management Information System</b></li>
-                        <li><b>Nursing</b></li>
-                        <li><b>Public Health</b></li>
-                        <li><b>Sociology and Social Anthropology</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Accounting and Finance</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Architecture and Urban Planning</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Business Administration</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Civil Engineering</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Computer Science</b></li>
+                        <li><b> <i class="fa-regular fa-hand-point-right"></i> Construction Technology and Management</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Economics</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Management</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Marketing Management</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Medical Laboratory Sciences</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Management Information System</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Nursing</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Public Health</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Sociology and Social Anthropology</b></li>
 
                     </ul>
                 </div>
                 <div class="col-md-6 col-sm-12 text-sm-center text-center">
                     <ul class="header_links_ul" style="color: white">
                         <h4 style="color:wheat">Postgraduate Programs</h4>
-                        <li><b>Accounting and Finance</b></li>
-                        <li><b>Architecture and Urban Planning</b></li>
-                        <li><b>Development of Economics</b></li>
-                        <li><b>Master of Business Administration-General</b></li>
-                        <li><b>Master of Business Administration Specialization in Marketing</b></li>
-                        <li><b>Masters of Public Health</b></li>
-                        <li><b>Organizational Leadership</b></li>
-                        <li><b>Project Management</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Accounting and Finance</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Architecture and Urban Planning</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Development of Economics</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Master of Business Administration-General</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Master of Business Administration in Marketing</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Masters of Public Health</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Organizational Leadership</b></li>
+                        <li><b><i class="fa-regular fa-hand-point-right"></i> Project Management</b></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
