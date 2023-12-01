@@ -1,9 +1,9 @@
-
+{{-- ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);" --}}
 @extends("layout")
 @section("content")
-<div class="page-content bg-white">
+<div class="page-content">
     <!-- inner page banner -->
-    <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
+    <div class="page-banner">
         <div class="container">
             <div class="page-banner-entry">
                 <h1 class="text-white" style="margin-top: 90px">News</h1>
@@ -11,27 +11,27 @@
         </div>
     </div>
     <!-- Breadcrumb row -->
-    <div class="breadcrumb-row">
+    {{-- <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
                 <li><a href="/">Home</a></li>
                 <li>News</li>
             </ul>
         </div>
-    </div>
+    </div> --}}
     <!-- Breadcrumb row END -->
     <!-- contact area -->
     <div class="content-block">
         <!-- Portfolio  -->
         <div class="section-area section-sp1 gallery-bx">
             <div class="container">
-                <div class="feature-filters clearfix center m-b40">
+                {{-- <div class="feature-filters clearfix center">
                     <ul class="filters" data-toggle="buttons">
                         <!-- ... (existing filter buttons) ... -->
                     </ul>
-                </div>
+                </div> --}}
                 <div class="clearfix">
-                    <ul id="masonry" class="ttr-gallery-listing magnific-image row">
+                    <ul id="masonry" class="ttr-gallery-listing magnific-image row m-0">
                         @unless(count($news) == 0)
                             @foreach($news as $new)
                                 <x-news_card :new="$new"/>
