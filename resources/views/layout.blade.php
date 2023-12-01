@@ -69,6 +69,8 @@
             .header-transparent .menu-bar{
                 height: 110px;
                 background-color: inherit;
+                background: linear-gradient(180deg, rgb(12, 152, 218) 0%, rgba(1, 2, 2, 0) 100%);
+                
             }
             .nav > li{
                 height: 50px;
@@ -86,7 +88,7 @@
 <div id="loading-icon-bx"></div>
 	<!-- Header Top ==== -->
     {{-- <div class="fixed-top"> --}}
-        <header class="header rs-nav header-transparent">
+        <header class="header rs-nav header-transparent fixed-top" >
             {{-- <div class="top-bar" style="background-color: rgba(6, 45, 151, 0.1); color: rgb(250, 246, 246);">
                 <div class="container">
                     <div class="row d-flex justify-content-between">
@@ -450,6 +452,14 @@
 			</div>
 		</div>
 	</footer> --}}
+    <footer class="footer bg-dark text-light py-4 text-center">
+        <div class="container text-center">
+          <div class="row text-center" >
+            <p class="text-center" style="margin: auto">&copy; 2023 Unity University</p>
+          </div>
+        </div>
+      </footer>
+      
     <!-- Footer END ==== -->
     <button class="back-to-top fa fa-chevron-up" ></button>
 </div>

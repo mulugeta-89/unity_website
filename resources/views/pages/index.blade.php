@@ -1,6 +1,6 @@
 @extends("layout")
 @section("content")
-<div class="page-content bg-white">
+<div class="page-content">
         @include("partials.hero")
         {{-- <div class="content-block">
             @include("partials.services")
