@@ -62,6 +62,9 @@
             referrerpolicy="no-referrer"
         />
         <style>
+            body {
+                background-color: #343a40;
+            }
             .header-transparent .is-fixed .menu-bar{
                     position:fixed;
                     background-color:rgba(6, 45, 151, 0.9);
@@ -69,8 +72,9 @@
             .header-transparent .menu-bar{
                 height: 110px;
                 background-color: inherit;
-                background: linear-gradient(180deg, rgb(12, 152, 218) 0%, rgba(1, 2, 2, 0) 100%);
-                
+                border: none;
+                background: linear-gradient(180deg, rgb(64, 241, 241) 0%, rgba(1, 2, 2, 0) 100%);
+            
             }
             @media only screen and (min-width: 991px) {
                 .nav > li{
@@ -81,6 +85,7 @@
                     font-size: 8px
                 }
             }
+            
             /* This CSS might not be necessary if Bootstrap already includes these classes */
          
         </style>
@@ -195,7 +200,7 @@
                                 </li>
                                 <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Main Office(Gerji)</a></li>
+                                        <li><a href="/campus/alamoudi">Main Office(Gerji)</a></li>
                                         <li><a href="#">Campuses</a></li>
                                                                                
                                     </ul>
@@ -333,7 +338,6 @@
                                 </li>
                                 <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>University Enterprises</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        
                                         <li><a href="#">Printing Press</a></li>
                                         <li><a href="#">Clinical/Hospital</a></li>
                                         <li><a href="#">Studio</a></li>
@@ -341,11 +345,9 @@
                                         <li><a href="#">Stationary/Bookshops</a></li>
                                     </ul>
                                 </li>
-                                
-                                
-                                
+                             
                             </ul>
-                            
+                         
                         </div>
                         <!-- Navigation Menu END ==== -->
                     </div>
@@ -377,7 +379,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container" style="text-align: left">
+			{{-- <div class="container" style="text-align: left">
 				<div class="row">
 					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
 						<div class="widget">
@@ -451,13 +453,13 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 		</div>
-	</footer> --}}
-    <footer class="footer bg-dark text-light py-4 text-center">
+	{{-- </footer> --}}
+    <footer class="footer bg-dark text-light py-4 text-center" style="height: 230px">
         <div class="container text-center">
           <div class="row text-center" >
-            <p class="text-center" style="margin: auto">&copy; 2023 Unity University</p>
+            <h1 class="text-center" style="margin: 40px auto; color: wheat">&copy; 2023 Unity University</h1>
           </div>
         </div>
       </footer>

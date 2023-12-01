@@ -2,7 +2,7 @@
 <div class="post action-card col-lg-4 col-md-6 col-sm-12 col-xs-12 m-b40">
     <div class="recent-news">
         <div class="action-box">
-            <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
+            <img src="{{asset("/images/Gerji 2.jpg")}}" alt="">
         </div>
         <div class="info-bx">
             <ul class="media-post">
