@@ -211,7 +211,7 @@
                                         <li class="add-menu-left">
                                             <ul>
                                                 <li><a href="#">Academic Calendar</a></li>
-                                                <li><a href="#">University Campuses</a></li>
+                                                <li><a href="/campuses">University Campuses</a></li>
                                                 <li><a href="#">Enrollment Regulations</a></li>
                                                 <li><a href="#">Admission Procedures and Policies</a></li>
                                                 <li><a href="#">Privacy Rights of Students in Education Records</a></li>
