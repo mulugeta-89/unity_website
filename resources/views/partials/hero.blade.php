@@ -1,6 +1,8 @@
 
 <div class="rev-slider" style="position: relative">
+    
     <div id="rev_slider_486_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery36" data-source="gallery" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+        
         <!-- START REVOLUTION SLIDER 5.3.0.2 fullwidth mode -->
         <div id="rev_slider_486_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
             <ul>	<!-- SLIDE  -->
@@ -133,7 +135,7 @@
                         data-paddingbottom="[0,0,0,0]"
                         data-paddingleft="[0,0,0,0]"
                         style="z-index: 5;background-color:rgba(0, 0, 0, 0);border-color:rgba(0, 0, 0, 0);border-width:0px;"> </div>	
-                    
+                        
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption Newspaper-Title tp-resizeme" 
                         id="slide-100-layer-2" 
@@ -155,9 +157,10 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"
                         style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;">
+                        
                         {{-- <h1 style="color:#ffffff">
                             Welcome To Unity University
-                        </h1>
+                        </h1> --}}
                     </div>
                     
                 </li>
@@ -322,6 +325,7 @@
                
                 <!-- SLIDE  -->
             </ul>
-        </div><!-- END REVOLUTION SLIDER -->  
+            
+        </div><!-- END REVOLUTION SLIDER -->
     </div>  
-</div> 
+</div>

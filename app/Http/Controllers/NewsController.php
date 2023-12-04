@@ -10,7 +10,7 @@ class NewsController extends Controller
     //
     public function index(){
         return view("news.index",[
-            "news" => News::latest()->paginate(6)
+            "news" => News::latest()->paginate(4)
         ]);
     }
     public function create(){
@@ -22,6 +22,9 @@ class NewsController extends Controller
             "content" => "required",
             "publish_date" => "required",
         ]);
+        if($request->hasFile("image")){
+            $formFields["image"] = $request->file("image")->store("NewsImages", "public");
+        }
         News::create($formFields);
         return redirect("/news");
         

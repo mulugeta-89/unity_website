@@ -343,13 +343,15 @@
                                         <li><a href="#">Studio</a></li>
                                         <li><a href="#">Cafeteria</a></li>
                                         <li><a href="#">Stationary/Bookshops</a></li>
+                                        <li><a href="/news/create">Post News</a></li>
+                                        <li><a href="/event/create">Post Events</a></li>
                                     </ul>
                                 </li>
                              
                             </ul>
                          
                         </div>
-                        <img src="{{ asset("/unity_photos/unity_logo.png")}}" style="position: absolute;left: 30;"/>
+                        
                         <!-- Navigation Menu END ==== -->
                     </div>
                 </div>
@@ -457,14 +459,7 @@
 			</div> --}}
 		</div>
 	{{-- </footer> --}}
-    <footer class="footer bg-dark text-light py-4 text-center" style="position: relative;height: 230px">
-        <div class="container text-center">
-          <div class="row text-center" >
-            <h1 class="text-center" style="margin: 40px auto; color: wheat">&copy; 2023 Unity University</h1>
-          </div>
-        </div>
-      </footer>
-      
+    
     <!-- Footer END ==== -->
     <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
