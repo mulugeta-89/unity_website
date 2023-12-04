@@ -23,6 +23,8 @@
 /*=================================
 	1. HEADER
 =================================*/
+
+
 .color-transition:hover {
     color: red/* Run the animation over 2 seconds */
 }

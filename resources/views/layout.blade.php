@@ -328,8 +328,8 @@
                                 <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>Research and Community</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         
-                                        <li><a href="#">Links</a></li>
-                                        <li><a href="#">Advertisments</a></li> 
+                                        <li><a href="#">Linkages</a></li>
+                                        <li><a href="#">Researches</a></li> 
                                         <li><a href="#">Community Engagement</a></li>
                                         <li><a href="#">Public Relations</a></li> 
                                         <li><a href="#">Publications</a></li>
@@ -349,6 +349,7 @@
                             </ul>
                          
                         </div>
+                        <img src="{{ asset("/unity_photos/unity_logo.png")}}" style="position: absolute;left: 30;"/>
                         <!-- Navigation Menu END ==== -->
                     </div>
                 </div>
@@ -456,7 +457,7 @@
 			</div> --}}
 		</div>
 	{{-- </footer> --}}
-    <footer class="footer bg-dark text-light py-4 text-center" style="height: 230px">
+    <footer class="footer bg-dark text-light py-4 text-center" style="position: relative;height: 230px">
         <div class="container text-center">
           <div class="row text-center" >
             <h1 class="text-center" style="margin: 40px auto; color: wheat">&copy; 2023 Unity University</h1>

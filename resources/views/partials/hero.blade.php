@@ -1,4 +1,5 @@
-<div class="rev-slider">
+
+<div class="rev-slider" style="position: relative">
     <div id="rev_slider_486_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery36" data-source="gallery" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
         <!-- START REVOLUTION SLIDER 5.3.0.2 fullwidth mode -->
         <div id="rev_slider_486_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
@@ -154,11 +155,11 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"
                         style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;">
-                        <img src="{{ asset("/unity_photos/unity_logo.png") }}" style="width: 40%;margin-top: 50px"/>
                         {{-- <h1 style="color:#ffffff">
                             Welcome To Unity University
-                        </h1> --}}
+                        </h1>
                     </div>
+                    
                 </li>
                 <li data-index="rs-200" 
                     data-transition="parallaxvertical" 
@@ -233,7 +234,7 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"
                         style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;">
-                        <img src="{{ asset("/unity_photos/unity_logo.png") }}" style="width: 40%;margin-top: 50px"/>
+                        <img src="{{ asset("/unity_photos/unity_logo.png") }}"/>
                         {{-- <h1 style="color:#ffffff">
                             Welcome To Unity University
                         </h1> --}}
