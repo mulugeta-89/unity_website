@@ -6,7 +6,7 @@
         <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color: #c0c4c9;">
             {{$new->title}}
         </h1>
-        <img src="{{$new->image ? asset("storage/".$new->image) : asset("unity_photos/unity_logo2.png")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center" style="width: 100%; height:50%">
+        <img style="height: 600px;width: 100%" src="{{$new->image ? asset("storage/".$new->image) : asset("unity_photos/unity_logo2.png")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center" style="width: 100%; height:50%">
         <div class="text-black">
             <div class="row">
               <div class="col-md-6">

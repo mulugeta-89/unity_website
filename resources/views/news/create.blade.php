@@ -19,7 +19,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="title" style="color: white">Image</label>
+        <label for="image" style="color: white">Image</label>
         <input 
         type="file" 
         class="form-control" 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class NewsController extends Controller
 {
@@ -46,10 +47,16 @@ class NewsController extends Controller
             "publish_date" => "required",
             
         ]);
+        if($request->hasFile("image")){
+            $formFields["image"] = $request->file("image")->store("images", "public");
+        }
         $new->update($formFields);
         return redirect("/news");
     }
     public function destroy(News $new){
+        if($new->image && Storage::disk('public')->exists($new->image)) {
+            Storage::disk('public')->delete($new->image);
+        }
         $new->delete();
         return redirect("/news");
     }

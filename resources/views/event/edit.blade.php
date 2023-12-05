@@ -2,12 +2,12 @@
 @section("content")
 <div>
 <div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center">Add Event</h1>
+    <h1 style="text-align: center;color: wheat">Add Event</h1>
     <form action="/event/{{$event->id}}" method="POST">
       @csrf
       @method("PUT")
       <div class="form-group">
-        <label for="title">Event Title</label>
+        <label for="title" style="color: white">Event Title</label>
         <input 
         type="text" 
         class="form-control" 
@@ -20,7 +20,24 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="image" style="color: white">Image</label>
+        <input 
+        type="file" 
+        class="form-control" 
+        id="image" 
+        name="image" 
+        >
+        <img
+                class="w-48 mr-6 mb-6"
+                src="{{$event->image ? asset("storage/".$event->image) : asset("unity_photos/unity_photo.jpg")}}"
+                alt=""
+            />
+        @error("title")
+            <p class="text-danger mt-1">{{$message}}</p>
+        @enderror
+      </div>
+      <div class="form-group">
+        <label for="description" style="color: white">Description</label>
         <textarea 
         class="form-control"
          id="description"
@@ -32,7 +49,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="start_date_time">Start Date and Time</label>
+        <label for="start_date_time" style="color: white">Start Date and Time</label>
         <input 
           type="datetime-local" 
           class="form-control"
@@ -45,7 +62,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="end_date_time">End Date and Time</label>
+        <label for="end_date_time" style="color: white">End Date and Time</label>
         <input 
           type="datetime-local" 
           class="form-control" 
@@ -58,7 +75,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="location_name">Location Name</label>
+        <label for="location_name" style="color: white">Location Name</label>
         <input
           type="text" 
           class="form-control" 

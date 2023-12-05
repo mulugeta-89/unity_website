@@ -18,10 +18,9 @@
 </div> --}}
 <style>
     .event-bx {
-        border: 1px solid wheat;
-        border-radius: 7px;
-    }
-    
+	border: 1px solid wheat;
+	border-radius: 7px;
+}
     </style>
 @props(["new"])
 <li class="action-card col-lg-6 col-md-6 col-sm-12 mb-3" style="height: 100vh">
@@ -37,7 +36,7 @@
                 </div>
             </div> --}}
             <div class="event-info">
-                <h4 class="event-title"><a href="/news/{{$new->id}}" style="color: wheat">{{$new["title"]}}</a></h4>
+                <h4 class="event-title"><a href="/news/{{$new->id}}" style="color: wheat">{{ strlen($new["title"]) > 30 ? substr($new["title"], 0, 30) . '...' : $new["title"] }}</a></h4>
                 <ul class="media-post">
                     <li style="color: wheat">{{$new->publish_date}}</a></li>
                 </ul>

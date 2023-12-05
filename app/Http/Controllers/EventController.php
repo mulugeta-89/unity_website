@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class EventController extends Controller
 {
@@ -29,6 +30,9 @@ class EventController extends Controller
             "end_date" => "required",
             "location_name" => "required",
         ]);
+        if($request->hasFile("image")){
+            $formFields["image"] = $request->file("image")->store("EventImages", "public");
+        }
         Event::create($formFields);
         return redirect("/events");
     }
@@ -40,6 +44,9 @@ class EventController extends Controller
             "end_date" => "required",
             "location_name" => "required",
         ]);
+        if($request->hasFile("image")){
+            $formFields["image"] = $request->file("image")->store("images", "public");
+        }
         $event->update($formFields);
         return redirect("/events");
     }
@@ -49,6 +56,9 @@ class EventController extends Controller
         ]);
     }
     public function destroy(Event $event){
+        if($event->image && Storage::disk('public')->exists($event->image)) {
+            Storage::disk('public')->delete($event->image);
+        }
         $event->delete();
         return redirect("/events");
     }

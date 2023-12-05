@@ -6,7 +6,7 @@
         <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color: #c0c4c9;">
             {{$event["title"]}}
         </h1>
-        <img src="{{asset("/images/public_health.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
+        <img style="height: 600px;width: 100%" src="{{$event->image ? asset("storage/".$event->image) : asset("unity_photos/unity_logo2.png")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center" style="width: 100%; height:50%">
         {{-- <div class="text-black">
             <h5>Starting date:</h5><span>{{$event["start_date"]}}</span>
             <h5>End Date: {{$event["end_date"]}}</h5>
@@ -35,7 +35,7 @@
             <div class="row">
               <div class="col-md-12">
                 <h5 style="color: wheat">Description:</h5>
-                <p class="text-justify" style="color: white">{{$event["description"]}}</p>
+                <p class="text-justify" style="color: white;">{!! nl2br(e($event["description"])) !!}</p>
               </div>
             </div>
             <div class="row">
