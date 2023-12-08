@@ -22,10 +22,9 @@
               </div>
             </div> --}}
             <p class="text-justify" style="color: white;">{!! nl2br(e($new["content"])) !!}</p>
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-md-12">
                   <a href="/news/{{$new->id}}/edit" style="color: white">Edit</a>
-                  {{-- <a href="/event/{{$event->id}}/delete">Delete</a> --}}
                 </div>
               </div>
             <div class="row">
@@ -38,7 +37,7 @@
                             </button>
                         </form>
                 </div>
-            </div>
+            </div> --}}
 
           </div>
   </div>

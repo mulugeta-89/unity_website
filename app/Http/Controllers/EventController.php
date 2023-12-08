@@ -34,7 +34,7 @@ class EventController extends Controller
             $formFields["image"] = $request->file("image")->store("EventImages", "public");
         }
         Event::create($formFields);
-        return redirect("/events");
+        return redirect("/events/manage");
     }
     public function update(Request $request, Event $event){
         $formFields = $request->validate([
@@ -62,4 +62,10 @@ class EventController extends Controller
         $event->delete();
         return redirect("/events");
     }
+    public function manage(){
+        return view("event.manage",[
+            "events" => Event::latest()->get()
+        ]);
+    }
+
 }

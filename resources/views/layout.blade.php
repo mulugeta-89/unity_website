@@ -343,8 +343,6 @@
                                         <li><a href="#">Studio</a></li>
                                         <li><a href="#">Cafeteria</a></li>
                                         <li><a href="#">Stationary/Bookshops</a></li>
-                                        <li><a href="/news/create">Post News</a></li>
-                                        <li><a href="/event/create">Post Events</a></li>
                                     </ul>
                                 </li>
                              

@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\NewsController;
-use Illuminate\Support\Facades\Route;
-use App\Models\Event;
 use App\Models\News;
+use App\Models\Event;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -91,6 +92,7 @@ Route::get("/department/mba", function(){
 });
 // for the events
 Route::get("/events", [EventController::class, "index"]);
+Route::get("/events/manage", [EventController::class, "manage"]);
 Route::get("/event/create", [EventController::class, "create"]);
 Route::post("/events/store", [EventController::class, "store"]);
 Route::get("/event/{event}", [EventController::class, "show"]);
@@ -100,6 +102,7 @@ Route::put("event/{event}", [EventController::class, "update"]);
 
 //for  news
 Route::get("/news", [NewsController::class, "index"]);
+Route::get("/news/manage", [NewsController::class, "manage"]);
 Route::get("/news/create", [NewsController::class, "create"]);
 Route::post("/news/store", [NewsController::class, "store"]);
 Route::get("/news/{new}", [NewsController::class, "show"]);
@@ -107,3 +110,9 @@ Route::get("/news/{new}/edit", [NewsController::class, "edit"]);
 Route::put("/news/{new}", [NewsController::class, "update"]);
 Route::delete("/news/{new}", [NewsController::class, "destroy"]);
 
+
+//for admin
+// to show the login page
+Route::get("/admin", [UserController::class, "login"]);
+// to login the user
+Route::post('/users/authenticate', [UserController::class, 'authenticate']);

@@ -60,4 +60,9 @@ class NewsController extends Controller
         $new->delete();
         return redirect("/news");
     }
+    public function manage(){
+        return view("news.manage",[
+            "news" => News::latest()->get()
+        ]);
+    }
 }

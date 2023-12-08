@@ -38,10 +38,9 @@
                 <p class="text-justify" style="color: white;">{!! nl2br(e($event["description"])) !!}</p>
               </div>
             </div>
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-md-12">
                   <a href="/event/{{$event->id}}/edit" style="color: white">Edit</a>
-                  {{-- <a href="/event/{{$event->id}}/delete">Delete</a> --}}
                 </div>
               </div>
             <div class="row">
@@ -54,7 +53,7 @@
                             </button>
                         </form>
                 </div>
-            </div>
+            </div> --}}
 
           </div>
           
