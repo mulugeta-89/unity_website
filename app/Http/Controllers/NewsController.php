@@ -27,7 +27,7 @@ class NewsController extends Controller
             $formFields["image"] = $request->file("image")->store("NewsImages", "public");
         }
         News::create($formFields);
-        return redirect("/news");
+        return redirect("news/manage");
         
     }
     public function show(News $new){
@@ -51,7 +51,7 @@ class NewsController extends Controller
             $formFields["image"] = $request->file("image")->store("images", "public");
         }
         $new->update($formFields);
-        return redirect("/news");
+        return redirect("/news/manage");
     }
     public function destroy(News $new){
         if($new->image && Storage::disk('public')->exists($new->image)) {
@@ -62,7 +62,15 @@ class NewsController extends Controller
     }
     public function manage(){
         return view("news.manage",[
-            "news" => News::latest()->get()
+            "news" => News::latest()->paginate(10)
         ]);
+    }
+    public function search(Request $request){
+        $query = $request->input('query');
+        $news = News::where('title', 'like', "%$query%")
+                    ->orWhere('content', 'like', "%$query%")
+                    ->get();
+
+        return view('news.search', compact('news'));
     }
 }

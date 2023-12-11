@@ -20,8 +20,11 @@
             Manage Events
         </h1>
         <a href="/event/create" class="btn"><i class="fas fa-pen"></i> Create Events</a>
-        
     </header>
+    <form action="{{ route('events.search') }}" method="GET" style="margin-bottom: 10px; display:flex; justify-content: center">
+        <input type="text" name="query" placeholder="Search Events" style="outline: none; padding: 7px 12px;border-radius: 5px;width: 300px; border: none">
+        <button type="submit" style="background: #f7b205; border-radius: 5px;border: none; margin-left: 3px; padding: 7px 25px">Search</button>
+    </form>
 
     <table class="table table-bordered rounded">
         <tbody>
@@ -65,6 +68,11 @@
             @endunless
         </tbody>
     </table>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            {{ $events->links()}} <!-- Renders Bootstrap pagination links -->
+        </div>
+    </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -116,3 +116,6 @@ Route::delete("/news/{new}", [NewsController::class, "destroy"]);
 Route::get("/admin", [UserController::class, "login"]);
 // to login the user
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
+Route::get("/admin/news/search", [NewsController::class, 'search'])->name("news.search");
+Route::get("/admin/events/search", [EventController::class, 'search'])->name("events.search");
+

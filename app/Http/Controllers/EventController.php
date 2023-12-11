@@ -48,7 +48,7 @@ class EventController extends Controller
             $formFields["image"] = $request->file("image")->store("images", "public");
         }
         $event->update($formFields);
-        return redirect("/events");
+        return redirect("/events/manage");
     }
     public function edit(Event $event){
         return view("event.edit", [
@@ -64,8 +64,16 @@ class EventController extends Controller
     }
     public function manage(){
         return view("event.manage",[
-            "events" => Event::latest()->get()
+            "events" => Event::latest()->paginate(10)
         ]);
+    }
+    public function search(Request $request){
+        $query = $request->input('query');
+        $events = Event::where('title', 'like', "%$query%")
+                    ->orWhere('description', 'like', "%$query%")
+                    ->get();
+
+        return view('event.search', compact('events'));
     }
 
 }
