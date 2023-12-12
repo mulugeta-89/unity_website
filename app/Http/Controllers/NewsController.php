@@ -48,7 +48,7 @@ class NewsController extends Controller
             
         ]);
         if($request->hasFile("image")){
-            $formFields["image"] = $request->file("image")->store("images", "public");
+            $formFields["image"] = $request->file("image")->store("NewsImages", "public");
         }
         $new->update($formFields);
         return redirect("/news/manage");

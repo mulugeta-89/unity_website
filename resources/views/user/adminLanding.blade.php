@@ -36,6 +36,8 @@
   <div class="admin-links">
     <a href="/news/manage" class="btn">News</a>
     <a href="/events/manage" class="btn">Events</a>
+    <a href="/advertisments/manage" class="btn">Advertisments</a>
+    <a href="/voiceofunity/manage" class="btn">Voice of Unity</a>
   </div>
 </div>
 

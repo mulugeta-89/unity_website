@@ -167,7 +167,7 @@
                                         <li><a href="/news">News</a></li>
                                         <li><a href="/events">Events</a></li>
                                         <li><a href="#">Links</a></li>
-                                        <li><a href="#">Advertisments</a></li>                                        
+                                        <li><a href="/advertisments">Advertisments</a></li>                                        
                                     </ul>
                                 </li>
                                 <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px"><b>About Us</b> <i class="fa fa-chevron-down"></i></a>

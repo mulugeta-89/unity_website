@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\AdvertismentController;
 use App\Models\News;
 use App\Models\Event;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\EventController;
+use App\Models\Advertisments;
 
 /*
 |--------------------------------------------------------------------------
@@ -109,11 +111,19 @@ Route::get("/news/{new}", [NewsController::class, "show"]);
 Route::get("/news/{new}/edit", [NewsController::class, "edit"]);
 Route::put("/news/{new}", [NewsController::class, "update"]);
 Route::delete("/news/{new}", [NewsController::class, "destroy"]);
-
-
+// for advertisments
+Route::get("/advertisments", [AdvertismentController::class, "index"]);
+Route::get("/advertisments/manage", [AdvertismentController::class, "manage"]);
+Route::get("/advertisments/create", [AdvertismentController::class, "create"]);
+Route::post("/advertisments/store", [AdvertismentController::class, "store"]);
+Route::get("/advertisments/{advert}/edit", [AdvertismentController::class, "edit"]);
+Route::put("/advertisments/{advert}", [AdvertismentController::class, "update"]);
+Route::get("/advertisments/{advert}", [AdvertismentController::class, "show"]);
+Route::delete("/advertisments/{advert}", [AdvertismentController::class, "destroy"]);
 //for admin
 // to show the login page
 Route::get("/admin", [UserController::class, "login"])->name("login");
+
 // to login the user
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
 Route::get("/admin/news/search", [NewsController::class, 'search'])->name("news.search");

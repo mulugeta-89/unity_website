@@ -45,7 +45,7 @@ class EventController extends Controller
             "location_name" => "required",
         ]);
         if($request->hasFile("image")){
-            $formFields["image"] = $request->file("image")->store("images", "public");
+            $formFields["image"] = $request->file("image")->store("EventImages", "public");
         }
         $event->update($formFields);
         return redirect("/events/manage");
