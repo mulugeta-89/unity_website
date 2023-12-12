@@ -34,7 +34,12 @@
         </h1>
         <a href="/event/create" class="btn"><i class="fas fa-pen"></i> Create events</a>
         <a href="/events/manage" class="btn"> All events</a>
-        
+        <form class="d-inline" method="POST" action="/logout">
+            @csrf
+            <button type="submit" class="btn btn-primary" style="border: none">
+                <i class="fas fa-door-closed"></i> Logout
+            </button>
+        </form>
     </header>
     <form action="{{ route('events.search') }}" method="GET" style="margin-bottom: 10px; display:flex; justify-content: center">
         <input type="text" name="query" placeholder="Search events" style="outline: none; padding: 7px 12px;border-radius: 5px;width: 300px; border: none">

@@ -92,7 +92,7 @@ Route::get("/department/mba", function(){
 });
 // for the events
 Route::get("/events", [EventController::class, "index"]);
-Route::get("/events/manage", [EventController::class, "manage"]);
+Route::get("/events/manage", [EventController::class, "manage"])->middleware("auth");
 Route::get("/event/create", [EventController::class, "create"]);
 Route::post("/events/store", [EventController::class, "store"]);
 Route::get("/event/{event}", [EventController::class, "show"]);
@@ -102,7 +102,7 @@ Route::put("event/{event}", [EventController::class, "update"]);
 
 //for  news
 Route::get("/news", [NewsController::class, "index"]);
-Route::get("/news/manage", [NewsController::class, "manage"]);
+Route::get("/news/manage", [NewsController::class, "manage"])->middleware('auth');
 Route::get("/news/create", [NewsController::class, "create"]);
 Route::post("/news/store", [NewsController::class, "store"]);
 Route::get("/news/{new}", [NewsController::class, "show"]);
@@ -113,9 +113,10 @@ Route::delete("/news/{new}", [NewsController::class, "destroy"]);
 
 //for admin
 // to show the login page
-Route::get("/admin", [UserController::class, "login"]);
+Route::get("/admin", [UserController::class, "login"])->name("login");
 // to login the user
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
 Route::get("/admin/news/search", [NewsController::class, 'search'])->name("news.search");
 Route::get("/admin/events/search", [EventController::class, 'search'])->name("events.search");
+Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 
