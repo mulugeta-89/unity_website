@@ -40,7 +40,7 @@
                 <ul class="media-post">
                     <li style="color: wheat">{{$new->publish_date}}</a></li>
                 </ul>
-                <p style="color: white">{{ strlen($new["content"]) > 400 ? substr($new["content"], 0, 400) . '...' : $new["content"] }}</p>
+                <p style="color: white;text-align: justify">{{ strlen($new["content"]) > 400 ? substr($new["content"], 0, 400) . '...' : $new["content"] }}</p>
             </div>
         </div>
     </div>

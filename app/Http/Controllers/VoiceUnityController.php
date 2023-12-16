@@ -45,7 +45,7 @@ class VoiceUnityController extends Controller
             "pdf_file" => "required"
         ]);
         if($request->hasFile("pdf_file")){
-            $formFields["pdf_file"] = $request->file("pdf_file")->store("Advertismentpdf_files", "public");
+            $formFields["pdf_file"] = $request->file("pdf_file")->store("VoiceOfUnity", "public");
         }
         $voice->update($formFields);
         return redirect("/voiceofunity/manage");

@@ -75,7 +75,7 @@
             @else
             <tr class="border">
                 <td colspan="3" class="px-4 py-3 border-top border-bottom">
-                    <p class="text-center">No advertisments Found</p>
+                    <p class="text-center" style="color: white">No advertisments Found</p>
                 </td>
             </tr>
             @endunless
