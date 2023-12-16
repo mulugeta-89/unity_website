@@ -126,6 +126,10 @@ Route::get("/voice_of_unity", [VoiceUnityController::class, "index"]);
 Route::get("/voiceofunity/manage", [VoiceUnityController::class, "manage"]);
 Route::get("/voiceofunity/create", [VoiceUnityController::class, "create"]);
 Route::post("/voiceofunity/store", [VoiceUnityController::class, "store"]);
+Route::get("/voiceofunity/{voice}/edit", [VoiceUnityController::class, "edit"]);
+Route::put("/voiceofunity/{voice}", [VoiceUnityController::class, "update"]);
+Route::delete("/voiceofunity/{voice}", [VoiceUnityController::class, "destroy"]);
+
 
 //for admin
 // to show the login page

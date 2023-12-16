@@ -61,10 +61,10 @@
                     }
                 </style>
                 <td class="px-4 py-3 border-top border-bottom">
-                    <a href="/voices/{{$voice->id}}/edit" class="btn"><i class="fas fa-pen"></i> Edit</a>
+                    <a href="/voiceofunity/{{$voice->id}}/edit" class="btn"><i class="fas fa-pen"></i> Edit</a>
                 </td>
                 <td class="px-4 py-3 border-top border-bottom">
-                    <form method="POST" action="/voices/{{$voice->id}}">
+                    <form method="POST" action="/voiceofunity/{{$voice->id}}">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn"><i class="fas fa-trash"></i> Delete</button>

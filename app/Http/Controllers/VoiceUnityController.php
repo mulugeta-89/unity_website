@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Voiceunity;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class VoiceUnityController extends Controller
 {
@@ -21,8 +22,12 @@ class VoiceUnityController extends Controller
     public function create(){
         return view("voice.create");
     }
-    public function store(Request $request)
-    {
+    public function edit(Voiceunity $voice){
+        return view("voice.edit",[
+            "voice" => $voice
+        ]);
+    }
+    public function store(Request $request){
         $formFields = $request->validate([
             "title" => "required",
             "pdf_file" => "required|mimes:pdf|max:7168"
@@ -33,6 +38,24 @@ class VoiceUnityController extends Controller
         Voiceunity::create($formFields);
         return redirect("/voiceofunity/manage");
 
+    }
+    public function update(Request $request, Voiceunity $voice){
+        $formFields = $request->validate([
+            "title" => "required",
+            "pdf_file" => "required"
+        ]);
+        if($request->hasFile("pdf_file")){
+            $formFields["pdf_file"] = $request->file("pdf_file")->store("Advertismentpdf_files", "public");
+        }
+        $voice->update($formFields);
+        return redirect("/voiceofunity/manage");
+    }
+    public function destroy(Voiceunity $voice){
+        if($voice->pdf_file && Storage::disk('public')->exists($voice->pdf_file)) {
+            Storage::disk('public')->delete($voice->pdf_file);
+        }
+        $voice->delete();
+        return redirect("/voiceofunity/manage");
     }
 
 }
