@@ -333,7 +333,7 @@
                                         <li><a href="#">Community Engagement</a></li>
                                         <li><a href="#">Public Relations</a></li> 
                                         <li><a href="#">Publications</a></li>
-                                        <li><a href="#">Voice of Unity</a></li>                                       
+                                        <li><a href="/voice_of_unity">Voice of Unity</a></li>                                       
                                     </ul>
                                 </li>
                                 <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>University Enterprises</b><i class="fa fa-chevron-down"></i></a>

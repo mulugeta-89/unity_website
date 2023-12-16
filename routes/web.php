@@ -1,13 +1,14 @@
 <?php
 
-use App\Http\Controllers\AdvertismentController;
 use App\Models\News;
 use App\Models\Event;
+use App\Models\Advertisments;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\EventController;
-use App\Models\Advertisments;
+use App\Http\Controllers\VoiceUnityController;
+use App\Http\Controllers\AdvertismentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -120,6 +121,12 @@ Route::get("/advertisments/{advert}/edit", [AdvertismentController::class, "edit
 Route::put("/advertisments/{advert}", [AdvertismentController::class, "update"]);
 Route::get("/advertisments/{advert}", [AdvertismentController::class, "show"]);
 Route::delete("/advertisments/{advert}", [AdvertismentController::class, "destroy"]);
+//for voice of unity
+Route::get("/voice_of_unity", [VoiceUnityController::class, "index"]);
+Route::get("/voiceofunity/manage", [VoiceUnityController::class, "manage"]);
+Route::get("/voiceofunity/create", [VoiceUnityController::class, "create"]);
+Route::post("/voiceofunity/store", [VoiceUnityController::class, "store"]);
+
 //for admin
 // to show the login page
 Route::get("/admin", [UserController::class, "login"])->name("login");
