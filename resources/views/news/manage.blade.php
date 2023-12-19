@@ -11,6 +11,19 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+    <style>
+        body {
+            background-color: #343a40;
+        }
+        .btn {
+            background: #f7b205;
+            padding: 7px 25px;
+        }
+        .btn:hover {
+            color: white;
+            background-color: #4c1864
+        }
+    </style>
     
 </head>
 <body>
@@ -40,19 +53,7 @@
                 <td class="px-4 py-3 border-top border-bottom">
                     <a href="/news/{{$new->id}}" style="color: white">{{$new->title}}</a>
                 </td>
-                <style>
-                    body {
-                        background-color: #343a40;
-                    }
-                    .btn {
-                        background: #f7b205;
-                        padding: 7px 25px;
-                    }
-                    .btn:hover {
-                        color: white;
-                        background-color: #4c1864
-                    }
-                </style>
+                
                 <td class="px-4 py-3 border-top border-bottom">
                     <a href="/news/{{$new->id}}/edit" class="btn"><i class="fas fa-pen"></i> Edit</a>
                 </td>
@@ -68,7 +69,7 @@
             @else
             <tr class="border">
                 <td colspan="3" class="px-4 py-3 border-top border-bottom">
-                    <p class="text-center">No news Found</p>
+                    <p class="text-center" style="color: white">No news Found</p>
                 </td>
             </tr>
             @endunless

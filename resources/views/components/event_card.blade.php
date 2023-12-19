@@ -42,12 +42,12 @@
                 </div>
             </div>
             <div class="event-info">
-                <h4 class="event-title"><a href="/event/{{$event->id}}" style="color: wheat">{{ strlen($event["title"]) > 30 ? substr($event["title"], 0, 30) . '...' : $event["title"] }}</a></h4>
+                <h4 class="event-title"><a href="/event/{{$event->id}}" style="color: wheat">{{ strlen($event["title"]) > 30 ? mb_substr($event["title"], 0, 30, 'UTF-8') . '...' : $event["title"] }}</a></h4>
                 <ul class="media-post">
                     <li><a href="#" style="color: white"><i class="fa fa-clock-o" style="color: wheat"></i>{{$startTime}}</a></li>
                     <li><a href="#" style="color: white"><i class="fa fa-map-marker" style="color: wheat"></i> {{$event["location_name"]}}</a></li>
                 </ul>
-                <p style="color: white; text-align: justify">{{ strlen($event["description"]) > 400 ? substr($event["description"], 0, 400) . '...' : $event["description"] }}</p>
+                <p style="color: white; text-align: justify">{{ strlen($event["description"]) > 400 ? mb_substr($event["description"], 0, 200, 'UTF-8') . '...' : $event["description"] }}</p>
             </div>
         </div>
     </div>

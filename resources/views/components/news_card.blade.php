@@ -36,11 +36,12 @@
                 </div>
             </div> --}}
             <div class="event-info">
-                <h4 class="event-title"><a href="/news/{{$new->id}}" style="color: wheat">{{ strlen($new["title"]) > 30 ? substr($new["title"], 0, 30) . '...' : $new["title"] }}</a></h4>
+                <h5 class="event-title"><a href="/news/{{$new->id}}" style="color: wheat">{{ strlen($new["title"]) > 30 ? mb_substr($new["title"], 0, 30, 'UTF-8') . '...' : $new["title"] }}</a></h5>
                 <ul class="media-post">
                     <li style="color: wheat">{{$new->publish_date}}</a></li>
                 </ul>
-                <p style="color: white;text-align: justify">{{ strlen($new["content"]) > 400 ? substr($new["content"], 0, 400) . '...' : $new["content"] }}</p>
+                <p style="color: white;text-align: justify">{{ strlen($new["content"]) > 400 ? mb_substr($new["content"], 0, 200, 'UTF-8') . '...' : $new["content"] }}
+                </p>
             </div>
         </div>
     </div>
