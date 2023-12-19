@@ -73,7 +73,7 @@
                 height: 110px;
                 background-color: inherit;
                 border: none;
-                background: linear-gradient(180deg, rgb(64, 241, 241) 0%, rgba(1, 2, 2, 0) 100%);
+                background: linear-gradient(180deg, rgb(23, 24, 24) 0%, rgba(1, 2, 2, 0) 100%);
             
             }
             @media only screen and (min-width: 991px) {

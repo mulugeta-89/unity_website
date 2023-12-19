@@ -32,7 +32,7 @@
 <li class="action-card col-lg-6 col-md-6 col-sm-12 happening ">
     <div class="event-bx">
         <div class="action-box">
-            <img style="height: 300px;" src="{{$event->image ? asset("storage/".$event->image) : asset("unity_photos/unity_photo.jpg")}}" alt="" >
+            <img src="{{$event->image ? asset("storage/".$event->image) : asset("unity_photos/arif.jpg")}}" alt="" >
         </div>
         <div class="info-bx d-flex rounded">
             <div>

@@ -1,4 +1,3 @@
-{{-- ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);" --}}
 @extends("layout")
 @section("content")
 <div class="page-content">
@@ -10,26 +9,10 @@
             </div>
         </div>
     </div>
-    <!-- Breadcrumb row -->
-    {{-- <div class="breadcrumb-row">
-        <div class="container">
-            <ul class="list-inline">
-                <li><a href="/">Home</a></li>
-                <li>News</li>
-            </ul>
-        </div>
-    </div> --}}
-    <!-- Breadcrumb row END -->
-    <!-- contact area -->
     <div class="content-block">
         <!-- Portfolio  -->
         <div class="section-area section-sp1 gallery-bx">
             <div class="container">
-                {{-- <div class="feature-filters clearfix center">
-                    <ul class="filters" data-toggle="buttons">
-                        <!-- ... (existing filter buttons) ... -->
-                    </ul>
-                </div> --}}
                 <div class="clearfix">
                     <ul id="masonry" class="ttr-gallery-listing magnific-image row m-0">
                         @unless(count($news) == 0)
