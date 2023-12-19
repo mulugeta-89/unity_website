@@ -58,7 +58,7 @@ class NewsController extends Controller
             Storage::disk('public')->delete($new->image);
         }
         $new->delete();
-        return redirect("/news");
+        return redirect("/news/manage");
     }
     public function manage(){
         return view("news.manage",[
