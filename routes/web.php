@@ -78,6 +78,9 @@ Route::get("/campus/adama", function(){
 Route::get("/campus/burayu", function(){
     return view("pages.burayu");
 });
+Route::get("/chairman", function(){
+    return view("pages.chairman");
+});
 // for the events
 Route::get("/events", [EventController::class, "index"]);
 Route::get("/events/manage", [EventController::class, "manage"])->middleware("auth");

@@ -123,7 +123,7 @@
                                     <ul class="sub-menu add-menu">
                                         <li class="add-menu-left">
                                             <ul>
-                                                <li><a href="#">Chairman Message</a></li>
+                                                <li><a href="/chairman">Chairman Message</a></li>
                                                 <li><a href="#">President and Ceo Message</a></li>
                                                 <li><a href="/history">Unity University History</a></li>
                                                 <li><a href="/vision">University Vision, Mission, Values and Goals</a></li>
