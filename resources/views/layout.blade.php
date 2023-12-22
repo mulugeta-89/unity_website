@@ -84,75 +84,24 @@
                 .items {
                     font-size: 8px
                 }
-            }
-            
-            /* This CSS might not be necessary if Bootstrap already includes these classes */
-         
+            }         
         </style>
 </head>
 <body id="bg">
 <div class="page-wraper">
 <div id="loading-icon-bx"></div>
 	<!-- Header Top ==== -->
-    {{-- <div class="fixed-top"> --}}
         <header class="header rs-nav header-transparent fixed-top" >
-            {{-- <div class="top-bar" style="background-color: rgba(6, 45, 151, 0.1); color: rgb(250, 246, 246);">
-                <div class="container">
-                    <div class="row d-flex justify-content-between">
-                        <div class="topbar-left">
-                            <ul>
-                                <li><a href="#" style="color: rgb(253, 251, 251);"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
-                                <li><a href="#" style="color: rgb(252, 249, 249);" ><i class="fa fa-envelope-o"></i>uuinfo@uu.edu.et</a></li>
-                            </ul>
-                        </div>
-                        <div class="topbar-right">
-                            <ul>
-                                <li>
-                                    <span class="ethiopian-flag"></span><span style="color: rgb(252, 249, 249)"> Ethiopia</span>
-                                </li>
-                                <li><a href="/"  style="color: red"><b>Announcements</b></a></li>
-                                <li><a href="#" style="color: rgb(253, 248, 248)">Students Login</a></li>
-                                <li><a href="#" style="color: rgb(252, 248, 248)">Register</a></li>
-                                <li><a href="#" style="color: rgb(252, 248, 248)">E-learning</a></li>
-                                <li><a href="/contact_us" style="color: rgb(248, 243, 243)">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
             <div class="sticky-header navbar-expand-lg fixed-top">
                 <div class="menu-bar clearfix">
                     <div class="container clearfix">
                         <!-- Header Logo ==== -->
-                        {{-- <div class="menu-logo">
-                            <a href="/"><img src="{{asset("/unity_photos/logo4.png")}}" alt=""></a>
-                        </div> --}}
                         <!-- Mobile Nav Button ==== -->
                         <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span></span>
                             <span></span>
                             <span></span>
                         </button>
-                        <!-- Author Nav ==== -->
-                        {{-- <div class="secondary-menu">
-                            <div class="secondary-inner">
-                                <ul>
-                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-youtube"></i></a></li>
-                                    <!-- Search Button ==== -->
-                                </ul>
-                            </div>
-                        </div> --}}
-                        <!-- Search Box ==== -->
-                        {{-- <div class="nav-search-bar">
-                            <form action="#">
-                                <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
-                                <span><i class="ti-search"></i></span>
-                            </form>
-                            <span id="search-remove"><i class="ti-close"></i></span>
-                        </div> --}}
                         <!-- Navigation Menu ==== -->
                         <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
                             <div class="menu-logo">
@@ -186,11 +135,11 @@
                                         </li>
                                         <li class="add-menu-right">
                                             <ul style="list-style: none">
-                                                <li><a href="#">University Academic Programs</a></li>
-                                                <li><a href="#">University Student Services</a></li>
+                                                <li><a href="/programs">University Academic Programs</a></li>
+                                                <li><a href="/student_services">University Student Services</a></li>
                                                 <li><a href="#">Unity University Accreditation</a></li>
                                                 <li><a href="#">Alumni Association</a></li>
-                                                <li><a href="#">University Campuses</a></li>
+                                                <li><a href="/campuses">University Campuses</a></li>
                                                 <li><a href="#">The Colleges/Faculties</a></li>
                                                 <li><a href="#">Univesity Auxiliary Faculties</a></li>
                                                 <li><a href="#">University Policies and Procedures</a></li>
@@ -201,7 +150,9 @@
                                 <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="/campus/alamoudi">Main Office(Gerji)</a></li>
-                                        <li><a href="#">Campuses</a></li>
+                                        <li><a href="/campuses">Campuses</a></li>
+                                        <li><a href="/contact_us">Contact Us</a></li>
+
                                                                                
                                     </ul>
                                 </li>
@@ -281,9 +232,9 @@
                                 
                                 <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Undergraduate Studies</a></li>
-                                        <li><a href="#">Postgraduate Studies</a></li>
-                                        <li><a href="#">Distance Education</a></li>
+                                        <li><a href="/undergraduate">Undergraduate Studies</a></li>
+                                        <li><a href="/postgraduate">Postgraduate Studies</a></li>
+                                        <li><a href="/distance_education">Distance Education</a></li>
                                         <li><a href="#">Degree Requirements</a></li>
                                         <li><a href="#">University Policies and Procedures</a></li>
                                         <li><a href="#">Facility</a></li>
@@ -338,10 +289,10 @@
                                 </li>
                                 <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>University Enterprises</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Printing Press</a></li>
-                                        <li><a href="#">Clinical/Hospital</a></li>
+                                        <li><a href="/printing_press">Printing Press</a></li>
+                                        <li><a href="/clinic">Clinical/Hospital</a></li>
                                         <li><a href="#">Studio</a></li>
-                                        <li><a href="#">Cafeteria</a></li>
+                                        <li><a href="/cafeteria">Cafeteria</a></li>
                                         <li><a href="#">Stationary/Bookshops</a></li>
                                     </ul>
                                 </li>
@@ -357,104 +308,6 @@
         </header>
     {{-- </div> --}}
     @yield("content")
-    {{-- Footer starts here --}}
-    {{-- <footer style="background: rgb(29, 28, 28)">
-		<div class="footer-top">
-			<div class="pt-exebar">
-				<div class="container">
-					<div class="d-flex align-items-stretch">
-						<div class="pt-logo mr-auto">
-							<a href="/"><img src="{{asset("/unity_photos/logo4.png")}}" style="height: 130px; width: 400px" alt=""/></a>
-						</div>
-						<div class="pt-social-link">
-							<ul class="list-inline m-a0">
-								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-twitter"></i></a></li>
-								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-youtube"></i></a></li>
-							</ul>
-						</div>
-						<div class="pt-btn-join">
-							<a href="/contact_us" class="btn ">Join Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			{{-- <div class="container" style="text-align: left">
-				<div class="row">
-					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
-						<div class="widget">
-                            <div class="container">
-                                <h3 style="color: white">Contact Us</h3>
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label" style="color: white">Your Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message" class="form-label" style="color: white">Message</label>
-                                        <textarea class="form-control" id="message" rows="3" placeholder="Type your message here"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                            </div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-5 col-md-7 col-sm-12">
-						<div class="row">
-							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
-								<div class="widget footer_widget">
-									<h5 class="footer-title">Company</h5>
-									<ul>
-										<li><a href="/">Home</a></li>
-										<li><a href="/campuses">About</a></li>
-										<li><a href="#">FAQs</a></li>
-										<li><a href="/contact_us">Contact</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
-								<div class="widget footer_widget">
-									<h5 class="footer-title">Get In Touch</h5>
-									<ul>
-										<li><a href="#">News</a></li>
-										<li><a href="/events">Events</a></li>
-										<li><a href="/campuses">Campuses</a></li>
-										<li><a href="#">Testimonials</li>
-                                        <li><a href="/news/create">Post News</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
-								<div class="widget footer_widget">
-									<h5 class="footer-title">Programs</h5>
-									<ul>
-										<li><a href="/undergraduate">Undergraduate</li>
-										<li><a href="/postgraduate">Postgraduate</a></li>
-										<li><a href="/distance_education">Distance Education</a></li>
-                                        <li><a href="/event/create">Post event</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
-						<div class="widget widget_gallery gallery-grid-4">
-							<h5 class="footer-title">Our Gallery</h5>
-							<ul class="magnific-image">
-								<li><a href="{{asset("/images/pic1.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic1.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic2.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic2.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic3.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic3.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic4.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic4.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic5.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic5.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic6.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic6.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic7.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic7.jpg")}}" alt=""></a></li>
-								
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> --}}
 		</div>
 	{{-- </footer> --}}
     

@@ -22,10 +22,7 @@ use App\Http\Controllers\AdvertismentController;
 */
 
 Route::get('/', function () {
-    return view("pages.index",[
-        "events" => Event::latest()->take(4)->get(),
-        "news" => News::latest()->take(4)->get()
-    ]);
+    return view("pages.index");
 });
 Route::get("/history", function(){
     return view("pages.history");
@@ -81,63 +78,50 @@ Route::get("/campus/adama", function(){
 Route::get("/campus/burayu", function(){
     return view("pages.burayu");
 });
-Route::get("department/cs", function(){
-    return view("pages.cs");
-});
-Route::get("/deparment/accounting", function(){
-    return view("pages.accounting");
-});
-Route::get("/department/public_health", function(){
-    return view("pages.public_health");
-});
-Route::get("/department/mba", function(){
-    return view("pages.mba");
-});
 // for the events
 Route::get("/events", [EventController::class, "index"]);
 Route::get("/events/manage", [EventController::class, "manage"])->middleware("auth");
-Route::get("/event/create", [EventController::class, "create"]);
-Route::post("/events/store", [EventController::class, "store"]);
+Route::get("/event/create", [EventController::class, "create"])->middleware("auth");
+Route::post("/events/store", [EventController::class, "store"])->middleware("auth");
 Route::get("/event/{event}", [EventController::class, "show"]);
-Route::get("event/{event}/edit", [EventController::class, "edit"]);
-Route::delete("event/{event}", [EventController::class, "destroy"]);
-Route::put("event/{event}", [EventController::class, "update"]);
+Route::get("event/{event}/edit", [EventController::class, "edit"])->middleware("auth");
+Route::delete("event/{event}", [EventController::class, "destroy"])->middleware("auth");
+Route::put("event/{event}", [EventController::class, "update"])->middleware("auth");
 
 //for  news
 Route::get("/news", [NewsController::class, "index"]);
 Route::get("/news/manage", [NewsController::class, "manage"])->middleware('auth');
-Route::get("/news/create", [NewsController::class, "create"]);
-Route::post("/news/store", [NewsController::class, "store"]);
+Route::get("/news/create", [NewsController::class, "create"])->middleware("auth");
+Route::post("/news/store", [NewsController::class, "store"])->middleware("auth");
 Route::get("/news/{new}", [NewsController::class, "show"]);
-Route::get("/news/{new}/edit", [NewsController::class, "edit"]);
-Route::put("/news/{new}", [NewsController::class, "update"]);
-Route::delete("/news/{new}", [NewsController::class, "destroy"]);
+Route::get("/news/{new}/edit", [NewsController::class, "edit"])->middleware("auth");
+Route::put("/news/{new}", [NewsController::class, "update"])->middleware("auth");
+Route::delete("/news/{new}", [NewsController::class, "destroy"])->middleware("auth");
 // for advertisments
 Route::get("/advertisments", [AdvertismentController::class, "index"]);
-Route::get("/advertisments/manage", [AdvertismentController::class, "manage"]);
-Route::get("/advertisments/create", [AdvertismentController::class, "create"]);
-Route::post("/advertisments/store", [AdvertismentController::class, "store"]);
-Route::get("/advertisments/{advert}/edit", [AdvertismentController::class, "edit"]);
-Route::put("/advertisments/{advert}", [AdvertismentController::class, "update"]);
+Route::get("/advertisments/manage", [AdvertismentController::class, "manage"])->middleware("auth");
+Route::get("/advertisments/create", [AdvertismentController::class, "create"])->middleware("auth");
+Route::post("/advertisments/store", [AdvertismentController::class, "store"])->middleware("auth");
+Route::get("/advertisments/{advert}/edit", [AdvertismentController::class, "edit"])->middleware("auth");
+Route::put("/advertisments/{advert}", [AdvertismentController::class, "update"])->middleware("auth");
 Route::get("/advertisments/{advert}", [AdvertismentController::class, "show"]);
-Route::delete("/advertisments/{advert}", [AdvertismentController::class, "destroy"]);
+Route::delete("/advertisments/{advert}", [AdvertismentController::class, "destroy"])->middleware("auth");
 //for voice of unity
 Route::get("/voice_of_unity", [VoiceUnityController::class, "index"]);
-Route::get("/voiceofunity/manage", [VoiceUnityController::class, "manage"]);
-Route::get("/voiceofunity/create", [VoiceUnityController::class, "create"]);
-Route::post("/voiceofunity/store", [VoiceUnityController::class, "store"]);
-Route::get("/voiceofunity/{voice}/edit", [VoiceUnityController::class, "edit"]);
-Route::put("/voiceofunity/{voice}", [VoiceUnityController::class, "update"]);
-Route::delete("/voiceofunity/{voice}", [VoiceUnityController::class, "destroy"]);
+Route::get("/voiceofunity/manage", [VoiceUnityController::class, "manage"])->middleware("auth");
+Route::get("/voiceofunity/create", [VoiceUnityController::class, "create"])->middleware("auth");
+Route::post("/voiceofunity/store", [VoiceUnityController::class, "store"])->middleware("auth");
+Route::get("/voiceofunity/{voice}/edit", [VoiceUnityController::class, "edit"])->middleware("auth");
+Route::put("/voiceofunity/{voice}", [VoiceUnityController::class, "update"])->middleware("auth");
+Route::delete("/voiceofunity/{voice}", [VoiceUnityController::class, "destroy"])->middleware("auth");
 
 
 //for admin
 // to show the login page
-Route::get("/admin", [UserController::class, "login"])->name("login");
+Route::get("/admin", [UserController::class, "login"])->name("login")->middleware("guest");
 
 // to login the user
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
-Route::get("/admin/news/search", [NewsController::class, 'search'])->name("news.search");
-Route::get("/admin/events/search", [EventController::class, 'search'])->name("events.search");
-Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
-
+Route::get("/admin/news/search", [NewsController::class, 'search'])->name("news.search")->middleware("auth");
+Route::get("/admin/events/search", [EventController::class, 'search'])->name("events.search")->middleware("auth");
+Route::post('/logout', [UserController::class, 'logout'])->middleware('auth')->middleware("auth");
