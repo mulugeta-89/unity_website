@@ -196,7 +196,7 @@
                                                 <li><a href="#">Bookstores</a></li>
                                                 <li><a href="#">Printing Services</a></li>
                                                 <li><a href="/library_resource">Library Services</a></li>
-                                                <li><a href="#">Circulation</a></li>
+                                                <li><a href="/circulation">Circulation</a></li>
                                                 <li><a href="#">Computer Workstation</a></li>
                                                 <li><a href="#">Copy Service</a></li>
                                             </ul>
@@ -206,8 +206,8 @@
                                                 <li><a href="#">Government Documents</a></li>
                                                 <li><a href="#">Inter-library Loan</a></li>
                                                 <li><a href="#">Music and Media</a></li>
-                                                <li><a href="#">Online Catalogue</a></li>
-                                                <li><a href="#">Reserves</a></li>
+                                                <li><a href="/online_catalogue">Online Catalogue</a></li>
+                                                <li><a href="/reserves">Reserves</a></li>
                                                 <li><a href="#">Precede</a></li>
                                                 <li><a href="#">Reading and Study</a></li>
                                                 <li><a href="#">Reference Source</a></li>

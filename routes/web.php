@@ -87,6 +87,15 @@ Route::get("/president_message", function(){
 Route::get("/library_resource", function(){
     return view("pages.library_resource");
 });
+Route::get("/circulation", function(){
+    return view("pages.circulation");
+});
+Route::get("/online_catalogue", function(){
+    return view("pages.online_catalogue");
+});
+Route::get("/reserves", function(){
+    return view("pages.reserves");
+});
 // for the events
 Route::get("/events", [EventController::class, "index"]);
 Route::get("/events/manage", [EventController::class, "manage"])->middleware("auth");
