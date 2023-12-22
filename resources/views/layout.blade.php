@@ -195,7 +195,7 @@
                                                 <li><a href="#">Workshops</a></li>
                                                 <li><a href="#">Bookstores</a></li>
                                                 <li><a href="#">Printing Services</a></li>
-                                                <li><a href="#">Library Services</a></li>
+                                                <li><a href="/library_resource">Library Services</a></li>
                                                 <li><a href="#">Circulation</a></li>
                                                 <li><a href="#">Computer Workstation</a></li>
                                                 <li><a href="#">Copy Service</a></li>
