@@ -81,6 +81,9 @@ Route::get("/campus/burayu", function(){
 Route::get("/chairman", function(){
     return view("pages.chairman");
 });
+Route::get("/president_message", function(){
+    return view("pages.president_message");
+});
 // for the events
 Route::get("/events", [EventController::class, "index"]);
 Route::get("/events/manage", [EventController::class, "manage"])->middleware("auth");

@@ -124,7 +124,7 @@
                                         <li class="add-menu-left">
                                             <ul>
                                                 <li><a href="/chairman">Chairman Message</a></li>
-                                                <li><a href="#">President and Ceo Message</a></li>
+                                                <li><a href="/president_message">President and Ceo Message</a></li>
                                                 <li><a href="/history">Unity University History</a></li>
                                                 <li><a href="/vision">University Vision, Mission, Values and Goals</a></li>
                                                 <li><a href="#">Unity University Governance</a></li>
