@@ -2,13 +2,14 @@
 @section("content")
 <div>
 <div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center;color: wheat">Add Event</h1>
+    <h1 style="text-align: center;"">Edit Event</h1>
     <form action="/event/{{$event->id}}" method="POST">
       @csrf
       @method("PUT")
       <div class="form-group">
-        <label for="title" style="color: white">Event Title</label>
+        <label for="title">Event Title</label>
         <input 
+        style="font-size: 16px"
         type="text" 
         class="form-control" 
         id="title" 
@@ -20,36 +21,20 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="image" style="color: white">Image</label>
-        <input 
-        type="file" 
-        class="form-control" 
-        id="image" 
-        name="image" 
-        >
-        <img
-                class="w-48 mr-6 mb-6"
-                src="{{$event->image ? asset("storage/".$event->image) : asset("unity_photos/unity_photo.jpg")}}"
-                alt=""
-            />
-        @error("title")
-            <p class="text-danger mt-1">{{$message}}</p>
-        @enderror
-      </div>
-      <div class="form-group">
-        <label for="description" style="color: white">Description</label>
+        <label for="description" >Description</label>
         <textarea 
+        style="font-size: 16px; height: 300px;"
         class="form-control"
-         id="description"
-          name="description"
-           rows="4" 
-           required>{{$event->description}}</textarea>
+        id="description"
+        name="description"
+        rows="4" 
+        required>{{$event->description}}</textarea>
         @error("description")
             <p class="text-danger mt-1">{{$message}}</p>
         @enderror
       </div>
       <div class="form-group">
-        <label for="start_date_time" style="color: white">Start Date and Time</label>
+        <label for="start_date_time">Start Date and Time</label>
         <input 
           type="datetime-local" 
           class="form-control"
@@ -62,7 +47,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="end_date_time" style="color: white">End Date and Time</label>
+        <label for="end_date_time">End Date and Time</label>
         <input 
           type="datetime-local" 
           class="form-control" 
@@ -75,8 +60,9 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="location_name" style="color: white">Location Name</label>
+        <label for="location_name">Location Name</label>
         <input
+        style="font-size: 16px"
           type="text" 
           class="form-control" 
           id="location_name" 

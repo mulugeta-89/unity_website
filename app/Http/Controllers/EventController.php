@@ -42,7 +42,7 @@ class EventController extends Controller
             }
         }
         
-        return redirect("/events");
+        return redirect("/events/manage");
     }
     public function update(Request $request, Event $event){
         $formFields = $request->validate([
@@ -52,9 +52,6 @@ class EventController extends Controller
             "end_date" => "required",
             "location_name" => "required",
         ]);
-        if($request->hasFile("image")){
-            $formFields["image"] = $request->file("image")->store("EventImages", "public");
-        }
         $event->update($formFields);
         return redirect("/events/manage");
     }
@@ -68,7 +65,7 @@ class EventController extends Controller
             Storage::disk('public')->delete($event->image);
         }
         $event->delete();
-        return redirect("/events");
+        return redirect("/events/manage");
     }
     public function manage(){
         return view("event.manage",[

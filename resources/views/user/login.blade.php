@@ -11,7 +11,7 @@
 
 <div class="container">
   <div class="login-form">
-    <h2 class="text-center mb-4" style="color: wheat">Login</h2>
+    <h2 class="text-center mb-4">Login</h2>
     <form method="POST" action="/users/authenticate">
         @csrf
       <div class="form-group">

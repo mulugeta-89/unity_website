@@ -36,7 +36,7 @@ class NewsController extends Controller
                 ]);
             }
         }
-        return redirect("/news");
+        return redirect("/news/manage");
         
     }
     public function show(News $new){
@@ -57,9 +57,6 @@ class NewsController extends Controller
             "publish_date" => "required",
             
         ]);
-        if($request->hasFile("image")){
-            $formFields["image"] = $request->file("image")->store("NewsImages", "public");
-        }
         $new->update($formFields);
         return redirect("/news/manage");
     }
