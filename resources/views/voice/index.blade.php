@@ -2,7 +2,7 @@
 @section("content")
     <style>
         body {
-            background-color: #343a40;
+            background-color: #e1e2e3;
         }
         .btn {
             background: #f7b205;
@@ -16,7 +16,7 @@
     <div class="page-banner">
         <div class="container">
             <div class="page-banner-entry">
-                <h1 class="text-white" style="margin-top: 90px">Voice of Unity</h1>
+                <h1 style="margin-top: 90px">Voice of Unity</h1>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
             @foreach($voices as $voice)
             <tr class="border">
                 <td class="px-4 py-3 border-top border-bottom">
-                    <h3 style="color: white;font-size: 19px">{{$voice->title}}</h3>
+                    <h3 style="font-size: 19px">{{$voice->title}}</h3>
                 </td>
                 <td class="px-4 py-3 border-top border-bottom">
                     <a href="{{asset("storage/".$voice->pdf_file)}}" target="_blank" class="btn"><i class="fas fa-pen"></i> Open</a>
