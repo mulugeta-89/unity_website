@@ -1,14 +1,11 @@
 @extends("layout")
 @section("content")
 <style>
-    p {
-        color: white;
-    }
     </style>
     <div class="container">
         <div class="row">
           <div class="col-md-10 mx-auto">
-            <h1 class="full-width text-center" style="margin-top: 150px;font-size: 46px; text-transform: uppercase; text-align: justify; color:#c0c4c9;">
+            <h1 class="full-width text-center" style="margin-top: 150px;font-size: 46px; text-transform: uppercase; text-align: justify;">
                 Unity University History
             </h1>
             <p class="lead full-width text-justify">

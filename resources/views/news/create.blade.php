@@ -8,6 +8,7 @@
       <div class="form-group">
         <label for="title">Title</label>
         <input 
+        style="font-size: 21px"
         type="text" 
         class="form-control" 
         id="title" 
@@ -20,10 +21,11 @@
       </div>
       <div class="form-group">
         <label for="images">Images</label>
-        <input type="file" id="images" name="images[]" multiple accept="image/*" required>
+        <input type="file" id="images" name="images[]" multiple accept="image/*">
       <div class="form-group">
         <label for="description">Content</label>
         <textarea 
+        style="font-size: 21px; height: 300px"
         class="form-control"
          id="content"
         name="content"

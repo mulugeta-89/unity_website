@@ -8,6 +8,7 @@
       <div class="form-group">
         <label for="title">Event Title</label>
         <input 
+        style="font-size: 21px"
         type="text" 
         class="form-control" 
         id="title" 
@@ -19,13 +20,14 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="images">Image</label>
+        <label for="images">Images</label>
         <input type="file" id="images" name="images[]" multiple accept="image/*" required>
 
       </div>
       <div class="form-group">
         <label for="description">Description</label>
-        <textarea 
+        <textarea
+        style="font-size: 21px;height: 300px;"
         class="form-control"
          id="description"
           name="description"
@@ -64,6 +66,7 @@
       <div class="form-group">
         <label for="location_name">Location Name</label>
         <input
+        style="font-size: 21px"
           type="text" 
           class="form-control" 
           id="location_name" 

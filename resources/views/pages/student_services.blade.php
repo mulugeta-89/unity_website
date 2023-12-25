@@ -3,16 +3,16 @@
 <div class="container">
     <div class="row">
       <div class="m-b30" id="curriculum">
-        <h1 class="full-width text-center" style="margin-top: 150px; color: wheat">
+        <h1 class="full-width text-center" style="margin-top: 150px;">
             Unity University Student Services
         </h1>
-        <p style="color: white;text-align: justify">
+        <p style="text-align: justify">
             Community Service and Students’ Affairs Unit is organized to carryout University community-related tasks and all students-related works. Hence, it mainly focuses on the building up of the all-rounded capacity of the surrounding community, like giving short-term training on maintaining positive relationships among community members. Moreover, it works closely with the nearby Sub-City and District Traffic Police Offices on roads management for the safe traffic movement of students, parents, pedestrians and vehicles.
 
             Coming to the Students’ Affairs, the Unit gives all-rounded service to current students and Alumni members. In this regard, it serves the interest of students from their admission to graduation and beyond. To mention some:
         </p>
         <div class="curriculum-list">
-            <ul style="color: white" >
+            <ul>
                 <li>
                     <div class="curriculum-list-box">
                         <span>1. </span>Provide guidance and counseling service to students on their personal, family matters, social and academic responsibilities
@@ -41,8 +41,8 @@
             </ul>
         </div>
         <div class="curriculum-list">
-            <h5 style="font-size: 23px;color: wheat">The main objectives of the Unit encompass but are not limited to the following:</h5>
-            <ol style="color: white">
+            <h5 style="font-size: 23px;">The main objectives of the Unit encompass but are not limited to the following:</h5>
+            <ol>
                 <li>1. 
                     To attain its own share of tasks on quality of education through implementing Community Service and Students’ Affairs matters
                 </li>

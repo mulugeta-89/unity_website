@@ -136,7 +136,7 @@ Route::delete("/voiceofunity/{voice}", [VoiceUnityController::class, "destroy"])
 
 //for admin
 // to show the login page
-Route::get("/admin", [UserController::class, "login"])->name("login")->middleware("guest");
+Route::get("/admin", [UserController::class, "login"])->name("login");
 
 // to login the user
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);

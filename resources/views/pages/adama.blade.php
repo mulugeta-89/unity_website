@@ -10,8 +10,8 @@
         <div class="curriculum-list mt-3">
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-sm-center text-center">
-                    <ul class="header_links_ul" style="color: white">
-                        <h4 style="color: wheat">Undergraduate Programs</h4>
+                    <ul class="header_links_ul">
+                        <h4>Undergraduate Programs</h4>
                         <li><b><i class="fa-regular fa-hand-point-right"></i> Accounting and Finance</b></li>
                         <li><b><i class="fa-regular fa-hand-point-right"></i> Business Administration</b></li>
                         <li><b><i class="fa-regular fa-hand-point-right"></i> Computer Science</b></li>
@@ -21,8 +21,8 @@
                     </ul>
                 </div>
                 <div class="col-md-6 col-sm-12 text-sm-center text-center">
-                    <ul class="header_links_ul" style="color: white">
-                        <h4 style="color: wheat">Postgraduate Programs</h4>
+                    <ul class="header_links_ul">
+                        <h4>Postgraduate Programs</h4>
                         <li><b><i class="fa-regular fa-hand-point-right"></i> Master of Business Administration in Marketing</b></li>
                     </ul>
                 </div>

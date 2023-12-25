@@ -39,7 +39,7 @@
             @foreach($events as $event)
             <tr class="border">
                 <td class="px-4 py-3 border-top border-bottom">
-                    <a href="/event/{{$event->id}}" style="color: white">{{$event->title}}</a>
+                    <a href="/events/{{$event->id}}" style="color: white">{{ strlen($event["title"]) > 70 ? mb_substr($event["title"], 0, 70, 'UTF-8') . '...' : $event["title"] }}</a>
                 </td>
                 <style>
                     body {

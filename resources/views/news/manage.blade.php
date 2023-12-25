@@ -51,7 +51,7 @@
             @foreach($news as $new)
             <tr class="border">
                 <td class="px-4 py-3 border-top border-bottom">
-                    <a href="/news/{{$new->id}}" style="color: white">{{$new->title}}</a>
+                    <a href="/news/{{$new->id}}" style="color: white">{{ strlen($new["title"]) > 70 ? mb_substr($new["title"], 0, 70, 'UTF-8') . '...' : $new["title"] }}</a>
                 </td>
                 
                 <td class="px-4 py-3 border-top border-bottom">

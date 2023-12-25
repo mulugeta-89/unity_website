@@ -17,24 +17,24 @@
         <div class="text-black">
             <div class="row">
               <div class="col-md-6">
-                <h5 >Starting Date:</h5>
+                <h4 >Starting Date:</h4>
                 <p >{{$event["start_date"]}}</p>
               </div>
               <div class="col-md-6">
-                <h5 >End Date:</h5>
+                <h4 >End Date:</h4>
                 <p >{{$event["end_date"]}}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <h5>Location:</h5>
-                <p>{{$event["location_name"]}}</p>
+                <h4>Location:</h4>
+                <p style="font-size: 21px;font-weight: 700">{{$event["location_name"]}}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <h5>Description:</h5>
-                <p class="text-justify">{!! nl2br(e($event["description"])) !!}</p>
+                <h4>Description:</h4>
+                <p class="text-justify" style="font-size: 21px; font-weight: 700; color: black">{!! nl2br(e($event["description"])) !!}</p>
               </div>
             </div>
           </div>

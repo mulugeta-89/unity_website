@@ -5,7 +5,7 @@
     <div class="page-banner">
         <div class="container">
             <div class="page-banner-entry">
-                <h1 class="text-white" style="margin-top: 90px">Advertisment {{$advert->id}}</h1>
+                <h1 style="margin-top: 90px">Advertisment {{$advert->id}}</h1>
             </div>
         </div>
     </div>

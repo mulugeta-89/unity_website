@@ -2,12 +2,12 @@
 @section("content")
 <div>
 <div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center; color: wheat">Edit Advertisments</h1>
+    <h1 style="text-align: center;"">Edit Advertisments</h1>
     <form action="/advertisments/{{$advert->id}}" method="POST" enctype="multipart/form-data">
       @csrf
       @method("PUT")
       <div class="form-group">
-        <label for="image" style="color: white">Image</label>
+        <label for="image">Image</label>
         <input 
         type="file" 
         class="form-control" 

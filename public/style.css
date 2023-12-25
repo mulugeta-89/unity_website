@@ -71,9 +71,9 @@
 	font-size:15px;
 	padding: 0;
 }
-.secondary-menu .btn-link:hover{
+/* .secondary-menu .btn-link:hover{
 	color:var(--primary);
-}
+} */
 .secondary-menu .secondary-inner {
     display: inline-block;
     margin-left: 10px;
@@ -1056,9 +1056,9 @@
 .header-transparent .navbar-toggler{
     color: #fff;
 }
-.header-transparent .secondary-menu .btn-link:hover{
+/* .header-transparent .secondary-menu .btn-link:hover{
 	color:var(--primary);
-}
+} */
 .header-transparent .navbar-toggler span{
     background-color: #fff;
 }

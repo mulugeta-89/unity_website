@@ -11,14 +11,14 @@
     <div class="page-banner">
         <div class="container">
             <div class="page-banner-entry">
-                <h1 class="text-white" style="margin-top: 90px;color: wheat">President and CEO Message</h1>
+                <h1 style="margin-top: 90px;">President and CEO Message</h1>
             </div>
         </div>
     </div>
     <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <p style="text-align: justify; color: white">
+            <p style="text-align: justify;">
                 Dear 38th Batch Graduating Students of Unity University, let me start by saying CONGRATULATIONS! for successfully completing your studies and coming to this august occasion. This is not a simple Congratulations! Since you managed to achieve it against all odds. It goes without saying that you are not alone to enjoy this achievement. There are your faculty, friends, Instructors, the entire University community, as well as all significant others. Once again, I would like to congratulate all those who selflessly contributed towards the success.
 
                 As you all know, there are a lot of factors that make this Graduation event a special one. You all know the ups and downs you went through due to the impacts of COVID-19 pandemic. The pandemic has significantly impacted the teaching-learning process that had to be conducted by respecting protocols as related to number of students in each class.

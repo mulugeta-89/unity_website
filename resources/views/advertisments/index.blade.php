@@ -5,7 +5,7 @@
     <div class="page-banner">
         <div class="container">
             <div class="page-banner-entry">
-                <h1 class="text-white" style="margin-top: 90px">Advertisments</h1>
+                <h1 style="margin-top: 90px">Advertisments</h1>
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
             </div>
             @endforeach
             @else
-            <p style="color: white; text-align: center">No Advertisement Found!</p>
+            <p style="text-align: center">No Advertisement Found!</p>
         @endunless
 </div>
 @endsection
