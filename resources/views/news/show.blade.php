@@ -65,8 +65,6 @@
                         <img src="{{ asset("storage/".$new->images[1]->photo_path) }}" class="img-fluid mt-4 mb-1" alt="News Image">
                     </div> --}}
                 </div>
-            @elseif ($new->images->count() === 1)
-                <img src="{{ asset("storage/".$new->images[0]->photo_path) }}" class="img-fluid mt-4 mb-1 mx-auto d-block" alt="News Image">
             @else
                 <img src="{{ asset("unity_photos/arif.jpg") }}" class="img-fluid mt-4 mb-1 mx-auto d-block" alt="Default Image">
             @endif

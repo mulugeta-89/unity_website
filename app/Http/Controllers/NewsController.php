@@ -36,7 +36,7 @@ class NewsController extends Controller
                 ]);
             }
         }
-        return redirect("news");
+        return redirect("/news");
         
     }
     public function show(News $new){

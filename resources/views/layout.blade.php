@@ -295,6 +295,7 @@
                                         <li><a href="/cafeteria">Cafeteria</a></li>
                                         <li><a href="#">Stationary/Bookshops</a></li>
                                         <li><a href="/news/create">Create News</a></li>
+                                        <li><a href="/event/create">Create Events</a></li>
                                     </ul>
                                 </li>
                              
