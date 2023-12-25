@@ -99,22 +99,22 @@ Route::get("/reserves", function(){
 // for the events
 Route::get("/events", [EventController::class, "index"]);
 Route::get("/events/manage", [EventController::class, "manage"])->middleware("auth");
-Route::get("/event/create", [EventController::class, "create"])->middleware("auth");
-Route::post("/events/store", [EventController::class, "store"])->middleware("auth");
+Route::get("/event/create", [EventController::class, "create"]);
+Route::post("/events/store", [EventController::class, "store"]);
 Route::get("/event/{event}", [EventController::class, "show"]);
-Route::get("event/{event}/edit", [EventController::class, "edit"])->middleware("auth");
-Route::delete("event/{event}", [EventController::class, "destroy"])->middleware("auth");
-Route::put("event/{event}", [EventController::class, "update"])->middleware("auth");
+Route::get("event/{event}/edit", [EventController::class, "edit"]);
+Route::delete("event/{event}", [EventController::class, "destroy"]);
+Route::put("event/{event}", [EventController::class, "update"]);
 
 //for  news
 Route::get("/news", [NewsController::class, "index"]);
 Route::get("/news/manage", [NewsController::class, "manage"])->middleware('auth');
-Route::get("/news/create", [NewsController::class, "create"])->middleware("auth");
-Route::post("/news/store", [NewsController::class, "store"])->middleware("auth");
+Route::get("/news/create", [NewsController::class, "create"]);
+Route::post("/news/store", [NewsController::class, "store"]);
 Route::get("/news/{new}", [NewsController::class, "show"]);
-Route::get("/news/{new}/edit", [NewsController::class, "edit"])->middleware("auth");
-Route::put("/news/{new}", [NewsController::class, "update"])->middleware("auth");
-Route::delete("/news/{new}", [NewsController::class, "destroy"])->middleware("auth");
+Route::get("/news/{new}/edit", [NewsController::class, "edit"]);
+Route::put("/news/{new}", [NewsController::class, "update"]);
+Route::delete("/news/{new}", [NewsController::class, "destroy"]);
 // for advertisments
 Route::get("/advertisments", [AdvertismentController::class, "index"]);
 Route::get("/advertisments/manage", [AdvertismentController::class, "manage"])->middleware("auth");

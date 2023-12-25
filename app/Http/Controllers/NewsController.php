@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\News;
+use App\Models\NewsImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -10,9 +11,8 @@ class NewsController extends Controller
 {
     //
     public function index(){
-        return view("news.index",[
-            "news" => News::latest()->paginate(4)
-        ]);
+        $news = News::with('images')->latest()->paginate(4);
+        return view("news.index", compact("news"));
     }
     public function create(){
         return view("news.create");
@@ -23,16 +23,26 @@ class NewsController extends Controller
             "content" => "required",
             "publish_date" => "required",
         ]);
-        if($request->hasFile("image")){
-            $formFields["image"] = $request->file("image")->store("NewsImages", "public");
+        $new = News::create($formFields);
+        // if($request->hasFile("image")){
+        //     $formFields["image"] = $request->file("image")->store("NewsImages", "public");
+        // }
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $image) {
+                $imagePath = $image->store('NewsImages', "public"); // Store the image in storage/app/news_images
+                NewsImage::create([
+                    'news_id' => $new->id,
+                    'photo_path' => $imagePath,
+                ]);
+            }
         }
-        News::create($formFields);
-        return redirect("news/manage");
+        return redirect("news");
         
     }
     public function show(News $new){
+        $newWithImages = $new->load('images');
         return view("news.show",[
-            "new" => $new
+            "new" => $newWithImages
         ]);
     }
     public function edit(News $new){

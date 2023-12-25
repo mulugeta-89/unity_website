@@ -2,11 +2,11 @@
 @section("content")
 <div>
 <div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center; color: wheat">Add News</h1>
+    <h1 style="text-align: center;">Add News</h1>
     <form action="/news/store" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="form-group">
-        <label for="title" style="color: white">Title</label>
+        <label for="title">Title</label>
         <input 
         type="text" 
         class="form-control" 
@@ -19,20 +19,10 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="image" style="color: white">Image</label>
-        <input 
-        type="file" 
-        class="form-control" 
-        id="image" 
-        name="image" 
-        value="{{old("image")}}" 
-        >
-        @error("title")
-            <p class="text-danger mt-1">{{$message}}</p>
-        @enderror
-      </div>
+        <label for="images">Images</label>
+        <input type="file" id="images" name="images[]" multiple accept="image/*" required>
       <div class="form-group">
-        <label for="description" style="color: white">Content</label>
+        <label for="description">Content</label>
         <textarea 
         class="form-control"
          id="content"
@@ -44,7 +34,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="start_date_time" style="color: white">Publish date</label>
+        <label for="start_date_time"Publish date</label>
         <input 
           type="datetime-local" 
           class="form-control"

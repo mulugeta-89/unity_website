@@ -63,7 +63,7 @@
         />
         <style>
             body {
-                background-color: #343a40;
+                background-color: #e1e2e3;
             }
             .header-transparent .is-fixed .menu-bar{
                     position:fixed;
@@ -73,7 +73,7 @@
                 height: 110px;
                 background-color: inherit;
                 border: none;
-                background: linear-gradient(180deg, rgb(23, 24, 24) 0%, rgba(1, 2, 2, 0) 100%);
+                background: linear-gradient(0deg, rgb(255, 255, 255) 100%, rgba(1, 2, 2, 0) 100%);
             
             }
             @media only screen and (min-width: 991px) {
@@ -110,7 +110,7 @@
                                 </a>
                             </div>
                             <ul class="nav navbar-nav" >	
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black
                                 "><b>Home</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu" style="margin-top: 3px">
                                         <li><a href="/news">News</a></li>
@@ -119,7 +119,7 @@
                                         <li><a href="/advertisments">Advertisments</a></li>                                        
                                     </ul>
                                 </li>
-                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px"><b>About Us</b> <i class="fa fa-chevron-down"></i></a>
+                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px;color: black"><b>About Us</b> <i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu add-menu">
                                         <li class="add-menu-left">
                                             <ul>
@@ -147,7 +147,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="/campus/alamoudi">Main Office(Gerji)</a></li>
                                         <li><a href="/campuses">Campuses</a></li>
@@ -157,7 +157,7 @@
                                     </ul>
                                 </li>
                                 
-                                <li class="add-mega-menu" ><a href="javascript:;" style="font-size: 12px"><b>Admission and Records</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="add-mega-menu" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Admission and Records</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu add-menu">
                                         <li class="add-menu-left">
                                             <ul>
@@ -184,7 +184,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px" style="height: 50px;"><b>Academic Services</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px;color: black" style="height: 50px;"><b>Academic Services</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu add-menu">
                                         <li class="add-menu-left">
                                             <ul>
@@ -218,7 +218,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Resource Administration Services</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Resource Administration Services</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Human Resource Service</a></li>
                                         <li><a href="#">Materials Management Services</a></li>
@@ -230,7 +230,7 @@
                                     </ul>
                                 </li>
                                 
-                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="/undergraduate">Undergraduate Studies</a></li>
                                         <li><a href="/postgraduate">Postgraduate Studies</a></li>
@@ -243,7 +243,7 @@
                                         <li><a href="#">Grading</a></li>                                     
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px"><b>Academics General Education</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics General Education</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Kindergarten Education</a></li>
                                         <li><a href="#">Elementaty Education</a></li>
@@ -256,7 +256,7 @@
                                         <li><a href="#">Grading</a></li>                                     
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>Academics Specialized Training</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics Specialized Training</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Executive Training</a></li>
                                         <li><a href="#">Testing Services</a></li>
@@ -269,14 +269,14 @@
                                         <li><a href="#">Assessment</a></li>                                     
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>Online Education</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Online Education</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         
                                         <li><a href="#">Undergraduate</a></li>
                                         <li><a href="#">Postgraduate</a></li>                                        
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>Research and Community</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Research and Community</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         
                                         <li><a href="#">Linkages</a></li>
@@ -287,13 +287,14 @@
                                         <li><a href="/voice_of_unity">Voice of Unity</a></li>                                       
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px"><b>University Enterprises</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>University Enterprises</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="/printing_press">Printing Press</a></li>
                                         <li><a href="/clinic">Clinical/Hospital</a></li>
                                         <li><a href="#">Studio</a></li>
                                         <li><a href="/cafeteria">Cafeteria</a></li>
                                         <li><a href="#">Stationary/Bookshops</a></li>
+                                        <li><a href="/news/create">Create News</a></li>
                                     </ul>
                                 </li>
                              

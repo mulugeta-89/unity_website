@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class News extends Model
+class NewsImage extends Model
 {
     use HasFactory;
-    public function images()
+    protected $table = "newsimage";
+    public function news()
     {
-        return $this->hasMany(NewsImage::class, 'news_id');
+        return $this->belongsTo(News::class, 'news_id');
     }
 }
