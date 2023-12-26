@@ -35,7 +35,7 @@
 <li class="action-card col-lg-6 col-md-6 col-sm-12 happening ">
     <div class="event-bx">
         <div class="action-box">
-            <img src="{{$event->images && $event->images->isNotEmpty() ? asset("storage/".$event->images->first()->photo_path) : asset("unity_photos/arif.jpg")}}" alt="" >
+            <img style="height: 300px" src="{{$event->images && $event->images->isNotEmpty() ? asset("storage/".$event->images->first()->photo_path) : asset("unity_photos/arif.jpg")}}" alt="" >
         </div>
         <div class="info-bx d-flex rounded" style="background: #343a40">
             <div>

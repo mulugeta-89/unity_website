@@ -1054,13 +1054,13 @@
 .header-transparent .menu-links .nav > li > a,
 .header-transparent .secondary-menu .btn-link,
 .header-transparent .navbar-toggler{
-    color: #fff;
+    color: #0f0f0f;
 }
 /* .header-transparent .secondary-menu .btn-link:hover{
 	color:var(--primary);
 } */
 .header-transparent .navbar-toggler span{
-    background-color: #fff;
+    background-color: #181717;
 }
 
 .header-transparent .top-bar{
@@ -1110,6 +1110,7 @@
 	7. MENU ICON
 =================================*/
 .menuicon{
+  color:rgba(0, 0, 0, 0.02);
   width: 20px;
   height: 14px;
   position: relative;

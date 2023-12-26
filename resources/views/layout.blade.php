@@ -84,7 +84,27 @@
                 .items {
                     font-size: 8px
                 }
-            }         
+            } 
+            #footer {
+                display: none;
+            }
+            @media only screen and (max-width: 767px) {
+                #footer {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .header-transparent .navbar-toggler{
+                color: #0f0f0f;
+            }
+            /* .header-transparent .secondary-menu .btn-link:hover{
+                color:var(--primary);
+            } */
+            .header-transparent .navbar-toggler span{
+                background-color: #181717;
+            }    
         </style>
 </head>
 <body id="bg">
@@ -310,6 +330,11 @@
     @yield("content")
 		</div>
 	{{-- </footer> --}}
+    <footer id="footer">
+        <div>
+            <h3 style="color: black;">Unity University</h3>
+        </div>
+    </footer>
     
     <!-- Footer END ==== -->
     <button class="back-to-top fa fa-chevron-up" ></button>

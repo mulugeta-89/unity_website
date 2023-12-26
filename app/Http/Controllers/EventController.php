@@ -11,7 +11,7 @@ class EventController extends Controller
 {
     //
     public function index(){
-        $events = Event::with('images')->latest()->paginate(4);
+        $events = Event::with('images')->latest()->paginate(8);
         return view("event.index", compact("events"));
     }
     public function show(Event $event){
