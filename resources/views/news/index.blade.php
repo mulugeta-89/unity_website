@@ -11,9 +11,10 @@
     </div>
     <div class="content-block">
         <!-- Portfolio  -->
-        <div class="section-area section-sp1 gallery-bx">
+        <div class="section-area section-sp1">
             <div class="container">
                 <div class="clearfix">
+                    {{-- class="ttr-gallery-listing magnific-image row m-0" --}}
                     <ul id="masonry" class="ttr-gallery-listing magnific-image row m-0">
                         @unless(count($news) == 0)
                             @foreach($news as $new)

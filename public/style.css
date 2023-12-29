@@ -2262,10 +2262,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e14', end
 .event-info .media-post li a{
 	text-transform: capitalize;
     font-size: 14px;
-	color:#757575;
 }
 .event-info p{
-	color: #454545;
     margin-bottom: 0;
     font-family: rubik;
     font-size: 15px;

@@ -32,7 +32,7 @@
 
 
 ?>
-<li class="action-card col-lg-6 col-md-6 col-sm-12 happening ">
+<li class="action-card col-lg-6 col-md-6 col-sm-12 happening " style="list-style: none;margin-bottom: 23px">
     <div class="event-bx">
         <div class="action-box">
             <img style="height: 300px" src="{{$event->images && $event->images->isNotEmpty() ? asset("storage/".$event->images->first()->photo_path) : asset("unity_photos/arif.jpg")}}" alt="" >
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="event-info" >
-                <h4 style="color: white"><a href="/event/{{$event->id}}">{{ strlen($event["title"]) > 30 ? mb_substr($event["title"], 0, 30, 'UTF-8') . '...' : $event["title"] }}</a></h4>
+                <h4><a style="color: white" href="/event/{{$event->id}}">{{ strlen($event["title"]) > 30 ? mb_substr($event["title"], 0, 30, 'UTF-8') . '...' : $event["title"] }}</a></h4>
                 <ul class="media-post">
                     <li><a href="#" style="color: white"><i class="fa fa-clock-o"></i>{{$startTime}}</a></li>
                     <li><a style="color: white" href="#"><i class="fa fa-map-marker"></i> {{$event["location_name"]}}</a></li>

@@ -104,7 +104,14 @@
             } */
             .header-transparent .navbar-toggler span{
                 background-color: #181717;
-            }    
+            }
+            .event-bx {
+                border: 1px solid wheat;
+                border-radius: 7px;
+            }
+            .event-bx a:hover {
+                color: white
+            }   
         </style>
 </head>
 <body id="bg">
