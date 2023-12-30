@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="clearfix">
                     {{-- class="ttr-gallery-listing magnific-image row m-0" --}}
-                    <ul id="masonry" class="ttr-gallery-listing magnific-image row m-0">
+                    <ul id="masonry">
                         @unless(count($news) == 0)
                             @foreach($news as $new)
                                 <x-news_card :new="$new"/>

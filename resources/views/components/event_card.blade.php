@@ -2,6 +2,7 @@
     .event-bx {
 	border: 1px solid wheat;
 	border-radius: 7px;
+    color: white;
 }
     .event-bx a:hover {
         color: white;

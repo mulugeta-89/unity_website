@@ -1,7 +1,19 @@
-
+<style>
+    .event-bx {
+        color: white;
+        width: 540px;
+    }
+    @media only screen and (max-width: 767px) {
+            #news-div {
+                margin: 0;
+                width: 300px;
+            }
+    }
+    </style>
 @props(["new"])
-<li class="action-card col-lg-5 col-md-5 col-sm-12 mb-3  happening" style="list-style:none; margin-right: 75px">
-    <div class="event-bx" style="width: 540px">
+<li class="action-card col-lg-5 col-md-5 col-sm-12 mb-3  happening" style="list-style: none; margin-right: 75px" >
+    
+    <div class="event-bx" id = "news-div" >
         <div class="action-box">
             <img style="height: 260px" src="{{$new->images && $new->images->isNotEmpty() ? asset("storage/".$new->images->first()->photo_path) : asset("unity_photos/arif.jpg")}}" alt="" >
         </div>

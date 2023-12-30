@@ -89,6 +89,9 @@
                 display: none;
             }
             @media only screen and (max-width: 767px) {
+                body {
+                    margin: 0
+                }
                 #footer {
                     display: block;
                     display: flex;
