@@ -30,8 +30,6 @@
     $date = $monthAndDate[2];
 
     $startTime = $dateAndTime[1];
-
-
 ?>
 <li class="action-card col-lg-6 col-md-6 col-sm-12 happening " style="list-style: none;margin-bottom: 23px">
     <div class="event-bx">

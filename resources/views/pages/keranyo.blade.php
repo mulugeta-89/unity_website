@@ -20,6 +20,19 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
+            <div class="curriculum-list_for_tel">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><b>Address: Addis Ababa-Ethiopia</b></li>
+                    <li> 
+                        <ul>
+                            <b>Tel:</b>
+                            <li><b>+251 (0)11 868 4322</b></li>
+                            <li><b>+251 (0)11 868 4767</b></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
 
   </div>

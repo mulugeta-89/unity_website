@@ -42,7 +42,20 @@
                         <li><b><i class="fa-regular fa-hand-point-right"></i> Project Management</b></li>
                     </ul>
                 </div>
+
                 <div class="clearfix"></div>
+            </div>
+            <div class="curriculum-list_for_tel">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><b>Address: Gerji(Addis Ababa)</b></li>
+                    <li> 
+                        <b>Tel: +251 (0)11 629 8154</b>
+                    </li>
+                    <li><b>Fax: +251 (0)11 629 8156</b></li>
+                    <li><b>P.O.Box: 6722 Addis Ababa, Ethiopia</b></li>
+                    <li><b>E-mail: uuinfo@ethionet.et</b></li>
+                </ul>
             </div>
         </div>
 

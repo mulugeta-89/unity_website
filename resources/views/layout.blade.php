@@ -181,7 +181,7 @@
                                     <ul class="sub-menu">
                                         <li><a href="/campus/alamoudi">Main Office(Gerji)</a></li>
                                         <li><a href="/campuses">Campuses</a></li>
-                                        <li><a href="/contact_us">Contact Us</a></li>
+                                        <li><a href="/contact_us">Contact E-mails</a></li>
 
                                                                                
                                     </ul>

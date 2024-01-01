@@ -20,6 +20,21 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
+            <div class="curriculum-list_for_tel">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><b>Address: Dessie-Ethiopia</b></li>
+                    <li> 
+                        <ul>
+                            <b>Tel:</b>
+                            <li><b>+251 (0)33 111 5050</b></li>
+                            <li><b>+251 (0)33 111 8604</b></li>
+                        </ul>
+                    </li>
+                    <li><b>Fax: +251 (0)33 111 1887</b></li>
+                    <li><b>P.O.Box: 2121</b></li>
+                </ul>
+            </div>
         </div>
 
         </div>

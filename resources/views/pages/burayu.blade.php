@@ -20,6 +20,21 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
+            <div class="curriculum-list_for_tel">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><b>Address: Burayu-Ethiopia</b></li>
+                    <li>
+                        <ul>
+                            <b>Tel:</b>
+                            <li><b>+251 (0)11 260 4983</b></li>
+                            <li><b>+251 (0)11 260 4731</b></li>
+                        </ul>
+                    </li>
+                    <li><b>Fax: +251 (0)11 629 8156</b></li>
+                    <li><b>P.O.Box: 1486</b></li>
+                </ul>
+            </div>
         </div>
 
   </div>
