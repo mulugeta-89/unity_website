@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin Landing Page</title>
+  <link rel="icon" href="{{asset("/images/tab-logo.png")}}" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{asset("/images/tab-logo.png")}}" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link
             rel="stylesheet"
@@ -75,7 +77,7 @@
             @else
             <tr class="border">
                 <td colspan="3" class="px-4 py-3 border-top border-bottom">
-                    <p class="text-center">No voices Found</p>
+                    <p class="text-center" style="color: white">No voices Found</p>
                 </td>
             </tr>
             @endunless

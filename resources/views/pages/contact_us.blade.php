@@ -1,63 +1,8 @@
 @extends("layout")
 @section("content")
 <style>
-    h1 {
-        margin-top: 150px;
-        font-size: 46px;
-        text-transform: uppercase;
-        text-align: justify;
-    }
-    .table-div {
-        margin-left: 120px;
-        margin-right: 120px;
-    }
-    .styled-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-    .styled-table thead tr {
-        background-color: #080808;
-        color: #ffffff;
-        text-align: left;
-    }
-    .styled-table th,
-    .styled-table td {
-        font-size: 20px;
-        padding: 12px 15px;
-    }
-    .styled-table tbody tr {
-        border-bottom: 1px solid #dddddd;
-    }
-
-    .styled-table tbody tr:nth-of-type(even) {
-        background-color: #f3f3f3;
-    }
-
-    .styled-table tbody tr:last-of-type {
-        border-bottom: 2px solid #009879;
-    }
-    .styled-table tbody tr.active-row {
-        font-weight: bold;
-        color: #56eed0;
-    }
-    @media only screen and (max-width: 767px) {
-        /* .styled-table {
-            width: 50%;
-        } */
-        .table-div {
-            margin: auto;
-        }
-        h1 {
-            font-weight: bold;
-            font-size: 21px;
-            text-align: center;
-        }
-    }
-</style>
+    
+</style> 
 <div>
     <h1 class="full-width text-center">
         Contact us through Emails

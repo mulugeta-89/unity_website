@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin Landing Page</title>
+  <link rel="icon" href="{{asset("/images/tab-logo.png")}}" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{asset("/images/tab-logo.png")}}" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link
             rel="stylesheet"
@@ -51,13 +53,12 @@
                 @foreach($events as $event)
                 <tr class="border">
                     <td class="px-4 py-3 border-top border-bottom">
-                        <a href="/events/{{$event->id}}" style="color: white">{{$event->title}}</a>
-                    </td>
+                        <a href="/event/{{$event->id}}" style="color: white">{{ strlen($event["title"]) > 70 ? mb_substr($event["title"], 0, 70, 'UTF-8') . '...' : $event["title"] }}</a>                    </td>
                     <style>
                         
                     </style>
                     <td class="px-4 py-3 border-top border-bottom">
-                        <a href="/events/{{$event->id}}/edit" class="btn"><i class="fas fa-pen"></i> Edit</a>
+                        <a href="/event/{{$event->id}}/edit" class="btn"><i class="fas fa-pen"></i> Edit</a>
                     </td>
                     <td class="px-4 py-3 border-top border-bottom">
                         <form method="POST" action="/events/{{$event->id}}">

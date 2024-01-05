@@ -24,6 +24,9 @@ use App\Http\Controllers\AdvertismentController;
 Route::get('/', function () {
     return view("pages.index");
 });
+Route::get('/calendar', function () {
+    return view("pages.calendar");
+});
 Route::get("/history", function(){
     return view("pages.history");
 });

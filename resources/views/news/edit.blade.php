@@ -1,14 +1,15 @@
 @extends("layout")
 @section("content")
 <div>
-<div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center;color: wheat">Edit the new</h1>
+<div class="container">
+    <h1 style="text-align: center">Edit the new</h1>
     <form action="/news/{{$new->id}}" method="POST" enctype="multipart/form-data">
       @csrf
       @method("PUT")
       <div class="form-group">
-        <label for="title" style="color: white">Title</label>
+        <label for="title">Title</label>
         <input 
+        style="font-size: 21px"
         type="text" 
         class="form-control" 
         id="title" 
@@ -19,8 +20,8 @@
             <p class="text-danger mt-1">{{$message}}</p>
         @enderror
       </div>
-      <div class="form-group">
-        <label for="image" style="color: white">Image</label>
+      {{-- <div class="form-group">
+        <label for="image">Image</label>
         <input 
         type="file" 
         class="form-control" 
@@ -35,10 +36,11 @@
         @error("title")
             <p class="text-danger mt-1">{{$message}}</p>
         @enderror
-      </div>
+      </div> --}}
       <div class="form-group">
-        <label for="description" style="color: white">Content</label>
+        <label for="description">Content</label>
         <textarea 
+        style="font-size: 21px; height: 300px"
         class="form-control"
          id="description"
           name="content"
@@ -49,7 +51,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="start_date_time" style="color: white">Publish_date</label>
+        <label for="start_date_time">Publish_date</label>
         <input 
           type="datetime-local" 
           class="form-control"

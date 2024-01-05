@@ -1,7 +1,7 @@
 @extends("layout")
 @section("content")
 <div>
-<div class="container mt-6 pt-5" style="margin-top: 120px;">
+<div class="container">
     <h1 style="text-align: center;">Add Event</h1>
     <form action="/events/store" method="POST" enctype="multipart/form-data">
       @csrf

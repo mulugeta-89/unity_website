@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin Landing Page</title>
+  <link rel="icon" href="{{asset("/images/tab-logo.png")}}" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{asset("/images/tab-logo.png")}}" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link
             rel="stylesheet"
@@ -40,7 +42,6 @@
                 <i class="fas fa-door-closed"></i> Logout
             </button>
         </form>
-        
     </header>
     <form action="{{ route('news.search') }}" method="GET" style="margin-bottom: 10px; display:flex; justify-content: center">
         <input type="text" name="query" placeholder="Search News" style="outline: none; padding: 7px 12px;border-radius: 5px;width: 300px; border: none">
@@ -52,8 +53,7 @@
                 @foreach($news as $new)
                 <tr class="border">
                     <td class="px-4 py-3 border-top border-bottom">
-                        <a href="/news/{{$new->id}}" style="color: white">{{$new->title}}</a>
-                    </td>
+                        <a href="/news/{{$new->id}}" style="color: white">{{ strlen($new["title"]) > 70 ? mb_substr($new["title"], 0, 70, 'UTF-8') . '...' : $new["title"] }}</a>                    </td>
                     <style>
                         
                     </style>

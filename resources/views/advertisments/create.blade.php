@@ -1,8 +1,8 @@
 @extends("layout")
 @section("content")
 <div>
-<div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center;"">Add Advertisments</h1>
+<div class="container">
+    <h1 style="text-align: center;">Add Advertisments</h1>
     <form action="/advertisments/store" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="form-group">

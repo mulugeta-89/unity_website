@@ -5,7 +5,7 @@
     <div class="page-banner">
         <div class="container">
             <div class="page-banner-entry">
-                <h1 style="margin-top: 90px">News</h1>
+                <h1 style="margin-top: 90px; text-align: center">News</h1>
             </div>
         </div>
     </div>

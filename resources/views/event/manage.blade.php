@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Managing Events</title>
+  <link rel="icon" href="{{asset("/images/tab-logo.png")}}" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{asset("/images/tab-logo.png")}}" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link
             rel="stylesheet"

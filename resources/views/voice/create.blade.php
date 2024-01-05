@@ -1,12 +1,12 @@
 @extends("layout")
 @section("content")
 <div>
-<div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center; color: wheat">Add Voice</h1>
+<div class="container">
+    <h1 style="text-align: center">Add Voice</h1>
     <form action="/voiceofunity/store" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="form-group">
-        <label for="title" style="color: white">Title</label>
+        <label for="title">Title</label>
         <input 
         type="text" 
         class="form-control" 
@@ -19,7 +19,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="pdf" style="color: white">Pdf</label>
+        <label for="pdf">Pdf</label>
         <input 
         type="file" 
         class="form-control" 
