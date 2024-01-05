@@ -73,7 +73,7 @@
                 height: 110px;
                 background-color: inherit;
                 border: none;
-                background: linear-gradient(0deg, rgb(255, 255, 255) 100%, rgba(1, 2, 2, 0) 100%);
+                /* background: linear-gradient(0deg, rgb(255, 255, 255) 100%, rgba(1, 2, 2, 0) 100%); */
             
             }
             @media only screen and (min-width: 991px) {
@@ -97,6 +97,19 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    /* margin-top: auto; */
+                }
+            }
+            @media only screen and (min-width: 1440px) {
+                body {
+                    margin: 0
+                }
+                #footer {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    /* margin-top: auto; */
                 }
             }
             .header-transparent .navbar-toggler{
@@ -121,7 +134,7 @@
 <div class="page-wraper">
 <div id="loading-icon-bx"></div>
 	<!-- Header Top ==== -->
-        <header class="header rs-nav header-transparent fixed-top" >
+        <header class="header rs-nav  fixed-top" >
             <div class="sticky-header navbar-expand-lg fixed-top">
                 <div class="menu-bar clearfix">
                     <div class="container clearfix">
@@ -153,10 +166,10 @@
                                     <ul class="sub-menu add-menu">
                                         <li class="add-menu-left">
                                             <ul>
-                                                <li><a href="/chairman">Chairman Message</a></li>
-                                                <li><a href="/president_message">President and Ceo Message</a></li>
+                                                <li><a href="#">Chairman Message</a></li>
+                                                <li><a href="#">President and Ceo Message</a></li>
                                                 <li><a href="/history">Unity University History</a></li>
-                                                <li><a href="/vision">University Vision, Mission, Values and Goals</a></li>
+                                                <li><a href="#">University Vision, Mission, Values and Goals</a></li>
                                                 <li><a href="#">Unity University Governance</a></li>
                                                 <li><a href="#">Office of the President and CEO</a></li>
                                                 <li><a href="#">University Resource Administration</a></li>
@@ -165,11 +178,11 @@
                                         </li>
                                         <li class="add-menu-right">
                                             <ul style="list-style: none">
-                                                <li><a href="/programs">University Academic Programs</a></li>
-                                                <li><a href="/student_services">University Student Services</a></li>
+                                                <li><a href="#">University Academic Programs</a></li>
+                                                <li><a href="#">University Student Services</a></li>
                                                 <li><a href="#">Unity University Accreditation</a></li>
                                                 <li><a href="#">Alumni Association</a></li>
-                                                <li><a href="/campuses">University Campuses</a></li>
+                                                <li><a href="#">University Campuses</a></li>
                                                 <li><a href="#">The Colleges/Faculties</a></li>
                                                 <li><a href="#">Univesity Auxiliary Faculties</a></li>
                                                 <li><a href="#">University Policies and Procedures</a></li>
@@ -179,8 +192,8 @@
                                 </li>
                                 <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="/campus/alamoudi">Main Office(Gerji)</a></li>
-                                        <li><a href="/campuses">Campuses</a></li>
+                                        <li><a href="#">Main Office(Gerji)</a></li>
+                                        <li><a href="#">Campuses</a></li>
                                         <li><a href="/contact_us">Contact E-mails</a></li>
 
                                                                                
@@ -192,7 +205,7 @@
                                         <li class="add-menu-left">
                                             <ul>
                                                 <li><a href="#">Academic Calendar</a></li>
-                                                <li><a href="/campuses">University Campuses</a></li>
+                                                <li><a href="#">University Campuses</a></li>
                                                 <li><a href="#">Enrollment Regulations</a></li>
                                                 <li><a href="#">Admission Procedures and Policies</a></li>
                                                 <li><a href="#">Privacy Rights of Students in Education Records</a></li>
@@ -225,8 +238,8 @@
                                                 <li><a href="#">Workshops</a></li>
                                                 <li><a href="#">Bookstores</a></li>
                                                 <li><a href="#">Printing Services</a></li>
-                                                <li><a href="/library_resource">Library Services</a></li>
-                                                <li><a href="/circulation">Circulation</a></li>
+                                                <li><a href="#">Library Services</a></li>
+                                                <li><a href="#">Circulation</a></li>
                                                 <li><a href="#">Computer Workstation</a></li>
                                                 <li><a href="#">Copy Service</a></li>
                                             </ul>
@@ -236,8 +249,8 @@
                                                 <li><a href="#">Government Documents</a></li>
                                                 <li><a href="#">Inter-library Loan</a></li>
                                                 <li><a href="#">Music and Media</a></li>
-                                                <li><a href="/online_catalogue">Online Catalogue</a></li>
-                                                <li><a href="/reserves">Reserves</a></li>
+                                                <li><a href="#">Online Catalogue</a></li>
+                                                <li><a href="#">Reserves</a></li>
                                                 <li><a href="#">Precede</a></li>
                                                 <li><a href="#">Reading and Study</a></li>
                                                 <li><a href="#">Reference Source</a></li>
@@ -262,9 +275,9 @@
                                 
                                 <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="/undergraduate">Undergraduate Studies</a></li>
-                                        <li><a href="/postgraduate">Postgraduate Studies</a></li>
-                                        <li><a href="/distance_education">Distance Education</a></li>
+                                        <li><a href="#">Undergraduate Studies</a></li>
+                                        <li><a href="#">Postgraduate Studies</a></li>
+                                        <li><a href="#">Distance Education</a></li>
                                         <li><a href="#">Degree Requirements</a></li>
                                         <li><a href="#">University Policies and Procedures</a></li>
                                         <li><a href="#">Facility</a></li>
@@ -319,10 +332,10 @@
                                 </li>
                                 <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>University Enterprises</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="/printing_press">Printing Press</a></li>
-                                        <li><a href="/clinic">Clinical/Hospital</a></li>
+                                        <li><a href="#">Printing Press</a></li>
+                                        <li><a href="#">Clinical/Hospital</a></li>
                                         <li><a href="#">Studio</a></li>
-                                        <li><a href="/cafeteria">Cafeteria</a></li>
+                                        <li><a href="#">Cafeteria</a></li>
                                         <li><a href="#">Stationary/Bookshops</a></li>
                                     </ul>
                                 </li>

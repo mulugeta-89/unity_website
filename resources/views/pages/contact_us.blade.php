@@ -1,6 +1,16 @@
 @extends("layout")
 @section("content")
 <style>
+    h1 {
+        margin-top: 150px;
+        font-size: 46px;
+        text-transform: uppercase;
+        text-align: justify;
+    }
+    .table-div {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
     .styled-table {
     width: 100%;
     border-collapse: collapse;
@@ -34,13 +44,26 @@
         font-weight: bold;
         color: #56eed0;
     }
+    @media only screen and (max-width: 767px) {
+        /* .styled-table {
+            width: 50%;
+        } */
+        .table-div {
+            margin: auto;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 21px;
+            text-align: center;
+        }
+    }
 </style>
 <div>
-    <h1 class="full-width text-center" style="margin-top: 150px;font-size: 46px; text-transform: uppercase; text-align: justify;">
+    <h1 class="full-width text-center">
         Contact us through Emails
     </h1>
 </div>
-<div class = "mt-4" style="margin:120px;">   
+<div class = "table-div">   
         <table class="styled-table">
             <thead>
                 <tr>
