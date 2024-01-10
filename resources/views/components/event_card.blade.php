@@ -43,10 +43,10 @@
                     <div class="event-month" style="color: white">{{$months[$month]}}</div>
                 </div>
             </div>
-            <div class="event-info" >
+            <div class="event-info" style="height: 250px">
                 <h4><a style="color: white" href="/event/{{$event->id}}">{{ strlen($event["title"]) > 30 ? mb_substr($event["title"], 0, 30, 'UTF-8') . '...' : $event["title"] }}</a></h4>
-                <ul class="media-post">
-                    <li><a href="#" style="color: white"><i class="fa fa-clock-o"></i>{{$startTime}}</a></li>
+                <ul class="media-post" style="list-style: none; display: flex;">
+                    <li style="margin-right: 10px"><a href="#" style="color: white"><i class="fa fa-clock-o"></i> {{$startTime}}</a></li>
                     <li><a style="color: white" href="#"><i class="fa fa-map-marker"></i> {{$event["location_name"]}}</a></li>
                 </ul>
                 <p style="text-align: justify; color: white">{{ strlen($event["description"]) > 400 ? mb_substr($event["description"], 0, 200, 'UTF-8') . '...' : $event["description"] }}</p>

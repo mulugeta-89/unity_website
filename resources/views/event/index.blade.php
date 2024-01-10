@@ -10,16 +10,6 @@
             </div>
         </div>
     </div>
-    <!-- Breadcrumb row -->
-    {{-- <div class="breadcrumb-row">
-        <div class="container">
-            <ul class="list-inline">
-                <li><a href="/">Home</a></li>
-                <li>Events</li>
-            </ul>
-        </div>
-    </div> --}}
-    <!-- Breadcrumb row END -->
     <!-- contact area -->
     <div class="content-block">
         <!-- Portfolio  -->
