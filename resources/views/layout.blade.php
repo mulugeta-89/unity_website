@@ -100,7 +100,7 @@
                     /* margin-top: auto; */
                 }
             }
-            @media only screen and (min-width: 1440px) {
+            /* @media only screen and (min-width: 1440px) {
                 body {
                     margin: 0
                 }
@@ -111,7 +111,7 @@
                     justify-content: center;
                     /* margin-top: auto; */
                 }
-            }
+            } */
             .header-transparent .navbar-toggler{
                 color: #0f0f0f;
             }
