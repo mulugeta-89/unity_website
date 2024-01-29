@@ -17,13 +17,13 @@
         <div class="text-black">
             <div class="row">
               <div class="col-md-6">
-                <h4 >Starting Date:</h4>
+                <h6>Published Date:</h6>
                 <p >{{$event["start_date"]}}</p>
               </div>
-              <div class="col-md-6">
+              {{-- <div class="col-md-6">
                 <h4 >End Date:</h4>
                 <p >{{$event["end_date"]}}</p>
-              </div>
+              </div> --}}
             </div>
             <div class="row">
               <div class="col-md-12">

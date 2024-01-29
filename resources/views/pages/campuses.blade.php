@@ -38,19 +38,6 @@
                 <li class="action-card col-lg-5 col-md-5 col-sm-12 mb-3">
                     <div class="event-bx m-b30">
                         <div class="action-box">
-                            <img src="{{asset("/images/Keranyo.jpg")}}" alt="">
-                        </div>
-                        <div class="info-bx d-flex">
-                            <div class="event-info">
-                                <h4 class="event-title">KERANYO CAMPUS (ADDIS ABABA)</h4>
-                                <a href="/campus/keranyo" class="btn radius-xl">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="action-card col-lg-5 col-md-5 col-sm-12 mb-3">
-                    <div class="event-bx m-b30">
-                        <div class="action-box">
                             <img src="{{asset("/images/Adama.jpg")}}" alt="">
                         </div>
                         <div class="info-bx d-flex">
@@ -74,9 +61,20 @@
                         </div>
                     </div>
                 </li>
-        
-        </div>
-       
+                <li class="action-card col-lg-5 col-md-5 col-sm-12 mb-3">
+                    <div class="event-bx m-b30">
+                        <div class="action-box">
+                            <img src="{{asset("/images/Keranyo.jpg")}}" alt="">
+                        </div>
+                        <div class="info-bx d-flex">
+                            <div class="event-info">
+                                <h4 class="event-title">KERANYO CAMPUS (ADDIS ABABA)</h4>
+                                <a href="/campus/keranyo" class="btn radius-xl">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+        </div> 
       </div>
     </div>
   </div>

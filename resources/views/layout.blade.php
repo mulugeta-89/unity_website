@@ -100,18 +100,6 @@
                     /* margin-top: auto; */
                 }
             }
-            /* @media only screen and (min-width: 1440px) {
-                body {
-                    margin: 0
-                }
-                #footer {
-                    display: block;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    /* margin-top: auto; */
-                }
-            } */
             .header-transparent .navbar-toggler{
                 color: #0f0f0f;
             }
@@ -230,7 +218,7 @@
                                                 <li><a href="#">Chairman Message</a></li>
                                                 <li><a href="#">President and Ceo Message</a></li>
                                                 <li><a href="/history">Unity University History</a></li>
-                                                <li><a href="#">University Vision, Mission, Values and Goals</a></li>
+                                                <li><a href="/vision">University Vision, Mission, Values and Goals</a></li>
                                                 <li><a href="#">Unity University Governance</a></li>
                                                 <li><a href="#">Office of the President and CEO</a></li>
                                                 <li><a href="#">University Resource Administration</a></li>
@@ -243,7 +231,7 @@
                                                 <li><a href="#">University Student Services</a></li>
                                                 <li><a href="#">Unity University Accreditation</a></li>
                                                 <li><a href="#">Alumni Association</a></li>
-                                                <li><a href="#">University Campuses</a></li>
+                                                <li><a href="/campuses">University Campuses</a></li>
                                                 <li><a href="#">The Colleges/Faculties</a></li>
                                                 <li><a href="#">Univesity Auxiliary Faculties</a></li>
                                                 <li><a href="#">University Policies and Procedures</a></li>
@@ -253,8 +241,8 @@
                                 </li>
                                 <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Main Office(Gerji)</a></li>
-                                        <li><a href="#">Campuses</a></li>
+                                        <li><a href="/campus/alamoudi">Main Office(Gerji)</a></li>
+                                        <li><a href="/campuses">Campuses</a></li>
                                         <li><a href="/contact_us">Contact E-mails</a></li>
 
                                                                                
@@ -266,7 +254,7 @@
                                         <li class="add-menu-left">
                                             <ul>
                                                 <li><a href="/calendar">Academic Calendar</a></li>
-                                                <li><a href="#">University Campuses</a></li>
+                                                <li><a href="/campuses">University Campuses</a></li>
                                                 <li><a href="#">Enrollment Regulations</a></li>
                                                 <li><a href="#">Admission Procedures and Policies</a></li>
                                                 <li><a href="#">Privacy Rights of Students in Education Records</a></li>

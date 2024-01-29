@@ -18,7 +18,7 @@
             <div class="text-black">
                 <div class="row">
                     <div class="col-md-6">
-                        <h4>Published_date:</h4>
+                        <h6>Published_date:</h6>
                         <p>{{ $new->publish_date }}</p>
                     </div>
                 </div>
@@ -26,13 +26,17 @@
             </div>
 
             <!-- Display additional images below the content -->
-            @if ($new->images->count() > 1)
+            @if ($new->images->count() > 2)
                 <div class="row mt-4">
                     @for ($i = 1; $i < $new->images->count(); $i++)
                         <div class="col-md-6">
                             <img src="{{ asset("storage/".$new->images[$i]->photo_path) }}" class="img-fluid mb-3" alt="Additional News Image">
                         </div>
                     @endfor
+                </div>
+            @elseif($new->images->count() == 2)
+                <div class="row" style="display: flex; justify-content: center">
+                    <img src="{{ asset("storage/".$new->images[1]->photo_path) }}"  alt="News Image">
                 </div>
             @endif
         </div>
