@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\News;
+use App\Models\NewsImage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class NewsController extends Controller
 {
     //
     public function index(){
-        return view("news.index",[
-            "news" => News::latest()->paginate(6)
-        ]);
+        $news = News::with('images')->latest()->paginate(8);
+        return view("news.index", compact("news"));
     }
     public function create(){
         return view("news.create");
@@ -22,13 +23,26 @@ class NewsController extends Controller
             "content" => "required",
             "publish_date" => "required",
         ]);
-        News::create($formFields);
-        return redirect("/news");
+        $new = News::create($formFields);
+        // if($request->hasFile("image")){
+        //     $formFields["image"] = $request->file("image")->store("NewsImages", "public");
+        // }
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $image) {
+                $imagePath = $image->store('NewsImages', "public"); // Store the image in storage/app/news_images
+                NewsImage::create([
+                    'news_id' => $new->id,
+                    'photo_path' => $imagePath,
+                ]);
+            }
+        }
+        return redirect("/news/manage");
         
     }
     public function show(News $new){
+        $newWithImages = $new->load('images');
         return view("news.show",[
-            "new" => $new
+            "new" => $newWithImages
         ]);
     }
     public function edit(News $new){
@@ -44,10 +58,26 @@ class NewsController extends Controller
             
         ]);
         $new->update($formFields);
-        return redirect("/news");
+        return redirect("/news/manage");
     }
     public function destroy(News $new){
+        if($new->image && Storage::disk('public')->exists($new->image)) {
+            Storage::disk('public')->delete($new->image);
+        }
         $new->delete();
-        return redirect("/news");
+        return redirect("/news/manage");
+    }
+    public function manage(){
+        return view("news.manage",[
+            "news" => News::latest()->paginate(10)
+        ]);
+    }
+    public function search(Request $request){
+        $query = $request->input('query');
+        $news = News::where('title', 'like', "%$query%")
+                    ->orWhere('content', 'like', "%$query%")
+                    ->get();
+
+        return view('news.search', compact('news'));
     }
 }

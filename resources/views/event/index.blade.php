@@ -1,25 +1,15 @@
 
 @extends("layout")
 @section("content")
-<div class="page-content bg-white">
+<div class="page-content">
     <!-- inner page banner -->
-    <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner2.jpg);">
+    <div class="page-banner">
         <div class="container">
             <div class="page-banner-entry">
-                <h1 class="text-white" style="margin-top: 90px">Events</h1>
+                <h1 style="margin-top: 90px;text-align: center">Events</h1>
             </div>
         </div>
     </div>
-    <!-- Breadcrumb row -->
-    <div class="breadcrumb-row">
-        <div class="container">
-            <ul class="list-inline">
-                <li><a href="/">Home</a></li>
-                <li>Events</li>
-            </ul>
-        </div>
-    </div>
-    <!-- Breadcrumb row END -->
     <!-- contact area -->
     <div class="content-block">
         <!-- Portfolio  -->

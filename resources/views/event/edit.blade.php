@@ -1,14 +1,15 @@
 @extends("layout")
 @section("content")
 <div>
-<div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center">Add Event</h1>
+<div class="container">
+    <h1 style="text-align: center;"">Edit Event</h1>
     <form action="/event/{{$event->id}}" method="POST">
       @csrf
       @method("PUT")
       <div class="form-group">
         <label for="title">Event Title</label>
         <input 
+        style="font-size: 16px"
         type="text" 
         class="form-control" 
         id="title" 
@@ -20,13 +21,14 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description" >Description</label>
         <textarea 
+        style="font-size: 16px; height: 300px;"
         class="form-control"
-         id="description"
-          name="description"
-           rows="4" 
-           required>{{$event->description}}</textarea>
+        id="description"
+        name="description"
+        rows="4" 
+        required>{{$event->description}}</textarea>
         @error("description")
             <p class="text-danger mt-1">{{$message}}</p>
         @enderror
@@ -60,6 +62,7 @@
       <div class="form-group">
         <label for="location_name">Location Name</label>
         <input
+        style="font-size: 16px"
           type="text" 
           class="form-control" 
           id="location_name" 

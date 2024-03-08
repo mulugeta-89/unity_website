@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
       <div class="m-b30" id="curriculum">
-        <h1 class="full-width text-center" style="margin-top: 150px;font-size: 46px; text-transform: uppercase; text-align: justify;color:#98b4d4;">
+        <h1 class="full-width text-center" style="margin-top: 150px;font-size: 46px; text-transform: uppercase; text-align: justify;">
             Printing Press
         </h1>
         <p class="lead full-width text-justify text-black">

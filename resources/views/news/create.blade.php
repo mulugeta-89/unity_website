@@ -1,13 +1,14 @@
 @extends("layout")
 @section("content")
 <div>
-<div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center">Add News</h1>
-    <form action="/news/store" method="POST">
+<div class="container">
+    <h1 style="text-align: center;">Add News</h1>
+    <form action="/news/store" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="form-group">
         <label for="title">Title</label>
         <input 
+        style="font-size: 21px"
         type="text" 
         class="form-control" 
         id="title" 
@@ -19,8 +20,12 @@
         @enderror
       </div>
       <div class="form-group">
+        <label for="images">Images</label>
+        <input type="file" id="images" name="images[]" multiple accept="image/*">
+      <div class="form-group">
         <label for="description">Content</label>
         <textarea 
+        style="font-size: 21px; height: 300px"
         class="form-control"
          id="content"
         name="content"
@@ -31,7 +36,7 @@
         @enderror
       </div>
       <div class="form-group">
-        <label for="start_date_time">Publish date</label>
+        <label for="start_date_time"Publish date</label>
         <input 
           type="datetime-local" 
           class="form-control"

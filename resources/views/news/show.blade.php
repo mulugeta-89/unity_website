@@ -1,48 +1,48 @@
+
 @extends("layout")
 @section("content")
 <div class="container">
     <div class="row">
-      <div class="col-md-10 mx-auto">
-        <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color: #4d0a91;">
-            {{$new->title}}
-        </h1>
-        <img src="{{asset("/images/public_health.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
-        <div class="text-black">
-            <div class="row">
-              <div class="col-md-6">
-                <h5 style="color: #4d0a91;">Published_date:</h5>
-                <p>{{$new["publish_date"]}}</p>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-md-12">
-                <h5 style="color: #4d0a91;">Description:</h5>
-                <p class="text-justify">{{$new["content"]}}</p>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                  <a href="/news/{{$new->id}}/edit">Edit</a>
-                  {{-- <a href="/event/{{$event->id}}/delete">Delete</a> --}}
+        <div class="col-md-10 mx-auto" style="margin-bottom: 100px">
+            <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify;">
+                {{ $new->title }}
+            </h1>
+            @if ($new->images->count() >= 1)
+                <div class="row" style="display: flex; justify-content: center">
+                        <img src="{{ asset("storage/".$new->images[0]->photo_path) }}"  alt="News Image">
                 </div>
-              </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <form method="POST" action="/news/{{$new->id}}">
-                            @csrf
-                            @method("DELETE")
-                            <button class="text-red-600">
-                                Delete
-                            </button>
-                        </form>
+            @else
+                <img src="{{ asset("unity_photos/arif.jpg") }}" class="img-fluid mt-4 mb-1 mx-auto d-block" alt="Default Image">
+            @endif
+
+            <div class="text-black">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Published_date:</h6>
+                        <p>{{ $new->publish_date }}</p>
+                    </div>
                 </div>
+                <p class="text-justify" style="font-size: 21px; font-weight: 700">{!! nl2br(e($new->content)) !!}</p>
             </div>
 
-          </div>
-          
-        
-  </div>
-  </div>
+            <!-- Display additional images below the content -->
+            @if ($new->images->count() > 2)
+                <div class="row mt-4">
+                    @for ($i = 1; $i < $new->images->count(); $i++)
+                        <div class="col-md-6">
+                            <img src="{{ asset("storage/".$new->images[$i]->photo_path) }}" class="img-fluid mb-3" alt="Additional News Image">
+                        </div>
+                    @endfor
+                </div>
+            @elseif($new->images->count() == 2)
+                <div class="row" style="display: flex; justify-content: center">
+                    <img src="{{ asset("storage/".$new->images[1]->photo_path) }}"  alt="News Image">
+                </div>
+            @endif
+        </div>
+    </div>
 </div>
 @endsection
+
+
+

@@ -1,13 +1,14 @@
 @extends("layout")
 @section("content")
 <div>
-<div class="container mt-6 pt-5" style="margin-top: 120px;">
-    <h1 style="text-align: center">Add Event</h1>
-    <form action="/events/store" method="POST">
+<div class="container">
+    <h1 style="text-align: center;">Add Event</h1>
+    <form action="/events/store" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="form-group">
         <label for="title">Event Title</label>
         <input 
+        style="font-size: 21px"
         type="text" 
         class="form-control" 
         id="title" 
@@ -19,8 +20,14 @@
         @enderror
       </div>
       <div class="form-group">
+        <label for="images">Images</label>
+        <input type="file" id="images" name="images[]" multiple accept="image/*" required>
+
+      </div>
+      <div class="form-group">
         <label for="description">Description</label>
-        <textarea 
+        <textarea
+        style="font-size: 21px;height: 300px;"
         class="form-control"
          id="description"
           name="description"
@@ -59,6 +66,7 @@
       <div class="form-group">
         <label for="location_name">Location Name</label>
         <input
+        style="font-size: 21px"
           type="text" 
           class="form-control" 
           id="location_name" 

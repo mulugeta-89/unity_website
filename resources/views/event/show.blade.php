@@ -2,63 +2,51 @@
 @section("content")
 <div class="container">
     <div class="row">
-      <div class="col-md-10 mx-auto">
-        <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color: #4d0a91;">
+      <div class="col-md-10 mx-auto" style="margin-bottom: 100px">
+        <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify;">
             {{$event["title"]}}
         </h1>
-        <img src="{{asset("/images/public_health.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
-        {{-- <div class="text-black">
-            <h5>Starting date:</h5><span>{{$event["start_date"]}}</span>
-            <h5>End Date: {{$event["end_date"]}}</h5>
-            <h5>Location: {{$event["location_name"]}}</h5>
-            <p>
-                {{$event["description"]}}
-            </p>
-        </div> --}}
+        
+        @if ($event->images->count() >= 1)
+                <div class="row" style="display: flex; justify-content: center">
+                        <img src="{{ asset("storage/".$event->images[0]->photo_path) }}"  alt="News Image">
+                </div>
+            @else
+                <img src="{{ asset("unity_photos/arif.jpg") }}" class="img-fluid mt-4 mb-1 mx-auto d-block" alt="Default Image">
+            @endif
         <div class="text-black">
             <div class="row">
               <div class="col-md-6">
-                <h5 style="color: #4d0a91;"">Starting Date:</h5>
-                <p>{{$event["start_date"]}}</p>
+                <h6>Published Date:</h6>
+                <p >{{$event["start_date"]}}</p>
               </div>
-              <div class="col-md-6">
-                <h5 style="color: #4d0a91;">End Date:</h5>
-                <p>{{$event["end_date"]}}</p>
+              {{-- <div class="col-md-6">
+                <h4 >End Date:</h4>
+                <p >{{$event["end_date"]}}</p>
+              </div> --}}
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Location:</h4>
+                <p style="font-size: 21px;font-weight: 700">{{$event["location_name"]}}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <h5 style="color: #4d0a91;">Location:</h5>
-                <p>{{$event["location_name"]}}</p>
+                <h4>Description:</h4>
+                <p class="text-justify" style="font-size: 21px; font-weight: 700; color: black">{!! nl2br(e($event["description"])) !!}</p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <h5 style="color: #4d0a91;">Description:</h5>
-                <p class="text-justify">{{$event["description"]}}</p>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                  <a href="/event/{{$event->id}}/edit">Edit</a>
-                  {{-- <a href="/event/{{$event->id}}/delete">Delete</a> --}}
-                </div>
-              </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <form method="POST" action="/event/{{$event->id}}">
-                            @csrf
-                            @method("DELETE")
-                            <button class="text-red-600">
-                                Delete
-                            </button>
-                        </form>
-                </div>
-            </div>
-
           </div>
-          
-        
+          @if ($event->images->count() > 1)
+                <div class="row mt-4">
+                    @for ($i = 1; $i < $event->images->count(); $i++)
+                        <div class="col-md-6">
+                            <img src="{{ asset("storage/".$event->images[$i]->photo_path) }}" class="img-fluid mb-3" alt="Additional News Image">
+                        </div>
+                    @endfor
+                </div>
+            @endif
   </div>
   </div>
 </div>

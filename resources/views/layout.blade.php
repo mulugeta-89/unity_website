@@ -62,79 +62,138 @@
             referrerpolicy="no-referrer"
         />
         <style>
+            body {
+                background-color: #e1e2e3;
+            }
             .header-transparent .is-fixed .menu-bar{
                     position:fixed;
                     background-color:rgba(6, 45, 151, 0.9);
             }
             .header-transparent .menu-bar{
+                height: 110px;
                 background-color: inherit;
+                border: none;
+                /* background: linear-gradient(0deg, rgb(255, 255, 255) 100%, rgba(1, 2, 2, 0) 100%); */
+            
             }
+            @media only screen and (min-width: 991px) {
+                .nav > li{
+                    height: 50px;
+                }
+                
+                .items {
+                    font-size: 8px
+                }
+            } 
+            #footer {
+                display: none;
+            }
+            @media only screen and (max-width: 767px) {
+                body {
+                    margin: 0
+                }
+                #footer {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    /* margin-top: auto; */
+                }
+            }
+            .header-transparent .navbar-toggler{
+                color: #0f0f0f;
+            }
+            /* .header-transparent .secondary-menu .btn-link:hover{
+                color:var(--primary);
+            } */
+            .header-transparent .navbar-toggler span{
+                background-color: #181717;
+            }
+            .event-bx {
+                border: 1px solid wheat;
+                border-radius: 7px;
+            }
+            .event-bx a:hover {
+                color: white
+            }
+
+            h1 {
+                margin-top: 150px;
+                font-size: 46px;
+                text-transform: uppercase;
+                text-align: justify;
+            }
+            .table-div {
+                margin-left: 120px;
+                margin-right: 120px;
+            }
+            .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+            .styled-table thead tr {
+                background-color: #080808;
+                color: #ffffff;
+                text-align: left;
+            }
+            .styled-table th {
+                color: white;
+            }
+            .styled-table th,
+            .styled-table td {
+                font-size: 20px;
+                padding: 12px 15px;
+            }
+            .styled-table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+            .styled-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .styled-table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+            .styled-table tbody tr.active-row {
+                font-weight: bold;
+                color: #56eed0;
+            }
+            @media only screen and (max-width: 767px) {
+                /* .styled-table {
+                    width: 50%;
+                } */
+                .table-div {
+                    margin: auto;
+                }
+                h1 {
+                    font-weight: bold;
+                    font-size: 21px;
+                    text-align: center;
+                }
+            }
+            
         </style>
 </head>
 <body id="bg">
 <div class="page-wraper">
 <div id="loading-icon-bx"></div>
 	<!-- Header Top ==== -->
-    {{-- <div class="fixed-top"> --}}
-        <header class="header rs-nav header-transparent" style="background: linear-gradient(180deg, rgb(12, 152, 218) 0%, rgba(1, 2, 2, 0) 100%);
-        ">
-            <div class="top-bar" style="background-color: rgba(6, 45, 151, 0.1); color: rgb(250, 246, 246);">
-                <div class="container">
-                    <div class="row d-flex justify-content-between">
-                        <div class="topbar-left">
-                            <ul>
-                                <li><a href="#" style="color: rgb(253, 251, 251);"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
-                                <li><a href="#" style="color: rgb(252, 249, 249);" ><i class="fa fa-envelope-o"></i>uuinfo@uu.edu.et</a></li>
-                            </ul>
-                        </div>
-                        <div class="topbar-right">
-                            <ul>
-                                <li>
-                                    <span class="ethiopian-flag"></span><span style="color: rgb(252, 249, 249)"> Ethiopia</span>
-                                </li>
-                                <li><a href="/"  style="color: red"><b>Announcements</b></a></li>
-                                <li><a href="#" style="color: rgb(253, 248, 248)">Students Login</a></li>
-                                <li><a href="#" style="color: rgb(252, 248, 248)">Register</a></li>
-                                <li><a href="#" style="color: rgb(252, 248, 248)">E-learning</a></li>
-                                <li><a href="/contact_us" style="color: rgb(248, 243, 243)">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sticky-header navbar-expand-lg">
-                <div class="menu-bar clearfix" style="height: 100px;">
+        <header class="header rs-nav  fixed-top" >
+            <div class="sticky-header navbar-expand-lg fixed-top">
+                <div class="menu-bar clearfix">
                     <div class="container clearfix">
                         <!-- Header Logo ==== -->
-                        <div class="menu-logo">
-                            <a href="/"><img src="{{asset("/unity_photos/logo4.png")}}" alt=""></a>
-                        </div>
                         <!-- Mobile Nav Button ==== -->
                         <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span></span>
                             <span></span>
                             <span></span>
                         </button>
-                        <!-- Author Nav ==== -->
-                        <div class="secondary-menu">
-                            <div class="secondary-inner">
-                                <ul>
-                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-youtube"></i></a></li>
-                                    <!-- Search Button ==== -->
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Search Box ==== -->
-                        <div class="nav-search-bar">
-                            <form action="#">
-                                <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
-                                <span><i class="ti-search"></i></span>
-                            </form>
-                            <span id="search-remove"><i class="ti-close"></i></span>
-                        </div>
                         <!-- Navigation Menu ==== -->
                         <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
                             <div class="menu-logo">
@@ -142,157 +201,198 @@
                                     
                                 </a>
                             </div>
-                            <ul class="nav navbar-nav">	
-                                <li >
-                                    <a href="/news">
-                                        <b>News</b>
-                                    </a>
-                                </li>
-                                <li><a href="javascript:;"><b>About</b> <i class="fa fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="javascript:;">About Unity<i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="/history">University History</a></li>
-                                                <li><a href="/vision">University Vision, Mission and Values</a></li>
-                                                <li><a href="/programs">University Academic Programs</a></li>
-                                                <li><a href="/student_services">University Student Services</a></li>
-                                                <li><a href="/campuses">University Campuses</a></li>
-                                                <li><a href="#">University Student Services</a></li>
-                                                <li><a href="#">Unity University Accreditation</a></li>
-                                                <li><a href="#">Alumni Association</a></li>
-                                                <li><a href="#">Auxiliary Faculties</a></li>
-
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:;">Enterprises<i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="/printing_press">Printing Press</a></li>
-                                                <li><a href="/clinic">Clinic/Hospital</a></li>
-                                                <li><a href="/cafeteria">Cafeteria</a></li>
-                                                <li><a href="/#">Studio</a></li>
-                                                <li><a href="/#">Stationary/Bookshops</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="javascript:;">Academic General Education<i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Kindergarten Education</a></li>
-                                                <li><a href="#">Elementary Education</a></li>
-                                                <li><a href="#">High-school Education</a></li>
-                                                <li><a href="#">Staff</a></li>
-                                                <li><a href="#">Policies and Procedures</a></li>
-                                                <li><a href="#">Requirements</a></li>
-                                                <li><a href="#">Mission Statement</a></li>
-                                                <li><a href="#">Course List</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">FAQ's
-                                            </i></a>
-                                        </li>
-                                        <li>
-                                            <a href="/contact_us">
-                                                Contact US
-                                            </a>
-                                        </li>
+                            <ul class="nav navbar-nav" >	
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black
+                                "><b>Home</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu" style="margin-top: 3px">
+                                        <li><a href="/news">News</a></li>
+                                        <li><a href="/events">Events</a></li>
+                                        <li><a href="#">Links</a></li>
+                                        <li><a href="/advertisments">Advertisments</a></li>                                        
                                     </ul>
                                 </li>
-                                <li >
-                                    <a href="/events">
-                                        <b>Events</b>
-                                    </a>
-                                </li>
-                                <li class="add-mega-menu"><a href="javascript:;"><b>Academics</b><i class="fa fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
-                                        
-                                                <li><a href="/undergraduate">Undergraduate</a></li>
-                                                <li><a href="/postgraduate">Postgraduate</a></li>
-                                                <li><a href="/online_education">Online Education</a></li>
-                                                <li><a href="/distance_education">Distance Education</a></li>
-                                                <li><a href="#">Facility</a></li>
-                                                <li><a href="#">University Policies and Procedures</a></li>
-                                                <li><a href="#">Mission Statement</a></li>
-                                                <li><a href="#">Course List</a></li>
-                                                <li><a href="#">Degree Requirements</a></li>
-                                        <li class="add-menu-right">
-                                            <img src="assets/images/adv/adv.jpg" alt=""/>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="javascript:;"><b>Office & Centers</b> <i class="fa fa-chevron-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="javascript:;">Resource Administration<i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Human Resource Service</a></li>
-                                                <li><a href="#">Materials Management Services</a></li>
-                                                <li><a href="#">Transporation Services</a></li>
-                                                <li><a href="#">Protection Services</a></li>
-                                                <li><a href="#">Facility Maintains</a></li>
-                                                <li><a href="#">Technical Services</a></li>
+                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px;color: black"><b>About Us</b> <i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu add-menu">
+                                        <li class="add-menu-left">
+                                            <ul>
+                                                <li><a href="#">Chairman Message</a></li>
+                                                <li><a href="#">President and Ceo Message</a></li>
+                                                <li><a href="/history">Unity University History</a></li>
+                                                <li><a href="/vision">University Vision, Mission, Values and Goals</a></li>
+                                                <li><a href="#">Unity University Governance</a></li>
+                                                <li><a href="#">Office of the President and CEO</a></li>
+                                                <li><a href="#">University Resource Administration</a></li>
                                                 <li><a href="#">University Academic Support</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="javascript:;">Academic Specialized Training<i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Executive Training</a></li>
-                                                <li><a href="#">Testing Services</a></li>
-                                                <li><a href="#">Consulting Services</a></li>
-                                                <li><a href="#">Credential reg</a></li>
-                                                <li><a href="#">Policies and Procedures</a></li>
-                                                <li><a href="#">Staff</a></li>
-                                                <li><a href="#">Mission Statement</a></li>
-                                                <li><a href="#">Course List</a></li>
+                                        <li class="add-menu-right">
+                                            <ul style="list-style: none">
+                                                <li><a href="#">University Academic Programs</a></li>
+                                                <li><a href="#">University Student Services</a></li>
+                                                <li><a href="#">Unity University Accreditation</a></li>
+                                                <li><a href="#">Alumni Association</a></li>
+                                                <li><a href="/campuses">University Campuses</a></li>
+                                                <li><a href="#">The Colleges/Faculties</a></li>
+                                                <li><a href="#">Univesity Auxiliary Faculties</a></li>
+                                                <li><a href="#">University Policies and Procedures</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="javascript:;">Academic Services<i class="fa fa-angle-right"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Library</a></li>
-                                                <li><a href="#">Laboratory</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/campus/alamoudi">Main Office(Gerji)</a></li>
+                                        <li><a href="/campuses">Campuses</a></li>
+                                        <li><a href="/contact_us">Contact E-mails</a></li>
+
+                                                                               
+                                    </ul>
+                                </li>
+                                
+                                <li class="add-mega-menu" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Admission and Records</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu add-menu">
+                                        <li class="add-menu-left">
+                                            <ul>
+                                                <li><a href="/calendar">Academic Calendar</a></li>
+                                                <li><a href="/campuses">University Campuses</a></li>
+                                                <li><a href="#">Enrollment Regulations</a></li>
+                                                <li><a href="#">Admission Procedures and Policies</a></li>
+                                                <li><a href="#">Privacy Rights of Students in Education Records</a></li>
+                                                <li><a href="#">Policies on Fairness and Student Conduct</a></li>
+                                                <li><a href="#">Institutional and Financial Assitance</a></li>
+                                                <li><a href="#">Attendance Policies</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="add-menu-right">
+                                            <ul style="list-style: none">
+                                                <li><a href="#">Prerequisites</a></li>
+                                                <li><a href="#">Withdrawal</a></li>
+                                                <li><a href="#">Grade Reporting</a></li>
+                                                <li><a href="#">Transcript</a></li>
+                                                <li><a href="#">Fees</a></li>
+                                                <li><a href="#">Appeals</a></li>
+                                                <li><a href="#">Course Offerings</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px;color: black" style="height: 50px;"><b>Academic Services</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu add-menu">
+                                        <li class="add-menu-left">
+                                            <ul>
+                                                <li><a href="#">Library Service</a></li>
+                                                <li><a href="#">Laboratory, Computer</a></li>
+                                                <li><a href="#">Laboratory, Mechare</a></li>
+                                                <li><a href="#">Laboratory, Medical</a></li>
                                                 <li><a href="#">Workshops</a></li>
                                                 <li><a href="#">Bookstores</a></li>
+                                                <li><a href="#">Printing Services</a></li>
+                                                <li><a href="#">Library Services</a></li>
+                                                <li><a href="#">Circulation</a></li>
                                                 <li><a href="#">Computer Workstation</a></li>
-                                                <li><a href="#">Music & Media</a></li>
+                                                <li><a href="#">Copy Service</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="add-menu-right">
+                                            <ul style="list-style: none">
+                                                <li><a href="#">Government Documents</a></li>
+                                                <li><a href="#">Inter-library Loan</a></li>
+                                                <li><a href="#">Music and Media</a></li>
                                                 <li><a href="#">Online Catalogue</a></li>
+                                                <li><a href="#">Reserves</a></li>
+                                                <li><a href="#">Precede</a></li>
+                                                <li><a href="#">Reading and Study</a></li>
+                                                <li><a href="#">Reference Source</a></li>
+                                                <li><a href="#">Students with Disabilities</a></li>
                                                 <li><a href="#">Teacher Center</a></li>
-                                                <li><a href="#">Student with Disabilities</a></li>
+
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                
-                                <li class="nav-dashboard"><a href="javascript:;"><b>Admissions</b><i class="fa fa-chevron-down"></i></a>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Resource Administration Services</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Academic Calendar</a></li>
-                                        <li><a href="#">Enrollment Regulations</a></li>
-                                        <li><a href="#">Admission Policies</a></li>
-                                        <li><a href="#">Policies on Fairness and Student Conduct</a></li>
-                                        <li><a href="#">Prerequisites</a></li>
-                                        <li><a href="#">Attendance Policies</a></li>
-                                        <li><a href="#">Grade Reporting</a></li>
-                                        <li><a href="#">Fees</a></li>
-                                        <li><a href="#">Appeals</a></li>
-                                        <li><a href="#">Course Offerings</a></li>
+                                        <li><a href="#">Human Resource Service</a></li>
+                                        <li><a href="#">Materials Management Services</a></li>
+                                        <li><a href="#">Transportation Services</a></li>
+                                        <li><a href="#">Protection Services</a></li>
+                                        <li><a href="#">Facility Maintains</a></li>
+                                        <li><a href="#">Technical Services</a></li>
+                                                                               
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;"><b>Research</b><i class="fa fa-chevron-down"></i></a>
+                                
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Linkages</a></li>
-                                        <li><a href="#">Researches</a></li>
-                                        <li><a href="#">Community Engagement</a></li>
-                                        <li><a href="#">Public Relations</a></li>
-                                        <li><a href="#">Publications</a></li>
-                                        <li><a href="#">Voice of Unity</a></li>
-
+                                        <li><a href="#">Undergraduate Studies</a></li>
+                                        <li><a href="#">Postgraduate Studies</a></li>
+                                        <li><a href="#">Distance Education</a></li>
+                                        <li><a href="#">Degree Requirements</a></li>
+                                        <li><a href="#">University Policies and Procedures</a></li>
+                                        <li><a href="#">Facility</a></li>
+                                        <li><a href="#">Mission Statement</a></li>
+                                        <li><a href="#">Course List</a></li>
+                                        <li><a href="#">Grading</a></li>                                     
+                                    </ul>
+                                </li>
+                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics General Education</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Kindergarten Education</a></li>
+                                        <li><a href="#">Elementaty Education</a></li>
+                                        <li><a href="#">High School Education</a></li>
+                                        <li><a href="#">Requirements</a></li>
+                                        <li><a href="#">University Policies and Procedures</a></li>
+                                        <li><a href="#">Staff</a></li>
+                                        <li><a href="#">Mission Statement</a></li>
+                                        <li><a href="#">Course List</a></li>
+                                        <li><a href="#">Grading</a></li>                                     
+                                    </ul>
+                                </li>
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics Specialized Training</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Executive Training</a></li>
+                                        <li><a href="#">Testing Services</a></li>
+                                        <li><a href="#">Consulting Services</a></li>
+                                        <li><a href="#">Credential reg</a></li>
+                                        <li><a href="#">Policies and Procedures</a></li>
+                                        <li><a href="#">Staff</a></li>
+                                        <li><a href="#">Mission Statement</a></li>
+                                        <li><a href="#">Course List</a></li>
+                                        <li><a href="#">Assessment</a></li>                                     
+                                    </ul>
+                                </li>
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Online Education</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
                                         
+                                        <li><a href="#">Undergraduate</a></li>
+                                        <li><a href="#">Postgraduate</a></li>                                        
                                     </ul>
                                 </li>
-                                
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Research and Community</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        
+                                        <li><a href="#">Linkages</a></li>
+                                        <li><a href="#">Researches</a></li> 
+                                        <li><a href="#">Community Engagement</a></li>
+                                        <li><a href="#">Public Relations</a></li> 
+                                        <li><a href="#">Publications</a></li>
+                                        <li><a href="/voice_of_unity">Voice of Unity</a></li>                                       
+                                    </ul>
+                                </li>
+                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>University Enterprises</b><i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Printing Press</a></li>
+                                        <li><a href="#">Clinical/Hospital</a></li>
+                                        <li><a href="#">Studio</a></li>
+                                        <li><a href="#">Cafeteria</a></li>
+                                        <li><a href="#">Stationary/Bookshops</a></li>
+                                    </ul>
+                                </li>
+
                             </ul>
-                            <div class="nav-social-link">
-                                <a href="javascript:;"><i class="fa fa-facebook"></i></a>
-                                <a href="javascript:;"><i class="fa fa-google-plus"></i></a>
-                                <a href="javascript:;"><i class="fa fa-linkedin"></i></a>
-                            </div>
+                         
                         </div>
+                        
                         <!-- Navigation Menu END ==== -->
                     </div>
                 </div>
@@ -300,106 +400,14 @@
         </header>
     {{-- </div> --}}
     @yield("content")
-    {{-- Footer starts here --}}
-    <footer style="background: rgb(29, 28, 28)">
-		<div class="footer-top">
-			<div class="pt-exebar">
-				<div class="container">
-					<div class="d-flex align-items-stretch">
-						<div class="pt-logo mr-auto">
-							<a href="/"><img src="{{asset("/unity_photos/logo4.png")}}" style="height: 130px; width: 400px" alt=""/></a>
-						</div>
-						<div class="pt-social-link">
-							<ul class="list-inline m-a0">
-								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-twitter"></i></a></li>
-								<li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="javascript:;" class="btn-link"><i class="fa-brands fa-youtube"></i></a></li>
-							</ul>
-						</div>
-						<div class="pt-btn-join">
-							<a href="/contact_us" class="btn ">Join Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container" style="text-align: left">
-				<div class="row">
-					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
-						<div class="widget">
-                            <div class="container">
-                                <h3 style="color: white">Contact Us</h3>
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label" style="color: white">Your Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message" class="form-label" style="color: white">Message</label>
-                                        <textarea class="form-control" id="message" rows="3" placeholder="Type your message here"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                            </div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-5 col-md-7 col-sm-12">
-						<div class="row">
-							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
-								<div class="widget footer_widget">
-									<h5 class="footer-title">Company</h5>
-									<ul>
-										<li><a href="/">Home</a></li>
-										<li><a href="/campuses">About</a></li>
-										<li><a href="#">FAQs</a></li>
-										<li><a href="/contact_us">Contact</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
-								<div class="widget footer_widget">
-									<h5 class="footer-title">Get In Touch</h5>
-									<ul>
-										<li><a href="#">News</a></li>
-										<li><a href="/events">Events</a></li>
-										<li><a href="/campuses">Campuses</a></li>
-										<li><a href="#">Testimonials</li>
-                                        <li><a href="/news/create">Post News</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
-								<div class="widget footer_widget">
-									<h5 class="footer-title">Programs</h5>
-									<ul>
-										<li><a href="/undergraduate">Undergraduate</li>
-										<li><a href="/postgraduate">Postgraduate</a></li>
-										<li><a href="/distance_education">Distance Education</a></li>
-                                        <li><a href="/event/create">Post event</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
-						<div class="widget widget_gallery gallery-grid-4">
-							<h5 class="footer-title">Our Gallery</h5>
-							<ul class="magnific-image">
-								<li><a href="{{asset("/images/pic1.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic1.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic2.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic2.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic3.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic3.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic4.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic4.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic5.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic5.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic6.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic6.jpg")}}" alt=""></a></li>
-								<li><a href="{{asset("/images/pic7.jpg")}}" class="magnific-anchor"><img src="{{asset("/images/pic7.jpg")}}" alt=""></a></li>
-								
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
-	</footer>
+	{{-- </footer> --}}
+    <footer id="footer">
+        <div>
+            <h3 style="color: black;">Unity University</h3>
+        </div>
+    </footer>
+    
     <!-- Footer END ==== -->
     <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
