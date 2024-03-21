@@ -30,10 +30,13 @@
 <body>
     
     <header style="display: flex; justify-content: space-evenly; align-items: center">
+        <!-- Page title -->
         <h1 class="text-center display-4 font-weight-bold my-4 text-uppercase" style="color: wheat; text-align: center">
             Manage Voice of Unity
         </h1>
+        <!-- Button to create new voice -->
         <a href="/voiceofunity/create" class="btn"><i class="fas fa-pen"></i> Create Voice</a>
+        <!-- Logout form -->
         <form class="d-inline" method="POST" action="/logout">
             @csrf
             <button type="submit" class="btn btn-primary" style="border: none">
@@ -41,30 +44,22 @@
             </button>
         </form>
     </header>
+    <!-- Table displaying voices -->
     <table class="table table-bordered rounded">
         <tbody>
+            <!-- Loop through voices -->
             @unless($voices->isEmpty())
             @foreach($voices as $voice)
             <tr class="border">
+                <!-- Voice title -->
                 <td class="px-4 py-3 border-top border-bottom">
                     <a href="{{asset("storage/".$voice->pdf_file)}}" target="_blank" style="color: white">{{$voice->title}}</a>
                 </td>
-                <style>
-                    body {
-                        background-color: #343a40;
-                    }
-                    .btn {
-                        background: #f7b205;
-                        padding: 7px 25px;
-                    }
-                    .btn:hover {
-                        color: white;
-                        background-color: #4c1864
-                    }
-                </style>
+                <!-- Edit voice button -->
                 <td class="px-4 py-3 border-top border-bottom">
                     <a href="/voiceofunity/{{$voice->id}}/edit" class="btn"><i class="fas fa-pen"></i> Edit</a>
                 </td>
+                <!-- Delete voice button -->
                 <td class="px-4 py-3 border-top border-bottom">
                     <form method="POST" action="/voiceofunity/{{$voice->id}}">
                         @csrf
@@ -74,6 +69,7 @@
                 </td>
             </tr>
             @endforeach
+            <!-- Display message if no voices found -->
             @else
             <tr class="border">
                 <td colspan="3" class="px-4 py-3 border-top border-bottom">
@@ -83,14 +79,15 @@
             @endunless
         </tbody>
     </table>
+    <!-- Pagination links -->
     <div class="row">
         <div class="col-lg-12 text-center">
             {{ $voices->links()}} <!-- Renders Bootstrap pagination links -->
         </div>
     </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-

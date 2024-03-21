@@ -202,8 +202,12 @@
                                 </a>
                             </div>
                             <ul class="nav navbar-nav" >	
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black
-                                "><b>Home</b><i class="fa fa-chevron-down"></i></a>
+                                <!-- Navigation menu item for Home -->
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;" style="font-size: 12px;color: black">
+                                        <b>Home</b><i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <!-- Sub-menu for Home -->
                                     <ul class="sub-menu" style="margin-top: 3px">
                                         <li><a href="/news">News</a></li>
                                         <li><a href="/events">Events</a></li>
@@ -211,9 +215,16 @@
                                         <li><a href="/advertisments">Advertisments</a></li>                                        
                                     </ul>
                                 </li>
-                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px;color: black"><b>About Us</b> <i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Navigation menu item for About Us -->
+                                <li class="add-mega-menu">
+                                    <a href="javascript:;" style="font-size: 12px;color: black">
+                                        <b>About Us</b> <i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <!-- Sub-menu for About Us -->
                                     <ul class="sub-menu add-menu">
                                         <li class="add-menu-left">
+                                            <!-- Left section of the About Us sub-menu -->
                                             <ul>
                                                 <li><a href="#">Chairman Message</a></li>
                                                 <li><a href="#">President and Ceo Message</a></li>
@@ -226,6 +237,7 @@
                                             </ul>
                                         </li>
                                         <li class="add-menu-right">
+                                            <!-- Right section of the About Us sub-menu -->
                                             <ul style="list-style: none">
                                                 <li><a href="#">University Academic Programs</a></li>
                                                 <li><a href="#">University Student Services</a></li>
@@ -239,18 +251,24 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Navigation item for Contact Us -->
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;" style="font-size: 12px;color: black"><b>Contact Us</b><i class="fa fa-chevron-down"></i></a>
+                                    <!-- Sub-menu for Contact Us -->
                                     <ul class="sub-menu">
                                         <li><a href="/campus/alamoudi">Main Office(Gerji)</a></li>
                                         <li><a href="/campuses">Campuses</a></li>
                                         <li><a href="/contact_us">Contact E-mails</a></li>
-
-                                                                               
                                     </ul>
                                 </li>
-                                
-                                <li class="add-mega-menu" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Admission and Records</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Navigation item for Admission and Records -->
+                                <li class="add-mega-menu">
+                                    <a href="javascript:;" style="font-size: 12px;color: black"><b>Admission and Records</b><i class="fa fa-chevron-down"></i></a>
+                                    <!-- Sub-menu for Admission and Records -->
                                     <ul class="sub-menu add-menu">
+                                        <!-- Left part of the sub-menu -->
                                         <li class="add-menu-left">
                                             <ul>
                                                 <li><a href="/calendar">Academic Calendar</a></li>
@@ -259,10 +277,11 @@
                                                 <li><a href="#">Admission Procedures and Policies</a></li>
                                                 <li><a href="#">Privacy Rights of Students in Education Records</a></li>
                                                 <li><a href="#">Policies on Fairness and Student Conduct</a></li>
-                                                <li><a href="#">Institutional and Financial Assitance</a></li>
+                                                <li><a href="#">Institutional and Financial Assistance</a></li>
                                                 <li><a href="#">Attendance Policies</a></li>
                                             </ul>
                                         </li>
+                                        <!-- Right part of the sub-menu -->
                                         <li class="add-menu-right">
                                             <ul style="list-style: none">
                                                 <li><a href="#">Prerequisites</a></li>
@@ -276,8 +295,13 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="add-mega-menu"><a href="javascript:;" style="font-size: 12px;color: black" style="height: 50px;"><b>Academic Services</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Navigation item for Academic Services -->
+                                <li class="add-mega-menu">
+                                    <a href="javascript:;" style="font-size: 12px;color: black" style="height: 50px;"><b>Academic Services</b><i class="fa fa-chevron-down"></i></a>
+                                    <!-- Sub-menu for Academic Services -->
                                     <ul class="sub-menu add-menu">
+                                        <!-- Left part of the sub-menu -->
                                         <li class="add-menu-left">
                                             <ul>
                                                 <li><a href="#">Library Service</a></li>
@@ -293,6 +317,7 @@
                                                 <li><a href="#">Copy Service</a></li>
                                             </ul>
                                         </li>
+                                        <!-- Right part of the sub-menu -->
                                         <li class="add-menu-right">
                                             <ul style="list-style: none">
                                                 <li><a href="#">Government Documents</a></li>
@@ -305,12 +330,15 @@
                                                 <li><a href="#">Reference Source</a></li>
                                                 <li><a href="#">Students with Disabilities</a></li>
                                                 <li><a href="#">Teacher Center</a></li>
-
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Resource Administration Services</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Navigation item for Resource Administration Services -->
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;" style="font-size: 12px;color: black"><b>Resource Administration Services</b><i class="fa fa-chevron-down"></i></a>
+                                    <!-- Sub-menu for Resource Administration Services -->
                                     <ul class="sub-menu">
                                         <li><a href="#">Human Resource Service</a></li>
                                         <li><a href="#">Materials Management Services</a></li>
@@ -318,11 +346,13 @@
                                         <li><a href="#">Protection Services</a></li>
                                         <li><a href="#">Facility Maintains</a></li>
                                         <li><a href="#">Technical Services</a></li>
-                                                                               
                                     </ul>
                                 </li>
-                                
-                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Navigation item for Academics Higher Education -->
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;" style="font-size: 12px;color: black"><b>Academics Higher Education</b><i class="fa fa-chevron-down"></i></a>
+                                    <!-- Sub-menu for Academics Higher Education -->
                                     <ul class="sub-menu">
                                         <li><a href="#">Undergraduate Studies</a></li>
                                         <li><a href="#">Postgraduate Studies</a></li>
@@ -332,23 +362,34 @@
                                         <li><a href="#">Facility</a></li>
                                         <li><a href="#">Mission Statement</a></li>
                                         <li><a href="#">Course List</a></li>
-                                        <li><a href="#">Grading</a></li>                                     
+                                        <li><a href="#">Grading</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard" ><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics General Education</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Navigation item for Academics General Education -->
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;" style="font-size: 12px;color: black"><b>Academics General Education</b><i class="fa fa-chevron-down"></i></a>
+                                    <!-- Sub-menu for Academics General Education -->
                                     <ul class="sub-menu">
                                         <li><a href="#">Kindergarten Education</a></li>
-                                        <li><a href="#">Elementaty Education</a></li>
+                                        <li><a href="#">Elementary Education</a></li>
                                         <li><a href="#">High School Education</a></li>
                                         <li><a href="#">Requirements</a></li>
                                         <li><a href="#">University Policies and Procedures</a></li>
                                         <li><a href="#">Staff</a></li>
                                         <li><a href="#">Mission Statement</a></li>
                                         <li><a href="#">Course List</a></li>
-                                        <li><a href="#">Grading</a></li>                                     
+                                        <li><a href="#">Grading</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Academics Specialized Training</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Menu item: Academics Specialized Training -->
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;" style="font-size: 12px;color: black">
+                                        <b>Academics Specialized Training</b>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <!-- Dropdown menu for Academics Specialized Training -->
                                     <ul class="sub-menu">
                                         <li><a href="#">Executive Training</a></li>
                                         <li><a href="#">Testing Services</a></li>
@@ -358,28 +399,43 @@
                                         <li><a href="#">Staff</a></li>
                                         <li><a href="#">Mission Statement</a></li>
                                         <li><a href="#">Course List</a></li>
-                                        <li><a href="#">Assessment</a></li>                                     
+                                        <li><a href="#">Assessment</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Online Education</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Menu item: Online Education -->
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;" style="font-size: 12px;color: black">
+                                        <b>Online Education</b>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <!-- Dropdown menu for Online Education -->
                                     <ul class="sub-menu">
-                                        
                                         <li><a href="#">Undergraduate</a></li>
-                                        <li><a href="#">Postgraduate</a></li>                                        
+                                        <li><a href="#">Postgraduate</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>Research and Community</b><i class="fa fa-chevron-down"></i></a>
+
+                                <!-- Menu item: Research and Community -->
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;" style="font-size: 12px;color: black">
+                                        <b>Research and Community</b>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <!-- Dropdown menu for Research and Community -->
                                     <ul class="sub-menu">
-                                        
                                         <li><a href="#">Linkages</a></li>
-                                        <li><a href="#">Researches</a></li> 
+                                        <li><a href="#">Researches</a></li>
                                         <li><a href="#">Community Engagement</a></li>
-                                        <li><a href="#">Public Relations</a></li> 
+                                        <li><a href="#">Public Relations</a></li>
                                         <li><a href="#">Publications</a></li>
-                                        <li><a href="/voice_of_unity">Voice of Unity</a></li>                                       
+                                        <li><a href="/voiceofunity">Voice of Unity</a></li>
                                     </ul>
                                 </li>
+
+                                <!-- Menu item: Unity Enterprises -->
                                 <li class="nav-dashboard"><a href="javascript:;" style="font-size: 12px;color: black"><b>University Enterprises</b><i class="fa fa-chevron-down"></i></a>
+                                    <!-- drop down menu: Unity Enterprises -->
                                     <ul class="sub-menu">
                                         <li><a href="#">Printing Press</a></li>
                                         <li><a href="#">Clinical/Hospital</a></li>
@@ -407,8 +463,9 @@
             <h3 style="color: black;">Unity University</h3>
         </div>
     </footer>
-    
     <!-- Footer END ==== -->
+
+    <!-- Button to move to top of the page ==== -->
     <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
 
@@ -435,7 +492,7 @@
 <!-- the setting and also the color skin -->
 <!-- <script src='assets/vendors/switcher/switcher.js'></script> -->
 <!-- Revolution JavaScripts Files -->
-<script src="{{asset("/vendors/revolution/js/jquery.themepunch.tools.min.js")}}"></script>
+{{-- <script src="{{asset("/vendors/revolution/js/jquery.themepunch.tools.min.js")}}"></script>
 <script src="{{asset("/vendors/revolution/js/jquery.themepunch.revolution.min.js")}}"></script>
 <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
 <script src="{{asset("/vendors/revolution/js/extensions/revolution.extension.actions.min.js")}}"></script>
@@ -447,7 +504,7 @@
 <script src="{{asset("/vendors/revolution/js/extensions/revolution.extension.parallax.min.js")}}"></script>
 <script src="{{asset("/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js")}}"></script>
 <script src="{{asset("/vendors/revolution/js/extensions/revolution.extension.video.min.js")}}"></script>
-<script src="{{asset("/js/bottom.js")}}"></script>
+<script src="{{asset("/js/bottom.js")}}"></script> --}}
 
 </body>
 
