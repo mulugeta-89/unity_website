@@ -22,6 +22,9 @@ class NewsController extends Controller
             "content" => "required",
             "publish_date" => "required",
         ]);
+        if($request->hasFile("image")){
+            $formFields["image"] = $request->file("image")->store("NewsImages", "public");
+        }
         News::create($formFields);
         return redirect("/news");
         

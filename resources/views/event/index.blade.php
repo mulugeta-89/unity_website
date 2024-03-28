@@ -25,7 +25,7 @@
         <!-- Portfolio  -->
         <div class="section-area section-sp1">
             <div class="container">
-                <div class="ttr-blog-grid-3 row" id="masonry">
+                <div class="ttr-blog-grid-3 row" id="masonry" style="list-style: none">
                         @unless(count($events) == 0)
                             @foreach($events as $event)
                                 <x-event_card :event="$event"/>

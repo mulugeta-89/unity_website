@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('news', function (Blueprint $table) {
             $table->id();
             $table->string("title");
+            $table->string("image");
             $table->longText("content");
             $table->dateTime('publish_date');
             $table->timestamps();

@@ -29,6 +29,9 @@ class EventController extends Controller
             "end_date" => "required",
             "location_name" => "required",
         ]);
+        if($request->hasFile("image")){
+            $formFields["image"] = $request->file("image")->store("EventImages", "public");
+        }
         Event::create($formFields);
         return redirect("/events");
     }

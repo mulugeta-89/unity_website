@@ -6,7 +6,7 @@
         <h1 class="full-width text-center" style="margin-top: 150px;font-size: 32px; text-transform: uppercase; text-align: justify; color: #4d0a91;">
             {{$new->title}}
         </h1>
-        <img src="{{asset("/images/public_health.jpg")}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
+        <img src="{{asset("storage/" . $new->image)}}" alt="Image" class="img-fluid mt-4 mb-1 align-items-center">
         <div class="text-black">
             <div class="row">
               <div class="col-md-6">

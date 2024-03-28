@@ -2,7 +2,7 @@
 <li class="action-card col-lg-6 col-md-6 col-sm-12 happening">
     <div class="event-bx m-b30">
         <div class="action-box">
-            <img src="{{asset("/unity_photos/Arega.jpg")}}" alt="">
+            <img style="height: 400px" src="{{asset("storage/".$event->image)}}" alt="">
         </div>
         <div class="info-bx d-flex">
             <div>
